@@ -1,0 +1,10 @@
+version: '2'
+services:
+  platform.web:
+    image: httpd:2.4
+    ports:
+      - "80:80"
+    environment:
+      - FOUNDRY_URL=https://tut.foundry
+    volumes:
+      - ../../public/:/usr/local/apache2/htdocs/
