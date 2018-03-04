@@ -1,8 +1,5 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { RootPaths } from 'containers'
 
-import { RouterComponent } from "../containers/router";
-
-$(document).ready(()=>{
-    ReactDOM.render(<RouterComponent />, document.getElementById('root'));
-});
+ReactDOM.render(<RootPaths />, document.getElementById('root'))

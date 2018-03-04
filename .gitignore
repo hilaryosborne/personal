@@ -1,11 +1,6 @@
-.DS_Store
-.idea
-node_modules
-
-composer.lock
+/node_modules
+/.idea
 yarn.lock
-
-access.log
-error.log
-
-public
+yarn-error.log
+package-lock.json
+/public
