@@ -1,0 +1,20 @@
+sudo: true
+language: node_js
+node_js:
+  - 8
+cache:
+  yarn: true
+  directories:
+    - node_modules
+script:
+  - node --version
+  - yarn build:dist
+
+deploy:
+  provider: s3
+  access_key_id: "AKIAIRK632P5CC4GNOCA"
+  secret_access_key: "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"
+  bucket: "www.hilaryosborne.com"
+  skip_cleanup: true
+  region: "ap-southeast-2"
+  local_dir: public

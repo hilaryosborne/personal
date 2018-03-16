@@ -5,9 +5,15 @@ const WebpackCleanupPlugin = require('webpack-cleanup-plugin')
 const webpack = require('webpack')
 
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
+const IndexWebpackPluginConfig = new HtmlWebpackPlugin({
   template: './src/index.html',
   filename: 'index.html',
+  inject: 'body'
+})
+
+const NotFoundWebpackPluginConfig = new HtmlWebpackPlugin({
+  template: './src/404.html',
+  filename: '404.html',
   inject: 'body'
 })
 
@@ -89,5 +95,5 @@ module.exports = {
       }
     ]
   },
-  plugins: [HtmlWebpackPluginConfig, extractSass, cleanup, assets, env, options ]
+  plugins: [ IndexWebpackPluginConfig, NotFoundWebpackPluginConfig, extractSass, cleanup, assets, env, options ]
 }
