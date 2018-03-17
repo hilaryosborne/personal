@@ -1,5 +1,6 @@
 version: 2
 jobs:
+
   app_checkout:
     docker:
       - image: circleci/node:9-stretch-browsers
@@ -7,9 +8,9 @@ jobs:
     steps:
       - checkout
       - save_cache:
+        key: v1-repo-{{ .Environment.CIRCLE_SHA1 }}
           paths:
             - ~/build
-          key: v1-repo-{{ .Environment.CIRCLE_SHA1 }}
 
   node_dependencies:
     docker:
@@ -24,12 +25,12 @@ jobs:
       - restore_cache:
           key: v1-repo-{{ .Environment.CIRCLE_SHA1 }}
       - restore_cache:
-          key: v1-deps-{{ checksum "yarn.lock" }}
+          key: v1-deps-{{ checksum "package.json" }}
       - run:
           name: Installing NPM Dependencies
           command: yarn install
       - save_cache:
-          key: v1-deps-{{ checksum "yarn.lock" }}
+          key: v1-deps-{{ checksum "package.json" }}
           paths:
             - ~/build/node_modules
 
@@ -46,9 +47,7 @@ jobs:
       - restore_cache:
           key: v1-repo-{{ .Environment.CIRCLE_SHA1 }}
       - restore_cache:
-          key: v1-deps-{{ checksum "yarn.lock" }}
-      - restore_cache:
-          key: v1-assets-{{ .Environment.CIRCLE_SHA1 }}
+          key: v1-deps-{{ checksum "package.json" }}
       - run:
           name: Compiling App
           command: yarn build:dist
@@ -73,7 +72,6 @@ jobs:
       - run:
           name: Deploy to S3 if tests pass
           command: aws s3 sync public s3://www.hilaryosborne.com --delete
-
 
 workflows:
   version: 2
