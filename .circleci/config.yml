@@ -26,9 +26,6 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
-      - run:
-          name: Running App Tests
-          command: 'yarn test'
   deploy:
     docker:
       - image: circleci/node:9-stretch-browsers
