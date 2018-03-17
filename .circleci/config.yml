@@ -3,7 +3,7 @@ jobs:
   build:
     docker:
       - image: circleci/node:9-stretch-browsers
-    working_directory: ~/app-build
+    working_directory: /build
     steps:
       - checkout
       - run:
@@ -31,6 +31,15 @@ jobs:
       - image: circleci/node:9-stretch-browsers
     working_directory: ~/app-build
     steps:
+      - run:
+          name: Install dependencies
+          working_directory: /build
+          command: |
+            apt-get -y -qq update
+            apt-get -y -qq install python3.4-dev
+            curl -O https://bootstrap.pypa.io/get-pip.py
+            python3.4 get-pip.py --user
+            pip install awscli --upgrade --user
       - run:
           name: Deploy to S3 if tests pass
           command: aws s3 sync public s3://www.hilaryosborne.com --delete
