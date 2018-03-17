@@ -9,8 +9,8 @@ jobs:
       - checkout
       - save_cache:
           key: v1-repo-{{ .Environment.CIRCLE_SHA1 }}
-            paths:
-              - ~/build
+          paths:
+            - ~/build
 
   node_dependencies:
     docker:
