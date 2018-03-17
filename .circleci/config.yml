@@ -34,6 +34,19 @@ jobs:
           paths:
             - ~/build/node_modules
 
+  testing:
+      docker:
+        - image: circleci/node:9-stretch-browsers
+      working_directory: ~/build
+      steps:
+        - restore_cache:
+            key: v1-repo-{{ .Environment.CIRCLE_SHA1 }}
+        - restore_cache:
+            key: v1-deps-{{ checksum "package.json" }}
+        - run:
+            name: Performing Tests
+            command: yarn test
+
   precompile:
     docker:
       - image: circleci/node:9-stretch-browsers
@@ -81,8 +94,12 @@ workflows:
       - node_dependencies:
           requires:
             - app_checkout
+      - testing:
+          requires:
+            - app_checkout
       - precompile:
           requires:
+            - testing
             - node_dependencies
       - deploy:
           requires:
