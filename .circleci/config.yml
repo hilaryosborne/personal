@@ -29,10 +29,7 @@ jobs:
       - run:
           name: Install dependencies
           command: |
-            sudo apt-get -y -qq update
-            sudo apt-get -y -qq install python3.4-dev
-            curl -O https://bootstrap.pypa.io/get-pip.py
-            python3.4 get-pip.py --user
+            sudo apt install python-pip python-dev
             pip install awscli --upgrade --user
       - run:
           name: Deploy to S3 if tests pass
