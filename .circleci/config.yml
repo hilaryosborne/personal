@@ -3,7 +3,7 @@ jobs:
   build:
     docker:
       - image: circleci/node:9-stretch-browsers
-    working_directory: /build
+    working_directory: ~/build
     steps:
       - checkout
       - run:
@@ -26,11 +26,6 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
-  deploy:
-    docker:
-      - image: circleci/node:9-stretch-browsers
-    working_directory: ~/app-build
-    steps:
       - run:
           name: Install dependencies
           working_directory: /build
