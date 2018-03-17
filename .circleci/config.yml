@@ -1,31 +1,69 @@
 version: 2
 jobs:
-  build:
+  app_checkout:
     docker:
       - image: circleci/node:9-stretch-browsers
     working_directory: ~/build
     steps:
       - checkout
-      - run:
-          name: Update NPM
-          command: 'sudo npm install -g npm@latest'
-      - run:
-          name: Install Yarn
-          command: 'sudo npm install -g yarn'
-          command: 'sudo chmod a+x /usr/local/bin/yarn'
-      - restore_cache:
-          keys:
-            - v1-dependencies-{{ checksum "package.json" }}
-      - run:
-          name: Installing NPM Dependencies
-          command: 'yarn install'
-      - run:
-          name: Building Application
-          command: 'yarn build:dist'
       - save_cache:
           paths:
-            - node_modules
-          key: v1-dependencies-{{ checksum "package.json" }}
+            - ~/build
+          key: v1-repo-{{ .Environment.CIRCLE_SHA1 }}
+
+  node_dependencies:
+    docker:
+      - image: circleci/node:9-stretch-browsers
+    working_directory: ~/build
+    steps:
+      - run:
+          name: Install Yarn
+          command: |
+            sudo npm install -g yarn
+            sudo chmod a+x /usr/local/bin/yarn
+      - restore_cache:
+          key: v1-repo-{{ .Environment.CIRCLE_SHA1 }}
+      - restore_cache:
+          key: v1-deps-{{ checksum "yarn.lock" }}
+      - run:
+          name: Installing NPM Dependencies
+          command: yarn install
+      - save_cache:
+          key: v1-deps-{{ checksum "yarn.lock" }}
+          paths:
+            - ~/build/node_modules
+
+  precompile:
+    docker:
+      - image: circleci/node:9-stretch-browsers
+    working_directory: ~/build
+    steps:
+      - run:
+          name: Install Yarn
+          command: |
+            sudo npm install -g yarn
+            sudo chmod a+x /usr/local/bin/yarn
+      - restore_cache:
+          key: v1-repo-{{ .Environment.CIRCLE_SHA1 }}
+      - restore_cache:
+          key: v1-deps-{{ checksum "yarn.lock" }}
+      - restore_cache:
+          key: v1-assets-{{ .Environment.CIRCLE_SHA1 }}
+      - run:
+          name: Compiling App
+          command: yarn build:dist
+      - save_cache:
+          key: v1-assets-{{ .Environment.CIRCLE_SHA1 }}
+          paths:
+            - ~/build/public
+
+  deploy:
+    docker:
+      - image: circleci/node:9-stretch-browsers
+    working_directory: ~/build
+    steps:
+      - restore_cache:
+          key: v1-assets-{{ .Environment.CIRCLE_SHA1 }}
       - run:
           name: Install dependencies
           command: |
@@ -41,7 +79,13 @@ workflows:
   version: 2
   build_and_test:
     jobs:
-      - build
+      - app_checkout
+      - node_dependencies:
+          requires:
+            - app_checkout
+      - precompile:
+          requires:
+            - node_dependencies
       - deploy:
           requires:
-            - build
+            - precompile
