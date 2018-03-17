@@ -1,4 +1,5 @@
 version: 2
+
 jobs:
 
   app_checkout:
@@ -88,7 +89,7 @@ jobs:
 
 workflows:
   version: 2
-  build_and_test:
+  build_test_deploy:
     jobs:
       - app_checkout
       - node_dependencies:
@@ -96,7 +97,7 @@ workflows:
             - app_checkout
       - testing:
           requires:
-            - app_checkout
+            - node_dependencies
       - precompile:
           requires:
             - testing
