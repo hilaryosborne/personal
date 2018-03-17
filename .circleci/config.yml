@@ -28,7 +28,6 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
       - run:
           name: Install dependencies
-          working_directory: /build
           command: |
             apt-get -y -qq update
             apt-get -y -qq install python3.4-dev
