@@ -3,14 +3,43 @@ jobs:
   build:
     docker:
       - image: circleci/node:9-stretch-browsers
+    working_directory: ~/app-build
     steps:
       - checkout
-      - run: npm install -g yarn
-      - run: yarn install
-      - run: yarn build:dist
+      - run:
+          name: Update NPM
+          command: 'sudo npm install -g npm@latest'
+      - run:
+          name: Install Yarn
+          command: 'sudo npm install -g yarn'
+          command: 'sudo chmod a+x /usr/local/bin/yarn'
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "package.json" }}
+      - run:
+          name: Installing NPM Dependencies
+          command: 'yarn install'
+      - run:
+          name: Building Application
+          command: 'yarn build:dist'
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
   test:
     docker:
       - image: circleci/node:9-stretch-browsers
     steps:
       - checkout
-      - run: yarn test
+      - run:
+          name: Running App Tests
+          command: 'yarn test'
+  deploy:
+    docker:
+      - image: circleci/node:9-stretch-browsers
+    working_directory: ~/app-build
+    steps:
+      - run:
+          name: Deploy to S3 if tests pass
+          command: aws s3 sync public s3://www.hilaryosborne.com --delete
+
