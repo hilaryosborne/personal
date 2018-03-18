@@ -1,0 +1,259 @@
+{
+  "personal": {
+    "given_names": "Hilary Thomas",
+    "family_names": "Osborne",
+    "friendly": "Hilary",
+    "formal": "Hilary Osborne",
+    "social":[
+      {
+        "type": "github",
+        "label": "GitHub Profile",
+        "url": "https://github.com/hilaryosborne"
+      },
+      {
+        "type": "linkedin",
+        "label": "Linkedin Profile",
+        "url": "https://www.linkedin.com/in/hilaryosborne"
+      },
+      {
+        "type": "steam",
+        "label": "Steam Profile",
+        "url": "http://steamcommunity.com/id/sackrin"
+      }
+    ],
+    "communication":[
+      {
+        "type": "phone",
+        "label": "My Phone Number",
+        "preferred": false,
+        "area": "04",
+        "number": "11 229 720",
+        "description": "SMS me as I might be busy",
+        "response": "2 working days"
+      },
+      {
+        "type": "email",
+        "label": "My Gmail",
+        "preferred": true,
+        "address": "h.t.osborne@gmail.com",
+        "description": "This is the best way to get in contact",
+        "response": "2 working days"
+      }
+    ]
+  },
+  "services":[
+    {
+      "label": "Tutoring",
+      "includes": ["lessons", "assessments", "marking", "mentorship"],
+      "rate": 8500,
+      "unit": "p/hr"
+    },
+    {
+      "label": "General Consulting",
+      "includes": ["scoping", "conceptual", "development", "project management", "devops"],
+      "rate": 8000,
+      "unit": "p/hr"
+    },
+    {
+      "label": "Greenfield Development",
+      "includes": ["scoping", "conceptual", "development", "project management", "devops"],
+      "conditions": "Monthly commitment and review",
+      "rate": 8000,
+      "unit": "p/hr"
+    },
+    {
+      "label": "Contract General Development",
+      "includes": ["development", "devops"],
+      "conditions": "Minimum 3 month contact",
+      "rate": 5500,
+      "unit": "p/hr"
+    }
+  ],
+  "disciplines":[
+    {
+      "label": "ReactJS",
+      "focus": true,
+      "knowledge": [
+        {
+          "label": "React General Knowledge",
+          "starred": false,
+          "confident": true,
+          "active": true
+        },
+        {
+          "label": "React Router",
+          "starred": false,
+          "confident": true,
+          "active": true
+        },
+        {
+          "label": "React-Redux",
+          "starred": false,
+          "confident": true,
+          "active": true
+        },
+        {
+          "label": "React Sagas",
+          "starred": true,
+          "confident": true,
+          "active": true
+        },
+        {
+          "label": "Radium + CSS in JS",
+          "starred": true,
+          "confident": true,
+          "active": true
+        },
+        {
+          "label": "Testing Enzyme + Jest",
+          "starred": true,
+          "confident": true,
+          "active": true
+        }
+      ]
+    },
+    {
+      "label": "Laravel",
+      "focus": true,
+      "knowledge": []
+    },
+    {
+      "label": "DevOps",
+      "focus": false,
+      "knowledge": [
+        {
+          "label": "Continuous Integration",
+          "starred": true,
+          "confident": true,
+          "active": true
+        },
+        {
+          "label": "Continuous Delivery",
+          "starred": true,
+          "confident": true,
+          "active": true
+        },
+        {
+          "label": "Infrastructure as Code",
+          "starred": true,
+          "confident": true,
+          "active": true
+        },
+        {
+          "label": "AWS S3 + CloudFront + EC2",
+          "starred": true,
+          "confident": true,
+          "active": true
+        },
+        {
+          "label": "Docker + Docker Swarm",
+          "starred": false,
+          "confident": true,
+          "active": true
+        }
+      ]
+    },
+    {
+      "label": "WordPress",
+      "focus": false,
+      "knowledge": []
+    },
+    {
+      "label": "ExpressJS",
+      "focus": false,
+      "knowledge": []
+    },
+    {
+      "label": "General",
+      "focus": true,
+      "knowledge": [
+        {
+          "label": "PHP < 7.3",
+          "starred": true,
+          "confident": true,
+          "active": true
+        },
+        {
+          "label": "ES > 6",
+          "starred": false,
+          "confident": true,
+          "active": true
+        },
+        {
+          "label": "CSS + SCSS",
+          "starred": false,
+          "confident": true,
+          "active": true
+        },
+        {
+          "label": "MongoDB",
+          "starred": true,
+          "confident": true,
+          "active": true
+        },
+        {
+          "label": "MySQL",
+          "starred": false,
+          "confident": true,
+          "active": true
+        },
+        {
+          "label": "GitHub",
+          "starred": false,
+          "confident": true,
+          "active": true
+        },
+        {
+          "label": "CLI/SSH/CMD",
+          "starred": false,
+          "confident": true,
+          "active": true
+        }
+      ]
+    }
+  ],
+  "projects":[
+    {
+      "label": "Fission"
+    },
+    {
+      "label": "React SPA Boilerplate"
+    },
+    {
+      "label": "Tutelage"
+    },
+    {
+      "label": "Tappr"
+    },
+    {
+      "label": "Vielo"
+    },
+    {
+      "label": "Vielo"
+    },
+    {
+      "label": "WordPress Boilerplate"
+    },
+    {
+      "label": "ACF Fusion"
+    },
+    {
+      "label": "DTH Media"
+    },
+    {
+      "label": "Fit4Duty"
+    },
+    {
+      "label": "Healthy Staff"
+    },
+    {
+      "label": "Drug And Alcohol Institute"
+    },
+    {
+      "label": "Axiom College"
+    },
+    {
+      "label": "Control Logic"
+    }
+  ]
+}

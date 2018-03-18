@@ -65,18 +65,17 @@ jobs:
       - run:
           name: Compiling App
           command: yarn build:dist
-      - save_cache:
-          key: v1-assets-{{ .Environment.CIRCLE_SHA1 }}
-          paths:
-            - ~/build/public
+      - persist_to_workspace:
+          root: public
+          paths: ./
 
   deploy:
     docker:
       - image: circleci/node:9-stretch-browsers
     working_directory: ~/build
     steps:
-      - restore_cache:
-          key: v1-assets-{{ .Environment.CIRCLE_SHA1 }}
+      - attach_workspace:
+          at: public
       - run:
           name: Install dependencies
           command: |
