@@ -107,14 +107,34 @@ workflows:
   version: 2
   build_test_deploy:
     jobs:
-      - app_checkout
+      - app_checkout:
+          filters:
+              branches:
+                  only: master
+              tags:
+                  only: /.*/
       - node_dependencies:
+          filters:
+              branches:
+                  only: master
+              tags:
+                  only: /.*/
           requires:
             - app_checkout
       - testing:
+          filters:
+            branches:
+                only: master
+            tags:
+                only: /.*/
           requires:
             - node_dependencies
       - precompile:
+          filters:
+            branches:
+                only: master
+            tags:
+                only: /.*/
           requires:
             - testing
             - node_dependencies
@@ -123,7 +143,7 @@ workflows:
               branches:
                   only: master
               tags:
-                  only: /^prod.*/
+                  only: /^v.*/
           requires:
             - precompile
       - deploy_staging:
