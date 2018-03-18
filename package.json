@@ -5,6 +5,7 @@
   "license": "MIT",
   "scripts": {
     "test": "jest",
+    "linter": "eslint src/**/*.{js,jsx} --ext .js, .jsx",
     "start": "webpack-dev-server --mode development --config webpack.common.js",
     "build:dev": "webpack --mode development -w --env=dev --progress --profile --colors --config webpack.common.js",
     "build:dist": "webpack --mode production --env=prod --progress --profile --colors --config webpack.production.js"

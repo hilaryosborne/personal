@@ -47,6 +47,9 @@ jobs:
         - run:
             name: Performing Tests
             command: yarn test
+        - run:
+            name: Performing Linting
+            command: yarn linter
 
   precompile:
     docker:
