@@ -110,13 +110,13 @@ workflows:
       - app_checkout:
           filters:
               branches:
-                  only: master
+                  only: /.*/
               tags:
                   only: /.*/
       - node_dependencies:
           filters:
               branches:
-                  only: master
+                  only: /.*/
               tags:
                   only: /.*/
           requires:
@@ -124,7 +124,7 @@ workflows:
       - testing:
           filters:
             branches:
-                only: master
+                only: /.*/
             tags:
                 only: /.*/
           requires:
@@ -138,14 +138,6 @@ workflows:
           requires:
             - testing
             - node_dependencies
-      - deploy_production:
-          filters:
-              branches:
-                  only: master
-              tags:
-                  only: /^v.*/
-          requires:
-            - precompile
       - deploy_staging:
           filters:
               branches:
@@ -154,3 +146,12 @@ workflows:
                   ignore: /^v.*/
           requires:
             - precompile
+      - deploy_production:
+          filters:
+              branches:
+                  ignore: /.*/
+              tags:
+                  only: /^v.*/
+          requires:
+            - precompile
+
