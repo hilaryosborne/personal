@@ -119,18 +119,18 @@ workflows:
             - testing
             - node_dependencies
       - deploy_production:
-        filters:
-          branches:
-            only: master
-          tags:
-            only: /^v.*/
-        requires:
-          - precompile
+          filters:
+              branches:
+                  only: master
+              tags:
+                  only: /^v.*/
+          requires:
+            - precompile
       - deploy_staging:
-        filters:
-          branches:
-            only: master
-          tags:
-            ignore: /^v.*/
-        requires:
-          - precompile
+          filters:
+              branches:
+                  only: master
+              tags:
+                  ignore: /^v.*/
+          requires:
+            - precompile
