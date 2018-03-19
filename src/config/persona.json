@@ -288,7 +288,19 @@
           "active": true
         },
         {
-          "label": "Whiteboard Everything Approach",
+          "label": "Whiteboard Problem Solving",
+          "starred": true,
+          "confident": true,
+          "active": true
+        },
+        {
+          "label": "Risk Management",
+          "starred": true,
+          "confident": true,
+          "active": true
+        },
+        {
+          "label": "Project Scoping + Management",
           "starred": true,
           "confident": true,
           "active": true
@@ -364,6 +376,14 @@
       "initiative": "personal",
       "engagement": "Myself",
       "disciplines": ["Laravel", "General", "DevOps"]
+    },
+    {
+      "label": "Portfolio",
+      "hours": "60+",
+      "year": "2018",
+      "initiative": "personal",
+      "engagement": "Myself",
+      "disciplines": ["ReactJS", "General", "DevOps"]
     },
     {
       "label": "React SPA Boilerplate",

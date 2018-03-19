@@ -1,5 +1,5 @@
 import React from 'react'
-import { Page, Titles, DisciplineEntire } from 'components/Resume'
+import { Page, Titles, EntireDiscipline, EntireProjects } from 'components/Resume'
 import { MarkDown } from 'components/Facade/Content'
 import persona from 'config/persona'
 
@@ -11,10 +11,10 @@ export class Resume extends React.Component {
         <MarkDown source={persona.career.about} />
       </Page>
       <Page>
-        <DisciplineEntire />
+        <EntireDiscipline />
       </Page>
       <Page>
-        <DisciplineEntire />
+        <EntireProjects />
       </Page>
     </div>)
   }
