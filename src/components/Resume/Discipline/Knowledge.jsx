@@ -14,7 +14,10 @@ export class Knowledge extends React.Component {
   render () {
     return (<div className='d-flex' style={styles.wrapper}>
       {_.get(this.props.data, 'label')}
-      <div className='ml-auto'>5/2</div>
+      <div className='ml-auto'>
+        <i className='far fa-check-circle ml-2' />
+        <i className='fas fa-fire ml-2' />
+      </div>
     </div>)
   }
 }
