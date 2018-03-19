@@ -79,57 +79,39 @@
       "knowledge": [
         {
           "label": "React Syntax + Best Practice",
-          "starred": false,
-          "confident": true,
-          "active": true
+          "tags": ["cando", "oldguard", "passionate"]
         },
         {
           "label": "React Router",
-          "starred": false,
-          "confident": true,
-          "active": true
+          "tags": ["cando", "oldguard", "passionate"]
         },
         {
           "label": "Single Page Application",
-          "starred": false,
-          "confident": true,
-          "active": true
+          "tags": ["cando", "oldguard", "passionate"]
         },
         {
           "label": "React Redux",
-          "starred": false,
-          "confident": true,
-          "active": true
+          "tags": ["cando", "oldguard", "passionate"]
         },
         {
           "label": "React Sagas",
-          "starred": true,
-          "confident": true,
-          "active": true
+          "tags": ["cando", "oldguard", "passionate"]
         },
         {
           "label": "Webpack 3+",
-          "starred": false,
-          "confident": true,
-          "active": true
+          "tags": ["cando", "oldguard", "passionate"]
         },
         {
           "label": "Radium + CSS in JS",
-          "starred": true,
-          "confident": true,
-          "active": true
+          "tags": ["cando", "oldguard", "passionate"]
         },
         {
           "label": "Testing Enzyme + Jest",
-          "starred": true,
-          "confident": true,
-          "active": true
+          "tags": ["cando", "oldguard", "passionate"]
         },
         {
           "label": "AWS S3/CloudFront CI + CD",
-          "starred": true,
-          "confident": true,
-          "active": true
+          "tags": ["cando", "oldguard", "passionate"]
         }
       ]
     },
@@ -139,57 +121,39 @@
       "knowledge": [
         {
           "label": "Laravel Best Practice",
-          "starred": false,
-          "confident": true,
-          "active": true
+          "tags": ["cando", "oldguard", "passionate"]
         },
         {
           "label": "Migrations + Eloquent ORM",
-          "starred": false,
-          "confident": true,
-          "active": true
+          "tags": ["cando", "oldguard", "passionate"]
         },
         {
           "label": "Passport Authentication",
-          "starred": false,
-          "confident": true,
-          "active": true
+          "tags": ["cando", "oldguard", "passionate"]
         },
         {
           "label": "Package Development",
-          "starred": false,
-          "confident": true,
-          "active": true
+          "tags": ["cando", "oldguard", "passionate"]
         },
         {
           "label": "Blade Templating",
-          "starred": false,
-          "confident": true,
-          "active": true
+          "tags": ["cando", "oldguard", "passionate"]
         },
         {
           "label": "Stateless RESTful API",
-          "starred": false,
-          "confident": true,
-          "active": true
+          "tags": ["cando", "oldguard", "passionate"]
         },
         {
           "label": "Docker Implementation",
-          "starred": false,
-          "confident": true,
-          "active": true
+          "tags": ["cando", "oldguard", "passionate"]
         },
         {
           "label": "Unit + Feature Testing",
-          "starred": false,
-          "confident": true,
-          "active": true
+          "tags": ["cando", "oldguard", "passionate"]
         },
         {
           "label": "AWS EC2 CI + CD",
-          "starred": true,
-          "confident": true,
-          "active": true
+          "tags": ["cando", "oldguard", "passionate"]
         }
       ]
     },
@@ -199,39 +163,27 @@
       "knowledge": [
         {
           "label": "Continuous Integration (CI)",
-          "starred": true,
-          "confident": true,
-          "active": true
+          "tags": ["cando", "oldguard", "passionate"]
         },
         {
           "label": "Continuous Delivery (CD)",
-          "starred": true,
-          "confident": true,
-          "active": true
+          "tags": ["cando", "oldguard", "passionate"]
         },
         {
           "label": "Infrastructure as Code (Docker)",
-          "starred": true,
-          "confident": true,
-          "active": true
+          "tags": ["cando", "oldguard", "passionate"]
         },
         {
           "label": "AWS S3 + CloudFront + EC2",
-          "starred": true,
-          "confident": true,
-          "active": true
+          "tags": ["cando", "oldguard", "passionate"]
         },
         {
           "label": "CircleCI",
-          "starred": false,
-          "confident": true,
-          "active": true
+          "tags": ["cando", "oldguard", "passionate"]
         },
         {
           "label": "Docker + Docker Compose",
-          "starred": false,
-          "confident": true,
-          "active": true
+          "tags": ["cando", "oldguard", "passionate"]
         }
       ]
     },
@@ -241,39 +193,27 @@
       "knowledge": [
         {
           "label": "WordPress Best Practice",
-          "starred": false,
-          "confident": true,
-          "active": true
+          "tags": ["cando", "oldguard", "passionate"]
         },
         {
           "label": "Theme Development",
-          "starred": false,
-          "confident": true,
-          "active": true
+          "tags": ["cando", "oldguard", "passionate"]
         },
         {
           "label": "WordPress + Composer",
-          "starred": false,
-          "confident": true,
-          "active": true
+          "tags": ["cando", "oldguard", "passionate"]
         },
         {
           "label": "Plugin Development",
-          "starred": false,
-          "confident": true,
-          "active": true
+          "tags": ["cando", "oldguard", "passionate"]
         },
         {
           "label": "Docker Implementation",
-          "starred": false,
-          "confident": true,
-          "active": true
+          "tags": ["cando", "oldguard", "passionate"]
         },
         {
           "label": "AWS EC2 CI + CD",
-          "starred": true,
-          "confident": true,
-          "active": true
+          "tags": ["cando", "oldguard", "passionate"]
         }
       ]
     },
@@ -283,33 +223,23 @@
       "knowledge": [
         {
           "label": "Team Leadership + Coffee",
-          "starred": true,
-          "confident": true,
-          "active": true
+          "tags": ["cando", "oldguard", "passionate"]
         },
         {
           "label": "Whiteboard Problem Solving",
-          "starred": true,
-          "confident": true,
-          "active": true
+          "tags": ["cando", "oldguard", "passionate"]
         },
         {
           "label": "Risk Management",
-          "starred": true,
-          "confident": true,
-          "active": true
+          "tags": ["cando", "oldguard", "passionate"]
         },
         {
           "label": "Project Scoping + Management",
-          "starred": true,
-          "confident": true,
-          "active": true
+          "tags": ["cando", "oldguard", "passionate"]
         },
         {
           "label": "Continuous Human Improvement (CHI)",
-          "starred": true,
-          "confident": true,
-          "active": true
+          "tags": ["cando", "oldguard", "passionate"]
         }
       ]
     },
@@ -319,51 +249,35 @@
       "knowledge": [
         {
           "label": "PHP < 7.3",
-          "starred": true,
-          "confident": true,
-          "active": true
+          "tags": ["cando", "oldguard", "passionate"]
         },
         {
           "label": "ES > 6",
-          "starred": false,
-          "confident": true,
-          "active": true
+          "tags": ["cando", "oldguard", "passionate"]
         },
         {
           "label": "CSS + SCSS",
-          "starred": false,
-          "confident": true,
-          "active": true
+          "tags": ["cando", "oldguard", "passionate"]
         },
         {
           "label": "MongoDB",
-          "starred": true,
-          "confident": true,
-          "active": true
+          "tags": ["cando", "oldguard", "passionate"]
         },
         {
           "label": "MySQL",
-          "starred": false,
-          "confident": true,
-          "active": true
+          "tags": ["cando", "oldguard", "passionate"]
         },
         {
           "label": "GitHub",
-          "starred": false,
-          "confident": true,
-          "active": true
+          "tags": ["cando", "oldguard", "passionate"]
         },
         {
           "label": "Linux/Ubuntu",
-          "starred": false,
-          "confident": true,
-          "active": true
+          "tags": ["cando", "oldguard", "passionate"]
         },
         {
           "label": "CLI/SSH/CMD",
-          "starred": false,
-          "confident": true,
-          "active": true
+          "tags": ["cando", "oldguard", "passionate"]
         }
       ]
     }
@@ -462,6 +376,14 @@
       "initiative": "cooperate",
       "engagement": "Wise Robot Pty Ltd",
       "disciplines": ["WordPress", "ReactJS", "General", "DevOps"]
+    },
+    {
+      "label": "Docker Swarm Environment",
+      "hours": "80+",
+      "year": "2017",
+      "initiative": "personal",
+      "engagement": "Myself",
+      "disciplines": ["DevOps", "General"]
     },
     {
       "label": "Fit4Duty Thalamus Portal",
