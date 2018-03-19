@@ -375,6 +375,9 @@
       "year": "2018",
       "initiative": "personal",
       "engagement": "Myself",
+      "links": [
+        { "label": "Main Repository", "url": "https://github.com/sackrin/fission", "icon": "github" }
+      ],
       "disciplines": ["Laravel", "General", "DevOps"]
     },
     {
@@ -391,6 +394,9 @@
       "year": "2018",
       "initiative": "personal",
       "engagement": "Myself",
+      "links": [
+        { "label": "Main Repository", "url": "https://github.com/hilaryosborne/react-spa", "icon": "github" }
+      ],
       "disciplines": ["ReactJS", "General"]
     },
     {
@@ -431,6 +437,10 @@
       "year": "2017",
       "initiative": "personal",
       "engagement": "Myself",
+      "links": [
+        { "label": "Main Repository", "url": "https://github.com/sackrin/boilerplate", "icon": "github" },
+        { "label": "Utils Repository", "url": "https://github.com/sackrin/boilerplate-utils", "icon": "github" }
+      ],
       "disciplines": ["WordPress", "General", "DevOps"]
     },
     {
@@ -439,6 +449,10 @@
       "year": "2017",
       "initiative": "personal",
       "engagement": "Myself",
+      "links": [
+        { "label": "Main Repository", "url": "https://github.com/sackrin/fusion", "icon": "github" },
+        { "label": "Models Repository", "url": "https://github.com/sackrin/fusion-model", "icon": "github" }
+      ],
       "disciplines": ["WordPress", "General", "DevOps"]
     },
     {
