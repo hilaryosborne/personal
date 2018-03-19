@@ -13,6 +13,9 @@ export class Resume extends React.Component {
       <Page>
         <DisciplineEntire />
       </Page>
+      <Page>
+        <DisciplineEntire />
+      </Page>
     </div>)
   }
 }

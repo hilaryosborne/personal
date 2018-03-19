@@ -1,12 +1,19 @@
 import React from 'react'
 import _ from 'lodash'
 import PropTypes from 'prop-types'
+import Radium from 'radium'
 
 const styles = {
-  wrapper: { borderBottom: '1px #000 dotted', marginBottom: '.7rem' }
+  wrapper: {
+    borderBottom: '1px #000 dotted',
+    marginBottom: '.7rem',
+    ':last-child': {
+      borderBottom: '0px transparent none'
+    }
+  }
 }
 
-export class Knowledge extends React.Component {
+export class KnowledgeComponent extends React.Component {
   static propTypes = {
     data: PropTypes.any
   }
@@ -21,3 +28,5 @@ export class Knowledge extends React.Component {
     </div>)
   }
 }
+
+export const Knowledge = Radium(KnowledgeComponent)

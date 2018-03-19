@@ -144,7 +144,7 @@
           "active": true
         },
         {
-          "label": "Eloquent ORM",
+          "label": "Migrations + Eloquent ORM",
           "starred": false,
           "confident": true,
           "active": true
@@ -156,7 +156,19 @@
           "active": true
         },
         {
-          "label": "RESTful API",
+          "label": "Package Development",
+          "starred": false,
+          "confident": true,
+          "active": true
+        },
+        {
+          "label": "Blade Templating",
+          "starred": false,
+          "confident": true,
+          "active": true
+        },
+        {
+          "label": "Stateless RESTful API",
           "starred": false,
           "confident": true,
           "active": true
@@ -266,9 +278,28 @@
       ]
     },
     {
-      "label": "ExpressJS",
+      "label": "Human",
       "focus": false,
-      "knowledge": []
+      "knowledge": [
+        {
+          "label": "Team Leadership + Coffee",
+          "starred": true,
+          "confident": true,
+          "active": true
+        },
+        {
+          "label": "Whiteboard Everything Approach",
+          "starred": true,
+          "confident": true,
+          "active": true
+        },
+        {
+          "label": "Continuous Human Improvement (CHI)",
+          "starred": true,
+          "confident": true,
+          "active": true
+        }
+      ]
     },
     {
       "label": "General",
@@ -327,46 +358,124 @@
   ],
   "projects":[
     {
-      "label": "Fission"
+      "label": "Fission",
+      "hours": "150+",
+      "year": "2018",
+      "initiative": "personal",
+      "engagement": "Myself",
+      "disciplines": ["Laravel", "General", "DevOps"]
     },
     {
-      "label": "React SPA Boilerplate"
+      "label": "React SPA Boilerplate",
+      "hours": "20+",
+      "year": "2018",
+      "initiative": "personal",
+      "engagement": "Myself",
+      "disciplines": ["ReactJS", "General"]
     },
     {
-      "label": "Tutelage"
+      "label": "Tutelage",
+      "hours": "500+",
+      "year": "2017",
+      "initiative": "personal",
+      "engagement": "Myself",
+      "disciplines": ["ReactJS", "Laravel", "DevOps", "General"]
     },
     {
-      "label": "Tappr"
+      "label": "Tappr Dashboard",
+      "hours": "100+",
+      "year": "2017",
+      "initiative": "cooperate",
+      "engagement": "Tappr",
+      "disciplines": ["ReactJS", "General"]
     },
     {
-      "label": "Vielo"
+      "label": "Vielo",
+      "hours": "40+",
+      "year": "2017",
+      "initiative": "cooperate",
+      "engagement": "Wise Robot Pty Ltd",
+      "disciplines": ["WordPress", "General", "DevOps"]
     },
     {
-      "label": "Vielo"
+      "label": "The Marketing Lab",
+      "hours": "20+",
+      "year": "2017",
+      "initiative": "cooperate",
+      "engagement": "Wise Robot Pty Ltd",
+      "disciplines": ["WordPress", "General", "DevOps"]
     },
     {
-      "label": "WordPress Boilerplate"
+      "label": "WordPress Boilerplate",
+      "hours": "80+",
+      "year": "2017",
+      "initiative": "personal",
+      "engagement": "Myself",
+      "disciplines": ["WordPress", "General", "DevOps"]
     },
     {
-      "label": "ACF Fusion"
+      "label": "ACF Fusion",
+      "hours": "100+",
+      "year": "2017",
+      "initiative": "personal",
+      "engagement": "Myself",
+      "disciplines": ["WordPress", "General", "DevOps"]
     },
     {
-      "label": "DTH Media"
+      "label": "DTH Media",
+      "hours": "180+",
+      "year": "2017",
+      "initiative": "cooperate",
+      "engagement": "Wise Robot Pty Ltd",
+      "disciplines": ["WordPress", "ReactJS", "General", "DevOps"]
     },
     {
-      "label": "Fit4Duty"
+      "label": "Fit4Duty Thalamus Portal",
+      "hours": "2000+",
+      "year": "2016",
+      "initiative": "cooperate",
+      "engagement": "BlockQuote Pty Ltd",
+      "disciplines": ["Symfony", "ReactJS", "General", "DevOps"]
     },
     {
-      "label": "Healthy Staff"
+      "label": "Healthy Staff",
+      "hours": "40+",
+      "year": "2016",
+      "initiative": "cooperate",
+      "engagement": "BlockQuote Pty Ltd",
+      "disciplines": ["WordPress", "General"]
     },
     {
-      "label": "Drug And Alcohol Institute"
+      "label": "Drug And Alcohol Institute",
+      "hours": "300+",
+      "year": "2015",
+      "initiative": "cooperate",
+      "engagement": "BlockQuote Pty Ltd",
+      "disciplines": ["WordPress", "General"]
     },
     {
-      "label": "Axiom College"
+      "label": "Axiom College",
+      "hours": "1200+",
+      "year": "2015",
+      "initiative": "cooperate",
+      "engagement": "Axiom Syndicate Pty Ltd",
+      "disciplines": ["WordPress", "General"]
     },
     {
-      "label": "Control Logic"
+      "label": "Axiom College Student Portal",
+      "hours": "2000+",
+      "year": "2015",
+      "initiative": "cooperate",
+      "engagement": "Axiom Syndicate Pty Ltd",
+      "disciplines": ["Symfony", "General"]
+    },
+    {
+      "label": "Control Logic",
+      "hours": "100+",
+      "year": "2015",
+      "initiative": "cooperate",
+      "engagement": "BlockQuote Pty Ltd",
+      "disciplines": ["WordPress", "General"]
     }
   ]
 }
