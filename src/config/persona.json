@@ -41,6 +41,9 @@
       }
     ]
   },
+  "career": {
+    "about": "Look no further if you are after a creative developer who has a long history in the digital industry and is constantly pushing the boundaries with new tools and methodologies.\n\nI would best describe myself as an **ES6** and **PHP** developer with a wide range of skills and experience across multiple technical, creative and business skill-sets.  I believe in approaching each digital problem by using a number of various technologies according to their strengths, industry track record and appropriateness for the problem at hand. My frameworks of choice are generally **ReactJS** (ES6) and **Laravel** (PHP) however I do have experience across a number of different frameworks and platforms such as **Symfony**, **WordPress**, **ExpressJS** etc. While I actively work across a broad range of digital disciplines, I do currently have a special focus on exploring single page application development using **ReactJS** and **Laravel**.\n\nDevelopment may be my strength, but problem solving is my passion. To me, problem solving is not limited to development alone. Creative and UX is a discipline that I actively pursue and, I believe, it makes me a better developer to lead and contribute in these areas. I greatly respect creative experts and I strive to contribute, enable and learn from graphic and UX professionals with whom I have the privilege to work alongside with. I believe that by having experience working across creative and technical makes me a better developer with a greater capacity to provide workable digital solutions.\n\nFinally, there is more to what I can offer than what I can fit into this small introduction. I invite you to browse my portfolio, or chat with me directly, to better gauge my ability and experience in digital development, leadership, creative and mentorship. Working together, I am sure we can learn, implement, monitor and improve digital solutions to solve almost any problem."
+  },
   "services":[
     {
       "label": "Tutoring",
@@ -75,7 +78,7 @@
       "focus": true,
       "knowledge": [
         {
-          "label": "React General Knowledge",
+          "label": "React Syntax + Best Practice",
           "starred": false,
           "confident": true,
           "active": true
@@ -87,7 +90,13 @@
           "active": true
         },
         {
-          "label": "React-Redux",
+          "label": "Single Page Application",
+          "starred": false,
+          "confident": true,
+          "active": true
+        },
+        {
+          "label": "React Redux",
           "starred": false,
           "confident": true,
           "active": true
@@ -95,6 +104,12 @@
         {
           "label": "React Sagas",
           "starred": true,
+          "confident": true,
+          "active": true
+        },
+        {
+          "label": "Webpack 3+",
+          "starred": false,
           "confident": true,
           "active": true
         },
@@ -109,32 +124,81 @@
           "starred": true,
           "confident": true,
           "active": true
+        },
+        {
+          "label": "AWS S3/CloudFront CI + CD",
+          "starred": true,
+          "confident": true,
+          "active": true
         }
       ]
     },
     {
       "label": "Laravel",
       "focus": true,
-      "knowledge": []
+      "knowledge": [
+        {
+          "label": "Laravel Best Practice",
+          "starred": false,
+          "confident": true,
+          "active": true
+        },
+        {
+          "label": "Eloquent ORM",
+          "starred": false,
+          "confident": true,
+          "active": true
+        },
+        {
+          "label": "Passport Authentication",
+          "starred": false,
+          "confident": true,
+          "active": true
+        },
+        {
+          "label": "RESTful API",
+          "starred": false,
+          "confident": true,
+          "active": true
+        },
+        {
+          "label": "Docker Implementation",
+          "starred": false,
+          "confident": true,
+          "active": true
+        },
+        {
+          "label": "Unit + Feature Testing",
+          "starred": false,
+          "confident": true,
+          "active": true
+        },
+        {
+          "label": "AWS EC2 CI + CD",
+          "starred": true,
+          "confident": true,
+          "active": true
+        }
+      ]
     },
     {
       "label": "DevOps",
       "focus": false,
       "knowledge": [
         {
-          "label": "Continuous Integration",
+          "label": "Continuous Integration (CI)",
           "starred": true,
           "confident": true,
           "active": true
         },
         {
-          "label": "Continuous Delivery",
+          "label": "Continuous Delivery (CD)",
           "starred": true,
           "confident": true,
           "active": true
         },
         {
-          "label": "Infrastructure as Code",
+          "label": "Infrastructure as Code (Docker)",
           "starred": true,
           "confident": true,
           "active": true
@@ -146,7 +210,13 @@
           "active": true
         },
         {
-          "label": "Docker + Docker Swarm",
+          "label": "CircleCI",
+          "starred": false,
+          "confident": true,
+          "active": true
+        },
+        {
+          "label": "Docker + Docker Compose",
           "starred": false,
           "confident": true,
           "active": true
@@ -156,7 +226,44 @@
     {
       "label": "WordPress",
       "focus": false,
-      "knowledge": []
+      "knowledge": [
+        {
+          "label": "WordPress Best Practice",
+          "starred": false,
+          "confident": true,
+          "active": true
+        },
+        {
+          "label": "Theme Development",
+          "starred": false,
+          "confident": true,
+          "active": true
+        },
+        {
+          "label": "WordPress + Composer",
+          "starred": false,
+          "confident": true,
+          "active": true
+        },
+        {
+          "label": "Plugin Development",
+          "starred": false,
+          "confident": true,
+          "active": true
+        },
+        {
+          "label": "Docker Implementation",
+          "starred": false,
+          "confident": true,
+          "active": true
+        },
+        {
+          "label": "AWS EC2 CI + CD",
+          "starred": true,
+          "confident": true,
+          "active": true
+        }
+      ]
     },
     {
       "label": "ExpressJS",
@@ -199,6 +306,12 @@
         },
         {
           "label": "GitHub",
+          "starred": false,
+          "confident": true,
+          "active": true
+        },
+        {
+          "label": "Linux/Ubuntu",
           "starred": false,
           "confident": true,
           "active": true
