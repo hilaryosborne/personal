@@ -1,9 +1,16 @@
 import React from 'react'
+import _ from 'lodash'
 import Radium from 'radium'
 import * as resumeStyles from '../styles'
 import * as baseStyles from 'scripts/styles'
+import persona from 'config/persona'
+import { Project } from './Project'
 
 export class EntireComponent extends React.Component {
+  getProjects () {
+    return _.get(persona, 'projects', [])
+  }
+
   render () {
     return (<div>
       <div className='row'>
@@ -11,6 +18,9 @@ export class EntireComponent extends React.Component {
           <h2 style={resumeStyles.typography.h2}>Projects<span style={baseStyles.underline.short} /></h2>
         </div>
       </div>
+      {_.map(this.getProjects(), (project, k) => {
+        return <Project key={k} data={project} />
+      })}
     </div>)
   }
 }
