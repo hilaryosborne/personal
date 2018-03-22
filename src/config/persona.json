@@ -284,30 +284,32 @@
   ],
   "projects":[
     {
-      "label": "Fission",
-      "hours": "150+",
+      "label": "PHP Fission Schema",
+      "hours": "+150",
       "year": "2018",
-      "initiative": "personal",
-      "engagement": "Myself",
+      "ongoing": true,
+      "summary": "Fission aims to provide an easy to understand set of concepts and tools for handling the creation and manipulation of nested array data which can be built into any framework. These tools include object schema building, value sanitization, value validation, value manipulation and, most importantly, role and scope based property access control.",
+      "tags": [],
       "links": [
         { "label": "Main Repository", "url": "https://github.com/sackrin/fission", "icon": "github" }
       ],
       "disciplines": ["Laravel", "General", "DevOps"]
     },
     {
-      "label": "Portfolio",
-      "hours": "60+",
+      "label": "Resume",
+      "hours": "+60",
       "year": "2018",
-      "initiative": "personal",
-      "engagement": "Myself",
+      "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam urna augue, aliquet quis nunc sed, mattis volutpat velit. Fusce faucibus, arcu ac hendrerit accumsan, lacus nisl vestibulum tellus, nec consectetur.",
+      "tags": [],
       "disciplines": ["ReactJS", "General", "DevOps"]
     },
     {
       "label": "React SPA Boilerplate",
-      "hours": "20+",
+      "hours": "+20",
       "year": "2018",
-      "initiative": "personal",
-      "engagement": "Myself",
+      "ongoing": true,
+      "summary": "This repo is a simple tool I use to introduce people into the world of react single page application development. The aim is to include all of the basic tools, scripts and processes needed to create a basic react spa application. If you spot something that can be improved, or think that something can be added to better achieve best practice then please contribute!",
+      "tags": [],
       "links": [
         { "label": "Main Repository", "url": "https://github.com/hilaryosborne/react-spa", "icon": "github" }
       ],
@@ -315,42 +317,43 @@
     },
     {
       "label": "Tutelage",
-      "hours": "500+",
+      "hours": "+500",
       "year": "2017",
-      "initiative": "personal",
-      "engagement": "Myself",
+      "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam urna augue, aliquet quis nunc sed, mattis volutpat velit. Fusce faucibus, arcu ac hendrerit accumsan, lacus nisl vestibulum tellus, nec consectetur.",
+      "tags": [],
       "disciplines": ["ReactJS", "Laravel", "DevOps", "General"]
     },
     {
       "label": "Tappr Dashboard",
-      "hours": "100+",
+      "hours": "+100",
       "year": "2017",
-      "initiative": "cooperate",
-      "engagement": "Tappr",
+      "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam urna augue, aliquet quis nunc sed, mattis volutpat velit. Fusce faucibus, arcu ac hendrerit accumsan, lacus nisl vestibulum tellus, nec consectetur.",
+      "tags": [],
       "disciplines": ["ReactJS", "General"]
     },
     {
       "label": "Vielo",
-      "hours": "40+",
+      "hours": "+40",
       "year": "2017",
-      "initiative": "cooperate",
-      "engagement": "Wise Robot Pty Ltd",
+      "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam urna augue, aliquet quis nunc sed, mattis volutpat velit. Fusce faucibus, arcu ac hendrerit accumsan, lacus nisl vestibulum tellus, nec consectetur.",
+      "tags": [],
       "disciplines": ["WordPress", "General", "DevOps"]
     },
     {
       "label": "The Marketing Lab",
-      "hours": "20+",
+      "hours": "+20",
       "year": "2017",
-      "initiative": "cooperate",
-      "engagement": "Wise Robot Pty Ltd",
+      "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam urna augue, aliquet quis nunc sed, mattis volutpat velit. Fusce faucibus, arcu ac hendrerit accumsan, lacus nisl vestibulum tellus, nec consectetur.",
+      "tags": [],
       "disciplines": ["WordPress", "General", "DevOps"]
     },
     {
       "label": "WordPress Boilerplate",
-      "hours": "80+",
+      "hours": "+80",
       "year": "2017",
-      "initiative": "personal",
-      "engagement": "Myself",
+      "ongoing": true,
+      "summary": "This project aims to provide a simple to use boilerplate for WordPress by bringing in multiple modern web technologies for client side, server side and hosting. This project approaches WordPress from a professional development perspective and is aimed at developers. It is not intended to be used by non developers or people new to WordPress. It is designed to create a philosophy for modern WordPress development using NodeJS, composer, docker and be continuous integration ready.",
+      "tags": [],
       "links": [
         { "label": "Main Repository", "url": "https://github.com/sackrin/boilerplate", "icon": "github" },
         { "label": "Utils Repository", "url": "https://github.com/sackrin/boilerplate-utils", "icon": "github" }
@@ -359,10 +362,11 @@
     },
     {
       "label": "ACF Fusion",
-      "hours": "100+",
+      "hours": "+100",
       "year": "2017",
-      "initiative": "personal",
-      "engagement": "Myself",
+      "ongoing": true,
+      "summary": "This project aims to provide a standard programming interface with the popular WordPress advanced custom fields plugin. Field groups are created and managed programmatically without the use of the graphical frontend or acf json files.",
+      "tags": [],
       "links": [
         { "label": "Main Repository", "url": "https://github.com/sackrin/fusion", "icon": "github" },
         { "label": "Models Repository", "url": "https://github.com/sackrin/fusion-model", "icon": "github" }
@@ -371,67 +375,91 @@
     },
     {
       "label": "DTH Media",
-      "hours": "180+",
+      "hours": "+180",
       "year": "2017",
-      "initiative": "cooperate",
-      "engagement": "Wise Robot Pty Ltd",
+      "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam urna augue, aliquet quis nunc sed, mattis volutpat velit. Fusce faucibus, arcu ac hendrerit accumsan, lacus nisl vestibulum tellus, nec consectetur.",
+      "tags": [],
       "disciplines": ["WordPress", "ReactJS", "General", "DevOps"]
     },
     {
       "label": "Docker Swarm Environment",
-      "hours": "80+",
+      "hours": "+80",
       "year": "2017",
-      "initiative": "personal",
-      "engagement": "Myself",
+      "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam urna augue, aliquet quis nunc sed, mattis volutpat velit. Fusce faucibus, arcu ac hendrerit accumsan, lacus nisl vestibulum tellus, nec consectetur.",
+      "tags": ["Bare Metal"],
       "disciplines": ["DevOps", "General"]
     },
     {
-      "label": "Fit4Duty Thalamus Portal",
-      "hours": "2000+",
+      "label": "Fit4Duty Portal",
+      "hours": "+2000",
       "year": "2016",
-      "initiative": "cooperate",
-      "engagement": "BlockQuote Pty Ltd",
+      "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam urna augue, aliquet quis nunc sed, mattis volutpat velit. Fusce faucibus, arcu ac hendrerit accumsan, lacus nisl vestibulum tellus, nec consectetur.",
+      "tags": [],
       "disciplines": ["Symfony", "ReactJS", "General", "DevOps"]
     },
     {
       "label": "Healthy Staff",
-      "hours": "40+",
+      "hours": "+40",
       "year": "2016",
-      "initiative": "cooperate",
-      "engagement": "BlockQuote Pty Ltd",
+      "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam urna augue, aliquet quis nunc sed, mattis volutpat velit. Fusce faucibus, arcu ac hendrerit accumsan, lacus nisl vestibulum tellus, nec consectetur.",
+      "tags": [],
       "disciplines": ["WordPress", "General"]
     },
     {
       "label": "Drug And Alcohol Institute",
-      "hours": "300+",
+      "hours": "+300",
       "year": "2015",
-      "initiative": "cooperate",
-      "engagement": "BlockQuote Pty Ltd",
+      "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam urna augue, aliquet quis nunc sed, mattis volutpat velit. Fusce faucibus, arcu ac hendrerit accumsan, lacus nisl vestibulum tellus, nec consectetur.",
+      "tags": [],
       "disciplines": ["WordPress", "General"]
     },
     {
       "label": "Axiom College",
-      "hours": "1200+",
+      "hours": "+1200",
       "year": "2015",
-      "initiative": "cooperate",
-      "engagement": "Axiom Syndicate Pty Ltd",
+      "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam urna augue, aliquet quis nunc sed, mattis volutpat velit. Fusce faucibus, arcu ac hendrerit accumsan, lacus nisl vestibulum tellus, nec consectetur.",
+      "tags": [],
       "disciplines": ["WordPress", "General"]
     },
     {
       "label": "Axiom College Student Portal",
-      "hours": "2000+",
+      "hours": "+2000",
       "year": "2015",
-      "initiative": "cooperate",
-      "engagement": "Axiom Syndicate Pty Ltd",
+      "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam urna augue, aliquet quis nunc sed, mattis volutpat velit. Fusce faucibus, arcu ac hendrerit accumsan, lacus nisl vestibulum tellus, nec consectetur.",
+      "tags": [],
       "disciplines": ["Symfony", "General"]
     },
     {
       "label": "Control Logic",
-      "hours": "100+",
+      "hours": "+100",
       "year": "2015",
-      "initiative": "cooperate",
-      "engagement": "BlockQuote Pty Ltd",
+      "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam urna augue, aliquet quis nunc sed, mattis volutpat velit. Fusce faucibus, arcu ac hendrerit accumsan, lacus nisl vestibulum tellus, nec consectetur.",
+      "tags": [],
       "disciplines": ["WordPress", "General"]
+    },
+    {
+      "label": "Griffith University Re-Theme",
+      "hours": "+1200",
+      "year": "2011",
+      "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam urna augue, aliquet quis nunc sed, mattis volutpat velit. Fusce faucibus, arcu ac hendrerit accumsan, lacus nisl vestibulum tellus, nec consectetur.",
+      "tags": [],
+      "disciplines": ["General"]
+    },
+    {
+      "label": "Cozmo Cards",
+      "hours": "+2400",
+      "year": "2007",
+      "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam urna augue, aliquet quis nunc sed, mattis volutpat velit. Fusce faucibus, arcu ac hendrerit accumsan, lacus nisl vestibulum tellus, nec consectetur.",
+      "tags": [],
+      "disciplines": ["General"]
+    },
+    {
+      "label": "AJ Parkes Online Ordering Portal",
+      "hours": "+2400",
+      "year": "2006",
+      "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam urna augue, aliquet quis nunc sed, mattis volutpat velit. Fusce faucibus, arcu ac hendrerit accumsan, lacus nisl vestibulum tellus, nec consectetur.",
+      "tags": [],
+      "disciplines": ["General"]
     }
   ]
 }

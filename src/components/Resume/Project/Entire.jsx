@@ -19,7 +19,7 @@ export class EntireComponent extends React.Component {
         </div>
       </div>
       {_.map(this.getProjects(), (project, k) => {
-        return <Project key={k} data={project} />
+        return <Project key={k} project={project} />
       })}
     </div>)
   }
