@@ -1,5 +1,5 @@
 import React from 'react'
-import { Page, Titles, EntireDiscipline, EntireProjects } from 'components/Resume'
+import { Page, Titles, EntireDiscipline, EntireProjects, EntireService } from 'components/Resume'
 import { MarkDown } from 'components/Facade/Content'
 import persona from 'config/persona'
 
@@ -15,6 +15,9 @@ export class Resume extends React.Component {
       </Page>
       <Page>
         <EntireProjects />
+      </Page>
+      <Page>
+        <EntireService />
       </Page>
     </div>)
   }

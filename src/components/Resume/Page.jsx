@@ -8,7 +8,7 @@ const styles = {
     ...base.backgrounds.white,
     marginTop: '4rem',
     marginBottom: '4rem',
-    padding: '6rem 6rem 12rem 6rem',
+    padding: '6rem 6rem 9rem 6rem',
     fontSize: '1.2rem',
     '@media print': {
       pageBreakAfter: 'always',

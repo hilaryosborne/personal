@@ -15,7 +15,7 @@ export class EntireComponent extends React.Component {
     return (<div>
       <div className='row'>
         <div className='col col-12'>
-          <h2 style={resumeStyles.typography.h2}>Projects<span style={baseStyles.underline.short} /></h2>
+          <h2 style={resumeStyles.typography.h2}>Projects Timeline<span style={baseStyles.underline.short} /></h2>
         </div>
       </div>
       {_.map(this.getProjects(), (project, k) => {

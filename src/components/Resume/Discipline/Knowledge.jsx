@@ -2,6 +2,7 @@ import React from 'react'
 import _ from 'lodash'
 import PropTypes from 'prop-types'
 import Radium from 'radium'
+import { Icon } from './Icon'
 
 const styles = {
   wrapper: {
@@ -22,8 +23,9 @@ export class KnowledgeComponent extends React.Component {
     return (<div className='d-flex' style={styles.wrapper}>
       {_.get(this.props.data, 'label')}
       <div className='ml-auto'>
-        <i className='far fa-check-circle ml-2' />
-        <i className='fas fa-fire ml-2' />
+        {_.map(_.get(this.props.data, 'tags', []), (icon, k) => {
+          return <Icon key={k} tag={icon} className='ml-1' />
+        })}
       </div>
     </div>)
   }
