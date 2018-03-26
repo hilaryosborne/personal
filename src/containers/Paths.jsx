@@ -10,6 +10,9 @@ import { backgrounds, typography } from 'scripts/styles'
 
 const styling = {
   'html, body': {...backgrounds.tomato, ...typography.body},
+  '@page': {
+    margin: '2cm 1cm'
+  },
   'mediaQueries': {
     'print': {
       'html, body': {

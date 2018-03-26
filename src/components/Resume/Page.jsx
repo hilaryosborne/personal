@@ -13,7 +13,7 @@ const styles = {
     '@media print': {
       pageBreakAfter: 'always',
       fontSize: '1rem',
-      padding: '1rem',
+      padding: 0,
       background: 'none'
     }
   }
