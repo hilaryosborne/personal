@@ -83,23 +83,23 @@
       "knowledge": [
         {
           "label": "React Syntax + Best Practice",
-          "tags": ["cando", "passionate"]
+          "tags": ["passionate", "cando"]
         },
         {
           "label": "React Router",
-          "tags": ["cando", "passionate"]
+          "tags": ["passionate", "cando"]
         },
         {
           "label": "Single Page Application",
-          "tags": ["cando", "passionate"]
+          "tags": ["passionate", "cando"]
         },
         {
           "label": "React Redux",
-          "tags": ["cando", "passionate"]
+          "tags": ["passionate", "cando"]
         },
         {
           "label": "React Sagas",
-          "tags": ["cando", "passionate"]
+          "tags": ["passionate", "cando"]
         },
         {
           "label": "Webpack 3+",
@@ -107,7 +107,7 @@
         },
         {
           "label": "Radium + CSS in JS",
-          "tags": ["cando", "passionate"]
+          "tags": ["passionate", "cando"]
         },
         {
           "label": "Testing Enzyme + Jest",
@@ -125,7 +125,7 @@
       "knowledge": [
         {
           "label": "Laravel Best Practice",
-          "tags": ["cando", "passionate"]
+          "tags": ["passionate", "cando"]
         },
         {
           "label": "Migrations + Eloquent ORM",
@@ -133,11 +133,11 @@
         },
         {
           "label": "Passport Authentication",
-          "tags": ["cando", "passionate"]
+          "tags": ["passionate", "cando"]
         },
         {
           "label": "Package Development",
-          "tags": ["cando", "passionate"]
+          "tags": ["passionate", "cando"]
         },
         {
           "label": "Blade Templating",
@@ -145,7 +145,7 @@
         },
         {
           "label": "Stateless RESTful API",
-          "tags": ["cando", "passionate"]
+          "tags": ["passionate", "cando"]
         },
         {
           "label": "Docker Implementation",
@@ -157,7 +157,7 @@
         },
         {
           "label": "AWS EC2 CI + CD",
-          "tags": ["cando", "passionate"]
+          "tags": ["passionate", "cando"]
         }
       ]
     },
@@ -167,15 +167,15 @@
       "knowledge": [
         {
           "label": "Continuous Integration (CI)",
-          "tags": ["cando", "passionate"]
+          "tags": ["passionate", "cando"]
         },
         {
           "label": "Continuous Delivery (CD)",
-          "tags": ["cando", "passionate"]
+          "tags": ["passionate", "cando"]
         },
         {
           "label": "Infrastructure as Code (Docker)",
-          "tags": ["cando", "passionate"]
+          "tags": ["passionate", "cando"]
         },
         {
           "label": "AWS S3 + CloudFront + EC2",
@@ -187,7 +187,7 @@
         },
         {
           "label": "Docker + Docker Compose",
-          "tags": ["cando", "passionate"]
+          "tags": ["passionate", "cando"]
         }
       ]
     },
@@ -197,11 +197,11 @@
       "knowledge": [
         {
           "label": "WordPress Best Practice",
-          "tags": ["cando", "oldguard"]
+          "tags": ["oldguard", "cando"]
         },
         {
           "label": "Theme Development",
-          "tags": ["cando", "oldguard"]
+          "tags": ["oldguard", "cando"]
         },
         {
           "label": "WordPress + Composer",
@@ -209,11 +209,11 @@
         },
         {
           "label": "Plugin Development",
-          "tags": ["cando", "oldguard"]
+          "tags": ["oldguard", "cando"]
         },
         {
           "label": "Docker Implementation",
-          "tags": ["cando", "passionate"]
+          "tags": ["passionate", "cando"]
         },
         {
           "label": "AWS EC2 CI + CD",
@@ -227,23 +227,23 @@
       "knowledge": [
         {
           "label": "Team Leadership",
-          "tags": ["cando", "oldguard", "passionate"]
+          "tags": ["oldguard", "passionate", "cando"]
         },
         {
           "label": "Whiteboard Problem Solving",
-          "tags": ["cando", "oldguard", "passionate"]
+          "tags": ["oldguard", "passionate", "cando"]
         },
         {
           "label": "Risk Management",
-          "tags": ["cando", "oldguard"]
+          "tags": ["oldguard", "cando"]
         },
         {
           "label": "Project Scoping + Management",
-          "tags": ["cando", "oldguard"]
+          "tags": ["oldguard", "cando"]
         },
         {
           "label": "Continuous Human Improvement (CHI)",
-          "tags": ["cando", "oldguard", "passionate"]
+          "tags": ["oldguard", "passionate", "cando"]
         }
       ]
     },
@@ -253,19 +253,19 @@
       "knowledge": [
         {
           "label": "PHP < 7.3",
-          "tags": ["cando", "oldguard"]
+          "tags": ["oldguard", "cando"]
         },
         {
           "label": "ES > 6",
-          "tags": ["cando", "passionate"]
+          "tags": ["passionate", "cando"]
         },
         {
           "label": "CSS + SCSS",
-          "tags": ["cando", "oldguard"]
+          "tags": ["oldguard", "cando"]
         },
         {
           "label": "MongoDB",
-          "tags": ["cando", "passionate"]
+          "tags": ["passionate", "cando"]
         },
         {
           "label": "MySQL",
@@ -277,11 +277,11 @@
         },
         {
           "label": "Linux/Ubuntu",
-          "tags": ["cando", "passionate"]
+          "tags": ["passionate", "cando"]
         },
         {
           "label": "CLI/SSH/CMD",
-          "tags": ["cando", "oldguard"]
+          "tags": ["oldguard", "cando"]
         }
       ]
     }
@@ -293,7 +293,7 @@
       "year": "2018",
       "ongoing": true,
       "summary": "Fission aims to provide an easy to understand set of concepts and tools for handling the creation and manipulation of nested array data which can be built into any framework. These tools include object schema building, value sanitization, value validation, value manipulation and, most importantly, role and scope based property access control.",
-      "tags": [],
+      "tags": ["Personal Project"],
       "links": [
         { "label": "Main Repository", "url": "https://github.com/sackrin/fission", "icon": "github" }
       ],
@@ -305,7 +305,7 @@
       "year": "2018",
       "ongoing": true,
       "summary": "This repo is a simple tool I use to introduce people into the world of react single page application development. The aim is to include all of the basic tools, scripts and processes needed to create a basic react spa application. If you spot something that can be improved, or think that something can be added to better achieve best practice then please contribute!",
-      "tags": [],
+      "tags": ["Personal Project"],
       "links": [
         { "label": "Main Repository", "url": "https://github.com/hilaryosborne/react-spa", "icon": "github" }
       ],
@@ -316,7 +316,7 @@
       "hours": "+500",
       "year": "2017",
       "summary": "The aim of the Tutelage project was was to create a suite of tools and platforms to standardise the educational content authoring and purchasing process to make it easier for all involved. We wanted to reduce the gap between authors, experts and educational institutes by providing an easy to use platform for educational institutes to create learning and assessment tools seamlessly using content from multiple authors",
-      "tags": [],
+      "tags": ["Personal Project"],
       "disciplines": ["ReactJS", "Laravel", "DevOps", "General"]
     },
     {
@@ -324,7 +324,7 @@
       "hours": "+100",
       "year": "2017",
       "summary": "Tappr is a payment technology redefining the payment experience. Say goodbye to confusing fees or difficult systems and hello to your money moving in the right direction. My involvement was to continue development of the React driven web dashboard to meet the feature roadmap deadlines and to implement solutions to challenges as they arrived.",
-      "tags": [],
+      "tags": ["Freelance"],
       "disciplines": ["ReactJS", "General"]
     },
     {
@@ -333,7 +333,7 @@
       "year": "2017",
       "ongoing": true,
       "summary": "This project aims to provide a simple to use boilerplate for WordPress by bringing in multiple modern web technologies for client side, server side and hosting. This project approaches WordPress from a professional development perspective and is aimed at developers. It is not intended to be used by non developers or people new to WordPress. It is designed to create a philosophy for modern WordPress development using NodeJS, composer, docker and be continuous integration ready.",
-      "tags": [],
+      "tags": ["Personal Project"],
       "links": [
         { "label": "Main Repository", "url": "https://github.com/sackrin/boilerplate", "icon": "github" },
         { "label": "Utils Repository", "url": "https://github.com/sackrin/boilerplate-utils", "icon": "github" }
@@ -346,7 +346,7 @@
       "year": "2017",
       "ongoing": true,
       "summary": "This project aims to provide a standard programming interface with the popular WordPress advanced custom fields plugin. Field groups are created and managed programmatically without the use of the graphical frontend or acf json files.",
-      "tags": [],
+      "tags": ["Personal Project"],
       "links": [
         { "label": "Main Repository", "url": "https://github.com/sackrin/fusion", "icon": "github" },
         { "label": "Models Repository", "url": "https://github.com/sackrin/fusion-model", "icon": "github" }
@@ -363,7 +363,7 @@
         "Used ES6 and webpack to create JS and SCSS driven theme.",
         "Used ACF to create a modular theme similar to concepts used for laravel blade templating."
       ],
-      "tags": [],
+      "tags": ["Freelance"],
       "disciplines": ["WordPress", "General", "DevOps"]
     },
     {
@@ -376,7 +376,7 @@
         "Used ES6 and webpack to create JS and SCSS driven theme.",
         "Used ACF to create a modular theme similar to concepts used for laravel blade templating."
       ],
-      "tags": [],
+      "tags": ["Freelance"],
       "disciplines": ["WordPress", "General", "DevOps"]
     },
     {
@@ -390,28 +390,28 @@
         "Heavy use of Google Maps API and geo searching to display delivery zones using polygons on a map.",
         "Project is deployed to and hosted within a docker swarm environment."
       ],
-      "tags": [],
+      "tags": ["Freelance"],
       "disciplines": ["WordPress", "ReactJS", "General", "DevOps"]
     },
     {
       "label": "Docker Swarm Environment",
       "hours": "+80",
       "year": "2017",
-      "tags": ["Bare Metal"],
+      "tags": ["Personal Project", "Bare Metal"],
       "disciplines": ["DevOps", "General"]
     },
     {
       "label": "Fit4Duty Portal",
       "hours": "+2000",
       "year": "2016",
-      "tags": [],
-      "disciplines": ["Symfony", "ReactJS", "General", "DevOps"]
+      "tags": ["Agency", "Symfony", "Angular2"],
+      "disciplines": ["ReactJS", "General", "DevOps"]
     },
     {
       "label": "Healthy Staff",
       "hours": "+40",
       "year": "2016",
-      "tags": [],
+      "tags": ["Agency"],
       "summary": "Healthy staff is a simple WordPress website created using a mixture of standard WordPress plugins (YOAST, ACF etc) and Visual Composer. The layout was created entirely with Visual Composer to allow for customisation of any design element on any page at any time. In addition to developing the theme I also developed the design concept and page hierarchy.",
       "disciplines": ["WordPress", "General"]
     },
@@ -420,7 +420,7 @@
       "hours": "+300",
       "year": "2015",
       "summary": "The Drug and Alcohol Institute website involved the development of a sales platform using WordPress and multiple integration features. The layout has been designed using Visual Composer with numerous custom visual composer plugins to bring integrated content from various third party providers such as Axcelerate. In addition to Axcelerate, eWay and Xero integration was built into the platform to allow for online payments and automatic invoice creation.",
-      "tags": [],
+      "tags": ["Freelance"],
       "disciplines": ["WordPress", "General"]
     },
     {
@@ -428,14 +428,14 @@
       "hours": "+100",
       "year": "2015",
       "summary": "Control Logic challenged my CSS and layout skills and pushed me way outside of my comfort zone. It was a challenging project and lead me to improve some of the more advanced creative and design skills that I had not had exposure to as a primarily server side developer. It is a WordPress website with custom plugins and theme development. It is fully responsive and built within Visual Composer.",
-      "tags": [],
+      "tags": ["Freelance"],
       "disciplines": ["WordPress", "General"]
     },
     {
       "label": "Axiom College",
       "hours": "+7000",
       "year": "2015",
-      "tags": [],
+      "tags": ["In-House", "Symfony", "Drupal 7", "Symfony"],
       "summary": [
         "The current Axiom College sales and enrollment platform is developed using WordPress with a custom theme and a number of custom plugins to provide integration to the company FileMaker database. I worked with stakeholders to continuously develop the branding and theme to stay ahead of the curve. The site is fully responsive and was designed to handle large amounts of both templated information and bespoke landing pages.",
         "Employed to managed the organisation’s digital projects.",
@@ -444,25 +444,25 @@
         "Developed multiple iterations of the digital student portal system and sales website",
         "Worked with heavily integrating the organisation's FileMaker database into every digital project."
       ],
-      "disciplines": ["In-House", "Symfony", "WordPress", "General"]
+      "disciplines": ["WordPress", "General"]
     },
     {
       "label": "Griffith University",
       "hours": "+1200",
       "year": "2011",
-      "tags": [],
+      "tags": ["Contractor", "jQuery"],
       "summary": [
         "I was contracted at Griffith to assist with the jQuery scripting for the new main Griffith website.",
         "My responsibilities involved development of the HTML/CSS, jQuery plugin development, third party jQuery plugin integration, social media integration, responsive design and some PHP development",
         "I customised the universities CMS, a enterprise level CMS called MySource matrix by programming a custom dashboard to make content creation easier and smoother"
       ],
-      "disciplines": ["In-House", "General"]
+      "disciplines": ["General"]
     },
     {
       "label": "Cozmo Cards",
       "hours": "+2400",
       "year": "2007",
-      "tags": [],
+      "tags": ["In-House", "Symfony", "jQuery"],
       "summary": [
         "I was contracted to develop a custom online gaming system for multiplayer browser card games",
         "Worked closely with professional card game players to learn the games, the strategies and the rules for 9 popular middle eastern games",
@@ -480,8 +480,8 @@
         "I worked closely with the company’s management and board of directors to develop a new modern brand as well as created a customised eCommerce platform.",
         "The platform featured an online drag and drop builder for customers to design their own custom name badges as well as eWay integration for online credit card processing."
       ],
-      "tags": [],
-      "disciplines": ["In-House", "General"]
+      "tags": ["In-House"],
+      "disciplines": ["General"]
     }
   ]
 }

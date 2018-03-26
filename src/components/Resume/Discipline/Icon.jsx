@@ -7,7 +7,7 @@ import PropTypes from 'prop-types'
 const tags = {
   cando: { label: 'Yup! Can Do', className: 'far fa-check-circle' },
   oldguard: { label: 'Worked with for donkey\'s years', className: 'fas fa-crosshairs' },
-  passionate: { label: 'Completely Focused', className: 'fas fa-fire' }
+  passionate: { label: 'Current Passion', className: 'fas fa-fire' }
 }
 
 @Radium()
