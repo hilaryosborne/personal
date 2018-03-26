@@ -14,13 +14,19 @@ export const base = {
 }
 
 export const typography = {
-  h1: { textTransform: 'uppercase', fontWeight: 'bold' },
-  h2: { textTransform: 'uppercase' }
+  body: { fontSize: '16px' },
+  h1: { textTransform: 'uppercase', fontWeight: 'bold', fontSize: '3.8rem' },
+  h2: { textTransform: 'uppercase', fontWeight: 'bold', fontSize: '2.4rem' },
+  h3: { textTransform: 'uppercase', fontWeight: 'bold', fontSize: '1.6rem' },
+  h4: { }
 }
 
 export const backgrounds = {
   white: {
     color: '#000', background: colors.white
+  },
+  tomato: {
+    color: '#FFF', background: colors.tomato
   }
 }
 

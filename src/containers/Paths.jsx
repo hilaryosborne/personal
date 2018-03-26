@@ -5,18 +5,35 @@ import { ConnectedRouter } from 'react-router-redux'
 import { store, history } from 'scripts/store'
 import { NotFound } from 'containers'
 import { Resume } from './Resume'
-import { StyleRoot } from 'radium'
+import { StyleRoot, Style } from 'radium'
+import { backgrounds, typography } from 'scripts/styles'
+
+const styling = {
+  'html, body': {...backgrounds.tomato, ...typography.body},
+  'mediaQueries': {
+    'print': {
+      'html, body': {
+        background: 'none'
+      }
+    }
+  },
+  h1: {...typography.h1},
+  h2: {...typography.h2},
+  h3: {...typography.h3}
+}
 
 export class Paths extends React.Component {
   render () {
-    return (<StyleRoot><Provider store={store}>
-      <ConnectedRouter history={history}>
-        <Switch>
-          <Route exact path='/' component={Resume} />
-          <Route component={NotFound} />
-        </Switch>
-      </ConnectedRouter>
-    </Provider>
+    return (<StyleRoot>
+      <Style rules={styling} />
+      <Provider store={store}>
+        <ConnectedRouter history={history}>
+          <Switch>
+            <Route exact path='/' component={Resume} />
+            <Route component={NotFound} />
+          </Switch>
+        </ConnectedRouter>
+      </Provider>
     </StyleRoot>)
   }
 }

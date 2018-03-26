@@ -12,12 +12,15 @@ const styles = {
     fontSize: '1.2rem',
     '@media print': {
       pageBreakAfter: 'always',
-      padding: '1rem'
+      fontSize: '1rem',
+      padding: '1rem',
+      background: 'none'
     }
   }
 }
 
-class PageComponent extends React.Component {
+@Radium()
+export class Page extends React.Component {
     static propTypes = {
       children: PropTypes.any
     }
@@ -28,5 +31,3 @@ class PageComponent extends React.Component {
       </div>)
     }
 }
-
-export const Page = Radium(PageComponent)

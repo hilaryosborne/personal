@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Radium from 'radium'
 import _ from 'lodash'
 import { Title } from './Title'
 import { Time } from './Time'
@@ -7,12 +8,21 @@ import { Tags } from './Tags'
 import { Link } from './Link'
 import { Summary } from './Summary'
 
+const styling = {
+  wrapper: {
+    '@media print': {
+      pageBreakInside: 'avoid'
+    }
+  }
+}
+
+@Radium
 export class Project extends React.Component {
     static propTypes = {
       project: PropTypes.any
     }
     render () {
-      return (<div style={{marginBottom: '2.5rem'}}>
+      return (<div style={{...styling.wrapper, marginBottom: '2.5rem'}}>
         <Title project={this.props.project} />
         <div className='d-flex mt-2'>
           <Tags project={this.props.project} />
