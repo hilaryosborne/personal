@@ -7,7 +7,7 @@ export class Link extends React.Component {
     link: PropTypes.any
   }
   render () {
-    return (<div className='d-flex'>
+    return (<div className='d-block d-md-flex'>
       <div>
         <i className='fab fa-github mr-1' /> {_.get(this.props.link, 'label')}
       </div>

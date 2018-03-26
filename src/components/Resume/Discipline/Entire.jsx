@@ -7,10 +7,16 @@ import * as resumeStyles from '../styles'
 import * as baseStyles from 'scripts/styles'
 
 const styles = {
-  row: { marginBottom: '2.5rem' }
+  row: {
+    marginBottom: '2.5rem',
+    '@media (max-width: 768px)': {
+      marginBottom: '0rem'
+    }
+  }
 }
 
-export class EntireComponent extends React.Component {
+@Radium
+export class Entire extends React.Component {
   getRows () {
     return _.chunk(persona.disciplines, 2)
   }
@@ -32,5 +38,3 @@ export class EntireComponent extends React.Component {
     </div>)
   }
 }
-
-export const Entire = Radium(EntireComponent)

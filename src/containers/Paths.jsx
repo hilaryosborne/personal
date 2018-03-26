@@ -18,6 +18,11 @@ const styling = {
       'html, body': {
         background: 'none'
       }
+    },
+    '(max-width: 768px)': {
+      'html, body': {
+        fontSize: '13px'
+      }
     }
   },
   h1: {...typography.h1},

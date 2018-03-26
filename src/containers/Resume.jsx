@@ -4,6 +4,15 @@ import { MarkDown } from 'components/Facade/Content'
 import persona from 'config/persona'
 import Radium from 'radium'
 
+const styling = {
+  social: {
+    marginTop: '12rem',
+    '@media (max-width: 768px)': {
+      marginTop: '4rem'
+    }
+  }
+}
+
 @Radium
 export class Resume extends React.Component {
   render () {
@@ -11,7 +20,7 @@ export class Resume extends React.Component {
       <Page>
         <Titles />
         <MarkDown source={persona.career.about} />
-        <EntireSocial style={{marginTop: '12rem'}} />
+        <EntireSocial style={{...styling.social}} />
       </Page>
       <Page>
         <EntireDiscipline />

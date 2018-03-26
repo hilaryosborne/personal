@@ -14,7 +14,7 @@ export class Group extends React.Component {
   }
 
   render () {
-    return (<div className='col col-12 col-md-6'>
+    return (<div className='col col-12 col-md-6 mb-4 mb-md-0'>
       <h3 style={styles.typography.h3}>{_.get(this.props.group, 'label')}</h3>
       {_.map(this.getKnowledge(), (item, k) => {
         const last = k === (this.getKnowledge().length - 1)

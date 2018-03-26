@@ -21,10 +21,11 @@ export class Project extends React.Component {
     static propTypes = {
       project: PropTypes.any
     }
+
     render () {
       return (<div style={{...styling.wrapper, marginBottom: '2.5rem'}}>
         <Title project={this.props.project} />
-        <div className='d-flex mt-2'>
+        <div className='d-block d-md-flex mt-2'>
           <Tags project={this.props.project} />
           <Time project={this.props.project} />
         </div>

@@ -38,7 +38,7 @@ export class Link extends React.Component {
   }
 
   render () {
-    return (<div className={classnames('d-flex', this.props.className)} style={{...this.props.style, ...styles.wrapper, ...this.getLastStyle()}}>
+    return (<div className={classnames('d-block d-md-flex', this.props.className)} style={{...this.props.style, ...styles.wrapper, ...this.getLastStyle()}}>
       <div>
         <i className={classnames(_.get(this.props.social, 'icon', 'far fa-file-alt'), 'mr-1')} /> {_.get(this.props.social, 'label')}
       </div>

@@ -10,6 +10,11 @@ const styles = {
     marginBottom: '4rem',
     padding: '6rem 6rem 9rem 6rem',
     fontSize: '1.2rem',
+    '@media (max-width: 768px)': {
+      padding: '1rem',
+      marginTop: '0',
+      marginBottom: '0'
+    },
     '@media print': {
       pageBreakAfter: 'always',
       fontSize: '1rem',
