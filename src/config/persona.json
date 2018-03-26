@@ -398,9 +398,6 @@
       "hours": "+80",
       "year": "2017",
       "tags": ["Bare Metal"],
-      "summary": [
-        ""
-      ],
       "disciplines": ["DevOps", "General"]
     },
     {
@@ -408,9 +405,6 @@
       "hours": "+2000",
       "year": "2016",
       "tags": [],
-      "summary": [
-        ""
-      ],
       "disciplines": ["Symfony", "ReactJS", "General", "DevOps"]
     },
     {
