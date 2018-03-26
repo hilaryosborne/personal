@@ -6,19 +6,28 @@
     "formal": "Hilary Osborne",
     "social":[
       {
+        "type": "website",
+        "label": "Portfolio Homepage",
+        "url": "https://www.hilaryosborne.com",
+        "icon": "fas fa-external-link-square-alt"
+      },
+      {
         "type": "github",
-        "label": "GitHub Profile",
-        "url": "https://github.com/hilaryosborne"
+        "label": "Fork me On GitHub",
+        "url": "https://github.com/hilaryosborne",
+        "icon": "fab fa-github-square"
       },
       {
         "type": "linkedin",
-        "label": "Linkedin Profile",
-        "url": "https://www.linkedin.com/in/hilaryosborne"
+        "label": "Connect with me on Linkedin",
+        "url": "https://www.linkedin.com/in/hilaryosborne",
+        "icon": "fab fa-linkedin"
       },
       {
         "type": "steam",
-        "label": "Steam Profile",
-        "url": "http://steamcommunity.com/id/sackrin"
+        "label": "Join Me On Steam",
+        "url": "http://steamcommunity.com/id/sackrin",
+        "icon": "fab fa-steam-square"
       }
     ],
     "communication":[
@@ -314,6 +323,7 @@
     {
       "label": "Tutelage",
       "hours": "+500",
+      "ongoing": true,
       "year": "2017",
       "summary": "The aim of the Tutelage project was was to create a suite of tools and platforms to standardise the educational content authoring and purchasing process to make it easier for all involved. We wanted to reduce the gap between authors, experts and educational institutes by providing an easy to use platform for educational institutes to create learning and assessment tools seamlessly using content from multiple authors",
       "tags": ["Personal Project"],
@@ -322,6 +332,7 @@
     {
       "label": "Tappr Dashboard",
       "hours": "+100",
+      "ongoing": true,
       "year": "2017",
       "summary": "Tappr is a payment technology redefining the payment experience. Say goodbye to confusing fees or difficult systems and hello to your money moving in the right direction. My involvement was to continue development of the React driven web dashboard to meet the feature roadmap deadlines and to implement solutions to challenges as they arrived.",
       "tags": ["Freelance"],
@@ -397,15 +408,28 @@
       "label": "Docker Swarm Environment",
       "hours": "+80",
       "year": "2017",
-      "tags": ["Personal Project", "Bare Metal"],
-      "disciplines": ["DevOps", "General"]
+      "tags": ["Personal Project", "Bare Metal", "ESXi"],
+      "disciplines": ["DevOps", "General"],
+      "summary": [
+        "Researched, budgeted and purchased bare metal equipment to create a production ready server environment.",
+        "Built bare metal servers from individual hardware components and supervised software configuration.",
+        "Deployed a production docker swarm within a visualized environment using rack resources and AWS cloud services.",
+        "Hosted and maintained a number of products and supporting services within the swarm."
+      ]
     },
     {
       "label": "Fit4Duty Portal",
       "hours": "+2000",
       "year": "2016",
       "tags": ["Agency", "Symfony", "Angular2"],
-      "disciplines": ["ReactJS", "General", "DevOps"]
+      "disciplines": ["ReactJS", "General", "DevOps"],
+      "summary": [
+        "Assigned the task to scope and develop a SaaS drug testing portal.",
+        "Requirements included a single page Angular 2 application with shared code base across browser and iOS devices.",
+        "Worked closely with stakeholders to scope requirements and identify market opportunities.",
+        "Programmed Symfony driven API with Angular 2 SPA frontend.",
+        "Used PhoneGap to deploy on mobile devices."
+      ]
     },
     {
       "label": "Healthy Staff",

@@ -9,11 +9,16 @@ export class Group extends React.Component {
     group: PropTypes.any
   }
 
+  getKnowledge () {
+    return _.get(this.props.group, 'knowledge', [])
+  }
+
   render () {
     return (<div className='col col-12 col-md-6'>
       <h3 style={styles.typography.h3}>{_.get(this.props.group, 'label')}</h3>
-      {_.map(_.get(this.props.group, 'knowledge', []), (item, k) => {
-        return <Knowledge key={k} data={item} />
+      {_.map(this.getKnowledge(), (item, k) => {
+        const last = k === (this.getKnowledge().length - 1)
+        return <Knowledge key={k} data={item} last={last} />
       })}
     </div>)
   }

@@ -15,12 +15,13 @@ export class EntireComponent extends React.Component {
     return (<div>
       <div className='row'>
         <div className='col col-12'>
-          <h2 style={resumeStyles.typography.h2}>Projects Timeline<span style={baseStyles.underline.short} /></h2>
+          <h2 style={resumeStyles.typography.h2}>Project Timeline<span style={baseStyles.underline.short} /></h2>
         </div>
       </div>
       {_.map(this.getProjects(), (project, k) => {
         return <Project key={k} project={project} />
       })}
+      <p style={{fontStyle: 'italic'}}>*Project time is represented by the project's starting year and the approximate number of active development hours performed to date. This is done as a great number of projects spanned a long period of time and often have numerous periods of active development and relative dormancy.</p>
     </div>)
   }
 }

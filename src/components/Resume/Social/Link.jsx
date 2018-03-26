@@ -1,9 +1,8 @@
 import React from 'react'
-import _ from 'lodash'
-import PropTypes from 'prop-types'
 import Radium from 'radium'
+import PropTypes from 'prop-types'
+import _ from 'lodash'
 import classnames from 'classnames'
-import { Icon } from './Icon'
 
 const styles = {
   wrapper: {
@@ -19,9 +18,9 @@ const styles = {
 }
 
 @Radium()
-export class Knowledge extends React.Component {
+export class Link extends React.Component {
   static propTypes = {
-    data: PropTypes.any,
+    social: PropTypes.any,
     className: PropTypes.string,
     style: PropTypes.object,
     last: PropTypes.bool
@@ -39,13 +38,11 @@ export class Knowledge extends React.Component {
   }
 
   render () {
-    return (<div className={classnames('d-flex', this.props.className)} style={{...styles.wrapper, ...this.props.style, ...this.getLastStyle()}}>
-      {_.get(this.props.data, 'label')}
-      <div className='ml-auto'>
-        {_.map(_.get(this.props.data, 'tags', []), (icon, k) => {
-          return <Icon key={k} tag={icon} className='ml-1' />
-        })}
+    return (<div className={classnames('d-flex', this.props.className)} style={{...this.props.style, ...styles.wrapper, ...this.getLastStyle()}}>
+      <div>
+        <i className={classnames(_.get(this.props.social, 'icon', 'far fa-file-alt'), 'mr-1')} /> {_.get(this.props.social, 'label')}
       </div>
+      <a href={_.get(this.props.social, 'url')} className='ml-auto'>{_.get(this.props.social, 'url')}</a>
     </div>)
   }
 }
