@@ -1,19 +1,21 @@
 import React from 'react'
 import Radium from 'radium'
+import _ from 'lodash'
 import classnames from 'classnames'
 import PropTypes from 'prop-types'
 
 const tags = {
-  cando: 'far fa-check-circle',
-  oldguard: 'fas fa-crosshairs',
-  passionate: 'fas fa-fire'
+  cando: { label: 'Yup! Can Do', className: 'far fa-check-circle' },
+  oldguard: { label: 'Worked with for donkey\'s years', className: 'fas fa-crosshairs' },
+  passionate: { label: 'Completely Focused', className: 'fas fa-fire' }
 }
 
-class IconComponent extends React.Component {
+@Radium()
+export class Icon extends React.Component {
   static propTypes = {
     tag: PropTypes.string,
     className: PropTypes.string,
-    style: PropTypes.obj
+    style: PropTypes.object
   }
 
   static defaultProps = {
@@ -22,13 +24,15 @@ class IconComponent extends React.Component {
     style: {}
   }
 
-  getTagClass () {
-    return tags[this.props.tag]
+  getLabel () {
+    return _.get(tags, '[' + this.props.tag + '].label')
+  }
+
+  getClassName () {
+    return _.get(tags, '[' + this.props.tag + '].className')
   }
 
   render () {
-    return <i style={this.props.style} className={classnames(this.props.className, this.getTagClass())} />
+    return <i style={this.props.style} title={this.getLabel()} className={classnames(this.props.className, this.getClassName())} />
   }
 }
-
-export const Icon = Radium(IconComponent)

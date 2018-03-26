@@ -46,14 +46,9 @@
   },
   "services":[
     {
-      "label": "Tutoring",
-      "includes": ["lessons", "assessments", "marking", "mentorship"],
-      "rate": "$85.00",
-      "unit": "hr"
-    },
-    {
       "label": "General Consulting",
       "includes": ["scoping", "conceptual", "development", "project management", "devops"],
+      "availability": "Available 15hrs/week",
       "rate": "$80.00",
       "unit": "hr"
     },
@@ -61,15 +56,24 @@
       "label": "Greenfield Development",
       "includes": ["scoping", "conceptual", "development", "project management", "devops"],
       "conditions": "Monthly commitment and review",
+      "availability": "Available 15hrs/week",
       "rate": "$80.00",
+      "unit": "hr"
+    },
+    {
+      "label": "Web Tutoring",
+      "includes": ["lessons", "assessments", "marking", "mentorship"],
+      "availability": "Booked Out",
+      "rate": "$85.00",
       "unit": "hr"
     },
     {
       "label": "Contract General Development",
       "includes": ["development", "devops"],
       "conditions": "Minimum 3 month contact",
-      "rate": "$55.00",
-      "unit": "hr"
+      "availability": "Upon Request",
+      "rate": "$460.00",
+      "unit": "day"
     }
   ],
   "disciplines":[
