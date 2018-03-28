@@ -5,6 +5,7 @@ import { ConnectedRouter } from 'react-router-redux'
 import { store, history } from 'scripts/store'
 import { NotFound } from 'containers'
 import { Resume } from './Resume'
+import { Home } from './Home'
 import { StyleRoot, Style } from 'radium'
 import { backgrounds, typography } from 'scripts/styles'
 
@@ -37,7 +38,8 @@ export class Paths extends React.Component {
       <Provider store={store}>
         <ConnectedRouter history={history}>
           <Switch>
-            <Route exact path='/' component={Resume} />
+            <Route exact path='/' component={Home} />
+            <Route exact path='/resume' component={Resume} />
             <Route component={NotFound} />
           </Switch>
         </ConnectedRouter>

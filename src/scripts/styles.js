@@ -1,3 +1,5 @@
+import _ from 'lodash'
+
 export const colors = {
   white: '#fff',
   tomato: '#f15b5a',
@@ -38,4 +40,25 @@ export const underline = {
     background: colors.tomato,
     height: '.4rem'
   }
+}
+
+export const breakpoints = {
+  'sm': '576px',
+  'md': '768px',
+  'lg': '992px',
+  'xl': '1200px'
+}
+
+export const mediaQueryBelow = (breakpoint, rules) => {
+  const point = _.get(breakpoints, '.' + breakpoint, '768px')
+  const query = {}
+  query['@media (max-width: ' + point + ')'] = {...rules}
+  return query
+}
+
+export const mediaQueryAbove = (breakpoint, rules) => {
+  const point = _.get(breakpoints, '.' + breakpoint, '768px')
+  const query = {}
+  query['@media (min-width: ' + point + ')'] = {...rules}
+  return query
 }
