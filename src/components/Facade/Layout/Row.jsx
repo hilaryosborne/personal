@@ -3,7 +3,8 @@ import Radium from 'radium'
 import PropTypes from 'prop-types'
 import classnames from 'classnames'
 
-export class RowComponent extends React.Component {
+@Radium
+export class Row extends React.Component {
     static propTypes = {
       style: PropTypes.any,
       children: PropTypes.any,
@@ -15,5 +16,3 @@ export class RowComponent extends React.Component {
       </div>)
     }
 }
-
-export const Row = Radium(RowComponent)
