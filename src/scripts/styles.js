@@ -17,10 +17,13 @@ export const base = {
 
 export const typography = {
   body: { fontSize: '16px' },
+  p: { fontSize: '1rem' },
+  lead: { fontSize: '1.3rem' },
   h1: { textTransform: 'uppercase', fontWeight: 'bold', fontSize: '3.8rem' },
   h2: { textTransform: 'uppercase', fontWeight: 'bold', fontSize: '2.4rem' },
   h3: { textTransform: 'uppercase', fontWeight: 'bold', fontSize: '1.6rem' },
-  h4: { }
+  h4: { },
+  h5: { }
 }
 
 export const backgrounds = {

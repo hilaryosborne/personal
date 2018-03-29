@@ -1,6 +1,10 @@
 import React from 'react'
 import { HeroBannerLayer } from 'components/Hero'
+import { withRouter } from 'react-router-dom'
+import { withAuth } from 'scripts/auth'
 
+@withAuth
+@withRouter
 export class Home extends React.Component {
   render () {
     return (<div>

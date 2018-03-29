@@ -18,7 +18,7 @@
       "!**/vendor/**"
     ],
     "moduleNameMapper": {
-      "^images(.*)$": "<rootDir>/src/images$1",
+      "^media(.*)$": "<rootDir>/src/media$1",
       "^scripts(.*)$": "<rootDir>/src/scripts$1",
       "^containers(.*)$": "<rootDir>/src/containers$1",
       "^components(.*)$": "<rootDir>/src/components$1",
@@ -69,6 +69,7 @@
     "babel-preset-es2017": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
+    "copy-webpack-plugin": "^4.5.1",
     "css-loader": "^0.28.7",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",

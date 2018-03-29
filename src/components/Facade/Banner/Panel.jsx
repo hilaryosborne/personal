@@ -6,11 +6,18 @@ import PropTypes from 'prop-types'
 const styling = {
   core: {
     backgroundPosition: 'center',
-    backgroundSize: 'cover'
+    backgroundSize: 'cover',
+    minHeight: '25rem'
   },
-  themes: {
+  sizes: {
+    adapt: {
+      height: 'auto'
+    },
     full: {
       height: '100vh'
+    },
+    half: {
+      height: '50vh'
     }
   }
 }
@@ -18,18 +25,26 @@ const styling = {
 @Radium
 export class Panel extends React.Component {
   static propTypes = {
-    theme: PropTypes.string,
+    img: PropTypes.string,
+    size: PropTypes.string,
     style: PropTypes.any,
     children: PropTypes.any,
     className: PropTypes.string
   }
 
   static defaultProps = {
-    theme: 'full'
+    banner: true,
+    type: 'full'
   }
 
   render () {
-    return (<div className={classnames('banner-panel', this.props.className)} style={{...styling.core, ...styling.themes[this.props.theme], ...this.props.style}}>
+    console.log(this.props)
+    return (<div className={classnames('banner-panel d-flex', this.props.className)} style={{
+      ...styling.core,
+      ...styling.sizes[this.props.size],
+      backgroundImage: `url(${this.props.img})`,
+      ...this.props.style
+    }}>
       {this.props.children}
     </div>)
   }
