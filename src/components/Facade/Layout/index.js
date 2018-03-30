@@ -1,4 +1,4 @@
-export { Col as FacadeCol } from './Col'
-export { Container as FacadeContainer } from './Container'
-export { Row as FacadeRow } from './Row'
-export { Layer as FacadeLayer } from './Layer'
+export { Col } from './Col'
+export { Container } from './Container'
+export { Row } from './Row'
+export { Layer } from './Layer'
