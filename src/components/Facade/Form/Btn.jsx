@@ -15,7 +15,8 @@ export const styling = {
   }
 }
 
-export class ButtonComponent extends React.Component {
+@Radium
+export class Btn extends React.Component {
   static propTypes = {
     kind: PropTypes.oneOf(['primary']).isRequired,
     children: PropTypes.any
@@ -24,5 +25,3 @@ export class ButtonComponent extends React.Component {
     return (<button style={[styling.base, styling[this.props.kind]]} className='btn'>{this.props.children}</button>)
   }
 }
-
-export const Button = Radium(ButtonComponent)

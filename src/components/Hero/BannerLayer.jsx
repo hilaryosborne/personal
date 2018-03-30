@@ -2,7 +2,7 @@ import React from 'react'
 import Radium from 'radium'
 import PropTypes from 'prop-types'
 import classnames from 'classnames'
-import { Layer, Banner, BannerPanel, H1, Lead, Container, Row, Col } from 'components'
+import { Layer, Banner, BannerPanel, H1, Lead, Container, Row, Col } from 'components/Facade'
 
 @Radium
 export class BannerLayer extends React.Component {

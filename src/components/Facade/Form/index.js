@@ -1,1 +1,1 @@
-export { Button as FacadeButton } from './Button'
+export { Btn } from './Btn'
