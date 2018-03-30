@@ -4,6 +4,7 @@ import PropType from 'prop-types'
 import classnames from 'classnames'
 import _ from 'lodash'
 import { backgrounds } from 'scripts/styles'
+import { SharedLogo } from './'
 
 const styling = {
   el: {
@@ -72,6 +73,10 @@ export class Header extends React.Component {
   }
 
   render () {
-    return (<div style={{...styling.el, ...styling[this.state.status], ...this.props.style}} className={classnames(this.props.className)}>Header</div>)
+    return (<div style={{...styling.el, ...styling[this.state.status], ...this.props.style}} className={classnames(this.props.className)}>
+      <div className='container p-2'>
+        <SharedLogo />
+      </div>
+    </div>)
   }
 }

@@ -3,7 +3,7 @@ import { Page, Titles, EntireDiscipline, EntireProjects, EntireSocial } from 'co
 import { MarkDown } from 'components/Facade/Content'
 import persona from 'config/persona'
 import Radium from 'radium'
-import { FacadePageMeta } from 'components'
+import { PageMeta } from 'components'
 
 const styling = {
   social: {
@@ -18,7 +18,7 @@ const styling = {
 export class Resume extends React.Component {
   render () {
     return (<div>
-      <FacadePageMeta title='Printer Friendly Resume' />
+      <PageMeta title='Printer Friendly Resume' />
       <Page>
         <Titles />
         <MarkDown source={persona.career.about} />
