@@ -33,7 +33,6 @@ export class Wrapper extends React.Component {
 
   getBannerChild () {
     const banners = this.getBannerChildren()
-    console.log(banners)
     return _.first(banners)
   }
 

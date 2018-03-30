@@ -2,7 +2,7 @@ import React from 'react'
 import Radium from 'radium'
 import PropTypes from 'prop-types'
 import classnames from 'classnames'
-import { Layer, FacadeBanner, FacadeBannerPanel, H1, Lead, Container, Row, Col } from 'components'
+import { Layer, Banner, BannerPanel, H1, Lead, Container, Row, Col } from 'components'
 
 @Radium
 export class BannerLayer extends React.Component {
@@ -12,8 +12,8 @@ export class BannerLayer extends React.Component {
   }
   render () {
     return (<Layer className={classnames('hero-layer', this.props.className)} style={[this.props.style]}>
-      <FacadeBanner>
-        <FacadeBannerPanel
+      <Banner>
+        <BannerPanel
           size='full'
           img={'/media/backgrounds/space_guy.jpg'}
           className='align-items-center'>
@@ -25,9 +25,9 @@ export class BannerLayer extends React.Component {
               </Col>
             </Row>
           </Container>
-        </FacadeBannerPanel>
-        <FacadeBannerPanel size='full' img={'/media/backgrounds/space_guy.jpg'} />
-      </FacadeBanner>
+        </BannerPanel>
+        <BannerPanel size='full' img={'/media/backgrounds/space_guy.jpg'} />
+      </Banner>
     </Layer>)
   }
 }

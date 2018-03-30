@@ -1,2 +1,2 @@
-export { Wrapper as FacadeBanner } from './Wrapper'
-export { Panel as FacadeBannerPanel } from './Panel'
+export { Wrapper as Banner } from './Wrapper'
+export { Panel as BannerPanel } from './Panel'

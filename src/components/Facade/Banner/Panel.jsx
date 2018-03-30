@@ -38,7 +38,6 @@ export class Panel extends React.Component {
   }
 
   render () {
-    console.log(this.props)
     return (<div className={classnames('banner-panel d-flex', this.props.className)} style={{
       ...styling.core,
       ...styling.sizes[this.props.size],
