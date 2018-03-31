@@ -5,6 +5,7 @@ import classnames from 'classnames'
 import _ from 'lodash'
 import { backgrounds } from 'scripts/styles'
 import { SharedLogo } from './'
+import { MenuToggle, Menu, MenuLink, MenuDropdown } from 'components/Facade'
 
 const styling = {
   el: {
@@ -75,7 +76,19 @@ export class Header extends React.Component {
   render () {
     return (<div style={{...styling.el, ...styling[this.state.status], ...this.props.style}} className={classnames(this.props.className)}>
       <div className='container p-2'>
-        <SharedLogo />
+        <div className='d-flex align-items-center'>
+          <SharedLogo />
+          <div className='ml-auto d-flex'>
+            <MenuToggle />
+            <Menu>
+              <MenuLink to={'/'}>Home</MenuLink>
+              <MenuLink>Something</MenuLink>
+              <MenuDropdown>
+                <MenuLink>Cool</MenuLink>
+              </MenuDropdown>
+            </Menu>
+          </div>
+        </div>
       </div>
     </div>)
   }

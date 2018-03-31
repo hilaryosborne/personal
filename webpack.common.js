@@ -60,7 +60,6 @@ module.exports = {
       config: path.resolve('src/config/'),
       components: path.resolve('src/components/'),
       containers: path.resolve('src/containers/'),
-      reducers: path.resolve('src/reducers/'),
       scripts: path.resolve('src/scripts/')
     }
   },
