@@ -1,10 +1,10 @@
 import React from 'react'
-import Radium from 'radium'
+import radium from 'radium'
 import classnames from 'classnames'
 import PropTypes from 'prop-types'
-import { connect as Connect } from 'react-redux'
+import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
-// import _ from 'lodash'
+import { filterProps } from 'scripts/utils'
 
 const styling = {
   el: {
@@ -13,13 +13,8 @@ const styling = {
   current: {}
 }
 
-const filterProps = (props, Component) => {
-  console.log(Component)
-  return {}
-}
-
-@Radium
-@Connect(state => state)
+@radium
+@connect(state => state)
 export class MenuLink extends React.Component {
   static propTypes = {
     children: PropTypes.any,
@@ -32,11 +27,10 @@ export class MenuLink extends React.Component {
   }
 
   render () {
-    this.isCurrent()
-    return (<a {...filterProps(this.props, Link)}
+    return (<Link {...filterProps(this.props, Link)}
       className={classnames(this.props.className)}
       style={{...styling.el, ...this.props.style}}>
       {this.props.children}
-    </a>)
+    </Link>)
   }
 }

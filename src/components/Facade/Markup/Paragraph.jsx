@@ -1,10 +1,10 @@
 import React from 'react'
-import Radium from 'radium'
+import radium from 'radium'
 import classnames from 'classnames'
 import PropTypes from 'prop-types'
 import { typography } from 'scripts/styles'
 
-@Radium
+@radium
 export class Paragraph extends React.Component {
   static propTypes = {
     style: PropTypes.object,

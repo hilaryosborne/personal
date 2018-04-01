@@ -1,5 +1,5 @@
 import React from 'react'
-import Radium from 'radium'
+import radium from 'radium'
 import classnames from 'classnames'
 import PropTypes from 'prop-types'
 
@@ -23,7 +23,7 @@ const styling = {
   }
 }
 
-@Radium
+@radium
 export class Panel extends React.Component {
   static propTypes = {
     img: PropTypes.string,

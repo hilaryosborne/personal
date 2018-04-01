@@ -1,11 +1,11 @@
 import React from 'react'
-import Radium from 'radium'
+import radium from 'radium'
 import PropType from 'prop-types'
 import classnames from 'classnames'
 import _ from 'lodash'
 import { backgrounds } from 'scripts/styles'
 import { SharedLogo } from './'
-import { MenuToggle, Menu, MenuLink, MenuDropdown } from 'components/Facade'
+import { MenuToggle, Menu, MenuLink } from 'components/Facade'
 
 const styling = {
   el: {
@@ -24,7 +24,7 @@ const styling = {
   }
 }
 
-@Radium
+@radium
 export class Header extends React.Component {
   static propTypes = {
     style: PropType.object,
@@ -82,10 +82,7 @@ export class Header extends React.Component {
             <MenuToggle />
             <Menu>
               <MenuLink to={'/'}>Home</MenuLink>
-              <MenuLink>Something</MenuLink>
-              <MenuDropdown>
-                <MenuLink>Cool</MenuLink>
-              </MenuDropdown>
+              <MenuLink to={'/projects'}>Projects</MenuLink>
             </Menu>
           </div>
         </div>

@@ -1,7 +1,7 @@
 import React from 'react'
 import _ from 'lodash'
 import PropTypes from 'prop-types'
-import Radium from 'radium'
+import radium from 'radium'
 import classnames from 'classnames'
 import { Icon } from './Icon'
 
@@ -18,7 +18,7 @@ const styles = {
   }
 }
 
-@Radium()
+@radium()
 export class Knowledge extends React.Component {
   static propTypes = {
     data: PropTypes.any,

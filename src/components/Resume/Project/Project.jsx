@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Radium from 'radium'
+import radium from 'radium'
 import _ from 'lodash'
 import { Title } from './Title'
 import { Time } from './Time'
@@ -16,7 +16,7 @@ const styling = {
   }
 }
 
-@Radium
+@radium
 export class Project extends React.Component {
     static propTypes = {
       project: PropTypes.any

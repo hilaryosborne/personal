@@ -1,9 +1,9 @@
 import React from 'react'
-import Radium from 'radium'
+import radium from 'radium'
 import classnames from 'classnames'
 import PropTypes from 'prop-types'
 
-@Radium
+@radium
 export class Menu extends React.Component {
   static propTypes = {
     children: PropTypes.any,

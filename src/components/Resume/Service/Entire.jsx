@@ -1,11 +1,11 @@
 import React from 'react'
-import Radium from 'radium'
+import radium from 'radium'
 import * as resumeStyles from '../styles'
 import * as baseStyles from 'scripts/styles'
 import persona from 'config/persona'
 import _ from 'lodash'
 
-@Radium()
+@radium()
 export class Entire extends React.Component {
   getServices () {
     return _.get(persona, 'services', [])

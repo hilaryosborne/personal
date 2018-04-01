@@ -1,5 +1,5 @@
 import React from 'react'
-import Radium from 'radium'
+import radium from 'radium'
 import PropTypes from 'prop-types'
 import classnames from 'classnames'
 import _ from 'lodash'
@@ -11,7 +11,7 @@ const styling = {
   container: {}
 }
 
-@Radium
+@radium
 export class Wrapper extends React.Component {
   static propTypes = {
     style: PropTypes.any,
@@ -19,28 +19,32 @@ export class Wrapper extends React.Component {
     className: PropTypes.string
   }
 
-  getBannerChildren () {
-    return _.filter(this.props.children, (child, k) => {
+  getChildren () {
+    return _.isArray(this.props.children) ? this.props.children : [this.props.children]
+  }
+
+  getBanners () {
+    return _.filter(this.getChildren(), (child, k) => {
       return _.get(child, 'props.banner', false)
     })
   }
 
-  getNonBannerChildren () {
-    return _.filter(this.props.children, (child, k) => {
+  getNonBanners () {
+    return _.filter(this.getChildren(), (child, k) => {
       return !_.get(child, 'props.banner', false)
     })
   }
 
-  getBannerChild () {
-    const banners = this.getBannerChildren()
+  getBanner () {
+    const banners = this.getBanners()
     return _.first(banners)
   }
 
   render () {
     return (<div className={classnames('banner-wrapper', this.props.className)} style={{...styling.wrapper, ...this.props.style}}>
       <div style={{...styling.container}}>
-        {this.getBannerChild()}
-        {this.getNonBannerChildren()}
+        {this.getBanner()}
+        {this.getNonBanners()}
       </div>
     </div>)
   }

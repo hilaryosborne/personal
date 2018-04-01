@@ -2,7 +2,7 @@ import React from 'react'
 import { Page, Titles, EntireDiscipline, EntireProjects, EntireSocial } from 'components/Resume'
 import { MarkDown } from 'components/Facade/Content'
 import persona from 'config/persona'
-import Radium from 'radium'
+import radium from 'radium'
 import { PageMeta } from 'components'
 
 const styling = {
@@ -14,7 +14,7 @@ const styling = {
   }
 }
 
-@Radium
+@radium
 export class Resume extends React.Component {
   render () {
     return (<div>

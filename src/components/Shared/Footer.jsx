@@ -1,9 +1,9 @@
 import React from 'react'
-import Radium from 'radium'
+import radium from 'radium'
 import PropType from 'prop-types'
 import classnames from 'classnames'
 
-@Radium
+@radium
 export class Footer extends React.Component {
   static propTypes = {
     style: PropType.object,

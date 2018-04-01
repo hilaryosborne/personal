@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Radium from 'radium'
+import radium from 'radium'
 import * as base from 'scripts/styles'
 
 const styles = {
@@ -24,7 +24,7 @@ const styles = {
   }
 }
 
-@Radium()
+@radium()
 export class Page extends React.Component {
     static propTypes = {
       children: PropTypes.any

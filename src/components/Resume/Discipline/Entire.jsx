@@ -1,7 +1,7 @@
 import React from 'react'
 import _ from 'lodash'
 import persona from 'config/persona'
-import Radium from 'radium'
+import radium from 'radium'
 import { Group } from './Group'
 import * as resumeStyles from '../styles'
 import * as baseStyles from 'scripts/styles'
@@ -15,7 +15,7 @@ const styles = {
   }
 }
 
-@Radium
+@radium
 export class Entire extends React.Component {
   getRows () {
     return _.chunk(persona.disciplines, 2)

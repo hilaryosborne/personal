@@ -1,5 +1,5 @@
 import React from 'react'
-import Radium from 'radium'
+import radium from 'radium'
 import _ from 'lodash'
 import classnames from 'classnames'
 import PropTypes from 'prop-types'
@@ -10,7 +10,7 @@ const tags = {
   passionate: { label: 'Current Passion', className: 'fas fa-fire' }
 }
 
-@Radium()
+@radium()
 export class Icon extends React.Component {
   static propTypes = {
     tag: PropTypes.string,

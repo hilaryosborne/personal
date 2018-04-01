@@ -1,5 +1,5 @@
 import React from 'react'
-import Radium from 'radium'
+import radium from 'radium'
 import PropTypes from 'prop-types'
 import color from 'color'
 import { branding, colors } from 'scripts/styles'
@@ -15,7 +15,7 @@ export const styling = {
   }
 }
 
-@Radium
+@radium
 export class Btn extends React.Component {
   static propTypes = {
     kind: PropTypes.oneOf(['primary']).isRequired,

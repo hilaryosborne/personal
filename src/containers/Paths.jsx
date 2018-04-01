@@ -3,9 +3,11 @@ import { Provider } from 'react-redux'
 import { Route, Switch } from 'react-router-dom'
 import { ConnectedRouter } from 'react-router-redux'
 import { store, history } from 'scripts/store'
-import { NotFound } from 'containers'
+import { NotFound } from './NotFound'
 import { Resume } from './Resume'
+import { Project } from './Project'
 import { Home } from './Home'
+import { Projects } from './Projects'
 import { StyleRoot, Style } from 'radium'
 import { backgrounds, typography } from 'scripts/styles'
 
@@ -40,6 +42,8 @@ export class Paths extends React.Component {
           <Switch>
             <Route exact path='/' component={Home} />
             <Route exact path='/resume' component={Resume} />
+            <Route exact path='/projects' component={Projects} />
+            <Route path='/project/:slug' component={Project} />
             <Route component={NotFound} />
           </Switch>
         </ConnectedRouter>

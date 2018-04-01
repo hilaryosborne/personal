@@ -1,21 +1,27 @@
 import React from 'react'
 import radium from 'radium'
-import PropTypes from 'prop-types'
+import PropType from 'prop-types'
 import classnames from 'classnames'
 import { Layer, Banner, BannerPanel, H1, Lead, Container, Row, Col } from 'components/Facade'
 
 @radium
 export class BannerLayer extends React.Component {
   static propTypes = {
-    style: PropTypes.object,
-    className: PropTypes.string
+    style: PropType.object,
+    className: PropType.string
   }
+
+  static defaultProps = {
+    style: {},
+    className: ''
+  }
+
   render () {
-    return (<Layer className={classnames('hero-layer', this.props.className)} style={[this.props.style]}>
+    return (<Layer className={classnames('project-banner-layer', this.props.className)} style={[this.props.style]}>
       <Banner>
         <BannerPanel
-          size='full'
-          img={'/media/backgrounds/space_guy.jpg'}
+          size='half'
+          img={'/media/backgrounds/jumping_man.jpg'}
           className='align-items-center'>
           <Container>
             <Row>
@@ -26,7 +32,6 @@ export class BannerLayer extends React.Component {
             </Row>
           </Container>
         </BannerPanel>
-        <BannerPanel size='full' img={'/media/backgrounds/space_guy.jpg'} />
       </Banner>
     </Layer>)
   }

@@ -1,12 +1,13 @@
 import React from 'react'
 import _ from 'lodash'
-import Radium from 'radium'
+import radium from 'radium'
 import * as resumeStyles from '../styles'
 import * as baseStyles from 'scripts/styles'
 import persona from 'config/persona'
 import { Project } from './Project'
 
-export class EntireComponent extends React.Component {
+@radium
+export class Entire extends React.Component {
   getProjects () {
     return _.get(persona, 'projects', [])
   }
@@ -25,5 +26,3 @@ export class EntireComponent extends React.Component {
     </div>)
   }
 }
-
-export const Entire = Radium(EntireComponent)

@@ -298,6 +298,7 @@
   "projects":[
     {
       "label": "PHP Fission Schema",
+      "slug": "fission",
       "hours": "+150",
       "year": "2018",
       "ongoing": true,
@@ -401,6 +402,13 @@
         "Heavy use of Google Maps API and geo searching to display delivery zones using polygons on a map.",
         "Project is deployed to and hosted within a docker swarm environment."
       ],
+      "casestudy": {
+        "blurb": "Working onsite at DTH media’s offices in New Farm, I worked on creating a modern set of digital tools for this Brisbane based startup.",
+        "summary": "The requirements of the DTH Media project were to create a modern public facing sales website along with a sales portal aimed at providing an online ordering process for geo printed marketing campaigns. A number of different technologies were used such as WordPress, NodeJS + ReactJS, mongoDB and Google Maps API. The result was an intuitive web platform that allowed for distributions areas to be planned and displayed within google maps for complete user self service.",
+        "views": [
+          {"type": "mobile", "label": "", "src": ""}
+        ]
+      },
       "tags": ["Freelance"],
       "disciplines": ["WordPress", "ReactJS", "General", "DevOps"]
     },

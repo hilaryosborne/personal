@@ -4,10 +4,12 @@ import { createStore, combineReducers, applyMiddleware } from 'redux'
 import { routerMiddleware, routerReducer } from 'react-router-redux'
 import createSagaMiddleware from 'redux-saga'
 import facadeReducer from 'components/Facade/reducer'
+import projectReducer from 'components/Project/reducer'
 
 // Compile the reducer collection
 const reducers = {
   facade: facadeReducer,
+  project: projectReducer,
   routing: routerReducer
 }
 // Create a new saga middleware provider

@@ -1,5 +1,6 @@
 import React from 'react'
-import Radium from 'radium'
+import radium from 'radium'
+import { withRouter } from 'react-router-dom'
 import PropType from 'prop-types'
 import classnames from 'classnames'
 
@@ -15,10 +16,12 @@ const styling = {
   }
 }
 
-@Radium
+@radium
+@withRouter
 export class Logo extends React.Component {
   static propTypes = {
     type: PropType.string,
+    history: PropType.object,
     size: PropType.string,
     style: PropType.object,
     className: PropType.string
@@ -29,6 +32,11 @@ export class Logo extends React.Component {
     size: 'md',
     style: {},
     className: ''
+  }
+
+  constructor (props) {
+    super(props)
+    this.doClickAction = this.doClickAction.bind(this)
   }
 
   getSrc () {
@@ -43,7 +51,11 @@ export class Logo extends React.Component {
     return styling.sizes[this.props.size]
   }
 
+  doClickAction () {
+    this.props.history.push('/')
+  }
+
   render () {
-    return (<img src={this.getSrc()} style={{...this.props.style, ...this.getSize()}} className={classnames(this.props.className)} />)
+    return (<img src={this.getSrc()} onClick={this.doClickAction} style={{...this.props.style, ...this.getSize()}} className={classnames(this.props.className)} />)
   }
 }

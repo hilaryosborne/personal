@@ -1,5 +1,5 @@
 import React from 'react'
-import Radium from 'radium'
+import radium from 'radium'
 import {typography} from './styles'
 
 const styling = {
@@ -13,7 +13,7 @@ const styling = {
   }
 }
 
-@Radium
+@radium
 export class Titles extends React.Component {
   render () {
     return (<div className='text-center' style={{...styling.wrapper}}>

@@ -1,5 +1,5 @@
 import React from 'react'
-import Radium from 'radium'
+import radium from 'radium'
 import PropTypes from 'prop-types'
 import _ from 'lodash'
 import classnames from 'classnames'
@@ -17,7 +17,7 @@ const styles = {
   }
 }
 
-@Radium()
+@radium()
 export class Link extends React.Component {
   static propTypes = {
     social: PropTypes.any,
