@@ -324,6 +324,7 @@
     },
     {
       "label": "Tutelage",
+      "slug": "tutelage",
       "hours": "+500",
       "ongoing": true,
       "year": "2017",
@@ -333,6 +334,7 @@
     },
     {
       "label": "Tappr Dashboard",
+      "slug": "tappr",
       "hours": "+100",
       "ongoing": true,
       "year": "2017",
@@ -380,7 +382,11 @@
         "Used ACF to create a modular theme similar to concepts used for laravel blade templating."
       ],
       "tags": ["Freelance"],
-      "disciplines": ["WordPress", "General", "DevOps"]
+      "disciplines": ["WordPress", "General", "DevOps"],
+      "slides": [
+        {"type": "laptop", "label": "", "src": "/media/projects/casestudies/vielo_laptop_one.jpg"},
+        {"type": "laptop", "label": "", "src": "/media/projects/casestudies/vielo_laptop_two.jpg"}
+      ]
     },
     {
       "label": "The Marketing Lab",
@@ -394,7 +400,10 @@
         "Used ACF to create a modular theme similar to concepts used for laravel blade templating."
       ],
       "tags": ["Freelance"],
-      "disciplines": ["WordPress", "General", "DevOps"]
+      "disciplines": ["WordPress", "General", "DevOps"],
+      "slides": [
+        {"type": "laptop", "label": "", "src": "/media/projects/casestudies/marketinglab_laptop_one.jpg"}
+      ]
     },
     {
       "label": "Direct To Home",
