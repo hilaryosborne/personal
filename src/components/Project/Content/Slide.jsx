@@ -6,21 +6,17 @@ import classnames from 'classnames'
 @radium
 export class Slide extends React.Component {
   static propTypes = {
-    // project: PropType.any,
-    // project: PropType.any,
+    slide: PropType.object,
     style: PropType.object,
     className: PropType.string
   }
 
   static defaultProps = {
-    // project: false,
     style: {},
     className: ''
   }
 
   render () {
-    return (<div className={classnames(this.props.className)} style={[this.props.style]}>
-      Component
-    </div>)
+    return (<img src={this.props.slide.src} className={classnames(this.props.className)} style={{...this.props.style, width: '100%'}} />)
   }
 }
