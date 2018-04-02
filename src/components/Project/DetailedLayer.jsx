@@ -14,7 +14,7 @@ const styling = {
     ...backgrounds.white
   },
   spacing: {
-    marginTop: '2rem'
+    marginTop: '3rem'
   }
 }
 

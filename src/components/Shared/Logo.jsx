@@ -10,9 +10,9 @@ const blackLogo = 'data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1
 
 const styling = {
   sizes: {
-    sm: { maxWidth: '5rem' },
-    md: { maxWidth: '13rem' },
-    lg: { maxWidth: '18rem' }
+    sm: { maxWidth: '3rem' },
+    md: { maxWidth: '10rem' },
+    lg: { maxWidth: '12rem' }
   }
 }
 

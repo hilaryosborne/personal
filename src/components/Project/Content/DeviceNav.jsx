@@ -7,7 +7,7 @@ import {colors} from 'scripts/styles'
 
 const styling = {
   el: {
-    fontSize: '2.4rem',
+    fontSize: '2rem',
     opacity: '.7',
     marginLeft: '.8rem',
     marginRight: '.8rem',

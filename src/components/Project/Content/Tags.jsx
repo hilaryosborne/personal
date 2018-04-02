@@ -38,7 +38,7 @@ export class Tags extends React.Component {
         {_.map(this.getChunked(), (tags, k) => {
           return (<Col key={k} md='6'>
             {_.map(tags, (tag, _k) => {
-              return (<Tag key={_k} className='mb-2'>{tag}</Tag>)
+              return (<Tag key={_k} className='mb-1'>{tag}</Tag>)
             })}
           </Col>)
         })}

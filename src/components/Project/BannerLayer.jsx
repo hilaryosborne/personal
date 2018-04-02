@@ -27,7 +27,7 @@ export class BannerLayer extends React.Component {
             <Row>
               <Col md='8'>
                 <H1>Scope. Code. Test. <br />Caffeine. Repeat!</H1>
-                <Lead className='lead'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a nunc consectetur, mollis mauris sed, feugiat ex. Cras ut risus diam. Integer eu elit efficitur, iaculis.</Lead>
+                <Lead className='lead'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a nunc consectetur, mollis mauris sed.</Lead>
               </Col>
             </Row>
           </Container>

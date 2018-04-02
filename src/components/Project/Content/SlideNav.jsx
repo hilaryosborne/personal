@@ -8,7 +8,7 @@ import {colors} from 'scripts/styles'
 const styling = {
   el: {
     position: 'absolute',
-    fontSize: '2.5rem',
+    fontSize: '2rem',
     color: colors.tomato,
     top: '50%',
     transform: 'translateY(-50%)',
@@ -19,10 +19,10 @@ const styling = {
   },
   direction: {
     left: {
-      left: '-4rem'
+      left: '-3rem'
     },
     right: {
-      right: '-4rem'
+      right: '-3rem'
     }
   }
 }

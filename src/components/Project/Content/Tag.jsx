@@ -2,13 +2,11 @@ import React from 'react'
 import radium from 'radium'
 import PropType from 'prop-types'
 import classnames from 'classnames'
-import {typography, colors} from 'scripts/styles'
+import {colors} from 'scripts/styles'
 
 const styling = {
   el: {
-    ...typography.lead,
-    fontWeight: 'bold',
-    fontSize: '1.4rem'
+    fontWeight: 'bold'
   },
   icon: {
     color: colors.tomato

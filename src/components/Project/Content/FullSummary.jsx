@@ -7,12 +7,6 @@ import { Row, Col, H3, Lead } from 'components/Facade'
 import { Tags } from './Tags'
 import {connect} from 'react-redux'
 
-const styling = {
-  blurb: {
-    fontSize: '1.8rem'
-  }
-}
-
 @radium
 @connect(state => state)
 export class FullSummary extends React.Component {
@@ -38,14 +32,14 @@ export class FullSummary extends React.Component {
 
   render () {
     return (<div className={classnames(this.props.className)} style={{...this.props.style}}>
-      <Row className='mb-4'>
-        <Col md='12' style={{...styling.blurb}}>
-          {_.get(this.props.project, 'viewing.project.blurb')}
+      <Row className='mb-3'>
+        <Col md='12'>
+          <Lead>{_.get(this.props.project, 'viewing.project.blurb')}</Lead>
         </Col>
       </Row>
       <Row>
         <Col md={'7'}>
-          <Lead>{this.getSummary()}</Lead>
+          {this.getSummary()}
         </Col>
         <Col md={'5'}>
           <H3 className='mb-3'>What was involved</H3>

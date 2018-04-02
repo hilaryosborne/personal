@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 import { Row, Col } from 'components/Facade'
 import { connect } from 'react-redux'
 import persona from 'config/persona'
-import {colors, typography} from 'scripts/styles'
+import {colors} from 'scripts/styles'
 
 const styling = {
   wrapper: {
@@ -15,8 +15,7 @@ const styling = {
     paddingBottom: '2rem'
   },
   link: {
-    color: colors.tomato,
-    ...typography.lead
+    color: colors.tomato
   }
 }
 

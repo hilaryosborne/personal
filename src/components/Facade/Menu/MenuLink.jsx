@@ -9,8 +9,7 @@ import { colors, fonts } from 'scripts/styles'
 
 const styling = {
   el: {
-    padding: '.8rem 1.2rem',
-    fontSize: '1.1rem',
+    padding: '.6rem',
     color: colors.white,
     ...fonts.raleway
   },

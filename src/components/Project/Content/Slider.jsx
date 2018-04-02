@@ -12,7 +12,7 @@ import {DeviceNav} from './DeviceNav'
 const styling = {
   device: {
     spacer: {
-      marginBottom: '2rem'
+      marginBottom: '1rem'
     }
   },
   mobile: {
@@ -41,8 +41,8 @@ const styling = {
     wrapper: {
       position: 'relative',
       display: 'block',
-      width: '60.2rem',
-      height: '38.2rem',
+      width: '48.2rem',
+      height: '30.3rem',
       backgroundImage: 'url(/media/projects/device_laptop.png)',
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat',
@@ -52,10 +52,10 @@ const styling = {
       position: 'absolute',
       display: 'block',
       overflow: 'hidden',
-      top: '2.7rem',
-      left: '7.17rem',
-      right: '6.87rem',
-      bottom: '6.70rem',
+      top: '2.05rem',
+      left: '5.8rem',
+      right: '5.4rem',
+      bottom: '5.2rem',
       ...backgrounds.white
     }
   }
