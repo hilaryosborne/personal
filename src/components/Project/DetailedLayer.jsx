@@ -3,6 +3,7 @@ import radium from 'radium'
 import PropType from 'prop-types'
 import classnames from 'classnames'
 import { Layer, Container } from 'components/Facade'
+import { SharedElevate } from 'components/Shared'
 import { Title, FullSummary, Slider, Description } from './Content'
 import { Navigation } from './Navigation'
 import { backgrounds } from 'scripts/styles'
@@ -34,13 +35,13 @@ export class DetailedLayer extends React.Component {
   render () {
     return (<Layer className={classnames('project-detailed-layer', this.props.className)} style={{...styling.layer, ...this.props.style}}>
       <Container>
-        <div style={{...backgrounds.white, position: 'relative', padding: '.6rem 1.5rem', margin: '-3.5rem -1.5rem 0 -1.5rem'}}>
+        <SharedElevate>
           <Title style={{marginBottom: '1rem'}} />
           <FullSummary />
           <Slider style={{...styling.spacing}} />
           <Description style={{...styling.spacing}} />
           <Navigation style={{...styling.spacing}} />
-        </div>
+        </SharedElevate>
       </Container>
     </Layer>)
   }

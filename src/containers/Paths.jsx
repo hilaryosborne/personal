@@ -43,7 +43,7 @@ export class Paths extends React.Component {
             <Route exact path='/' component={Home} />
             <Route exact path='/resume' component={Resume} />
             <Route exact path='/projects' component={Projects} />
-            <Route path='/project/:slug' component={Project} />
+            <Route path='/projects/:slug' component={Project} />
             <Route component={NotFound} />
           </Switch>
         </ConnectedRouter>

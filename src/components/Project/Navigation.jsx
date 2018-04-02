@@ -71,13 +71,13 @@ export class Navigation extends React.Component {
     return (<div style={{...styling.wrapper, ...this.props.style}} className={classnames(this.props.className)}>
       <Row>
         <Col md='4' className='text-left'>
-          <Link title={this.getPrevious().label} to={'/project/' + this.getPrevious().slug} style={{...styling.link}}><i className='fas fa-chevron-left mr-2' /> Previous Project</Link>
+          <Link title={this.getPrevious().label} to={'/projects/' + this.getPrevious().slug} style={{...styling.link}}><i className='fas fa-chevron-left mr-2' /> Previous Project</Link>
         </Col>
         <Col md='4' className='text-center'>
           <Link to='/projects' style={{...styling.link}}>View All Projects</Link>
         </Col>
         <Col md='4' className='text-right'>
-          <Link title={this.getNext().label} to={'/project/' + this.getNext().slug} style={{...styling.link}}>Next Project <i className='fas fa-chevron-right ml-2' /></Link>
+          <Link title={this.getNext().label} to={'/projects/' + this.getNext().slug} style={{...styling.link}}>Next Project <i className='fas fa-chevron-right ml-2' /></Link>
         </Col>
       </Row>
     </div>)

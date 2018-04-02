@@ -311,6 +311,7 @@
     },
     {
       "label": "React SPA Boilerplate",
+      "slug": "react-spa",
       "hours": "+20",
       "year": "2018",
       "ongoing": true,
@@ -341,6 +342,7 @@
     },
     {
       "label": "WordPress Boilerplate",
+      "slug": "wordpress-boilerplate",
       "hours": "+80",
       "year": "2017",
       "ongoing": true,
@@ -354,6 +356,7 @@
     },
     {
       "label": "ACF Fusion",
+      "slug": "acf-fusion",
       "hours": "+100",
       "year": "2017",
       "ongoing": true,
@@ -367,6 +370,7 @@
     },
     {
       "label": "Vielo",
+      "slug": "vielo",
       "hours": "+40",
       "year": "2017",
       "summary": [
@@ -380,6 +384,7 @@
     },
     {
       "label": "The Marketing Lab",
+      "slug": "marketing-lab",
       "hours": "+20",
       "year": "2017",
       "summary": [

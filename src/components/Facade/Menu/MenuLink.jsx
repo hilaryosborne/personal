@@ -5,10 +5,14 @@ import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { filterProps } from 'scripts/utils'
+import { colors, fonts } from 'scripts/styles'
 
 const styling = {
   el: {
-    padding: '.8rem 1.2rem'
+    padding: '.8rem 1.2rem',
+    fontSize: '1.1rem',
+    color: colors.white,
+    ...fonts.raleway
   },
   current: {}
 }
@@ -17,6 +21,8 @@ const styling = {
 @connect(state => state)
 export class MenuLink extends React.Component {
   static propTypes = {
+    to: PropTypes.any,
+    external: PropTypes.bool,
     children: PropTypes.any,
     className: PropTypes.string,
     style: PropTypes.object
@@ -27,10 +33,15 @@ export class MenuLink extends React.Component {
   }
 
   render () {
-    return (<Link {...filterProps(this.props, Link)}
-      className={classnames(this.props.className)}
-      style={{...styling.el, ...this.props.style}}>
-      {this.props.children}
-    </Link>)
+    return (this.props.external
+      ? <a href={this.props.to}
+        className={classnames(this.props.className)}
+        style={{...styling.el, ...this.props.style}}>
+        {this.props.children}</a>
+      : <Link {...filterProps(this.props, Link)}
+        className={classnames(this.props.className)}
+        style={{...styling.el, ...this.props.style}}>
+        {this.props.children}
+      </Link>)
   }
 }

@@ -83,6 +83,8 @@ export class Header extends React.Component {
             <Menu>
               <MenuLink to={'/'}>Home</MenuLink>
               <MenuLink to={'/projects'}>Projects</MenuLink>
+              <MenuLink to={'/resume'}>Services</MenuLink>
+              <MenuLink to={'https://github.com/hilaryosborne'} external><i className='fab fa-github mr-1' /> Fork me on GitHub</MenuLink>
             </Menu>
           </div>
         </div>

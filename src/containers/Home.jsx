@@ -10,7 +10,7 @@ import { PageMeta } from 'components/Facade'
 export class Home extends React.Component {
   render () {
     return (<SharedWrapper>
-      <PageMeta title='Welcome Home' />
+      <PageMeta title='Welcome' />
       <HeroBannerLayer />
     </SharedWrapper>)
   }
