@@ -3,9 +3,11 @@ import radium from 'radium'
 import _ from 'lodash'
 import PropType from 'prop-types'
 import classnames from 'classnames'
-import { H1 } from 'components/Facade'
+import { H1, Underline } from 'components/Facade'
+import {connect} from 'react-redux'
 
 @radium
+@connect(state => state)
 export class Title extends React.Component {
   static propTypes = {
     project: PropType.any,
@@ -20,7 +22,11 @@ export class Title extends React.Component {
 
   render () {
     return (<div className={classnames(this.props.className)} style={[this.props.style]}>
-      <H1>{_.get(this.props.project, 'project.label')}</H1>
+      <H1>
+        <Underline>
+          {_.get(this.props.project, 'viewing.project.label')}
+        </Underline>
+      </H1>
     </div>)
   }
 }

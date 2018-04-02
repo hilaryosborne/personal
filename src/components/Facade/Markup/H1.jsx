@@ -7,6 +7,7 @@ import { typography } from 'scripts/styles'
 @radium
 export class H1 extends React.Component {
   static propTypes = {
+    underlined: PropTypes.bool,
     style: PropTypes.object,
     className: PropTypes.string
   }

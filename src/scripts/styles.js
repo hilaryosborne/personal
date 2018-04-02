@@ -1,5 +1,10 @@
 import _ from 'lodash'
 
+export const fonts = {
+  raleway: { fontFamily: 'Raleway, sans-serif' },
+  lora: { fontFamily: 'Lora, serif' }
+}
+
 export const colors = {
   white: '#fff',
   tomato: '#f15b5a',
@@ -16,14 +21,14 @@ export const base = {
 }
 
 export const typography = {
-  body: { fontSize: '16px' },
+  body: { ...fonts.lora, fontSize: '16px' },
   p: { fontSize: '1rem' },
-  lead: { fontSize: '1.3rem' },
-  h1: { textTransform: 'uppercase', fontWeight: 'bold', fontSize: '3.8rem' },
-  h2: { textTransform: 'uppercase', fontWeight: 'bold', fontSize: '2.4rem' },
-  h3: { textTransform: 'uppercase', fontWeight: 'bold', fontSize: '1.6rem' },
-  h4: { },
-  h5: { }
+  lead: { fontSize: '1.3rem', lineHeight: '2rem' },
+  h1: { ...fonts.raleway, textTransform: 'uppercase', fontWeight: '900', fontSize: '4rem' },
+  h2: { ...fonts.raleway, textTransform: 'uppercase', fontWeight: 'bold', fontSize: '2.4rem' },
+  h3: { ...fonts.lora, fontWeight: '900', fontSize: '1.9rem' },
+  h4: { ...fonts.lora },
+  h5: { ...fonts.lora }
 }
 
 export const backgrounds = {
@@ -40,6 +45,13 @@ export const underline = {
     marginTop: '.8rem',
     display: 'block',
     width: '4rem',
+    background: colors.tomato,
+    height: '.4rem'
+  },
+  full: {
+    marginTop: '.8rem',
+    display: 'block',
+    width: '100%',
     background: colors.tomato,
     height: '.4rem'
   }

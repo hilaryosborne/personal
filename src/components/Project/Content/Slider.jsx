@@ -10,6 +10,11 @@ import {Slide} from './Slide'
 import {DeviceNav} from './DeviceNav'
 
 const styling = {
+  device: {
+    spacer: {
+      marginBottom: '2rem'
+    }
+  },
   mobile: {
     wrapper: {
       position: 'relative',
@@ -147,7 +152,7 @@ export class Slider extends React.Component {
 
   render () {
     return (this.hasSlides() ? <div className={classnames(this.props.className)} style={{...this.props.style}}>
-      {this.hasDevices() ? <div className='d-flex justify-content-center'>
+      {this.hasDevices() ? <div className='d-flex justify-content-center' style={{...styling.device.spacer}}>
         <DeviceNav icon='fas fa-laptop' active={this.getDevice() === 'laptop'} onClick={this.doLaptopAction} />
         <DeviceNav icon='fas fa-mobile-alt' active={this.getDevice() === 'mobile'} onClick={this.doMobileAction} />
       </div> : null}

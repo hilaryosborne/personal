@@ -392,7 +392,7 @@
       "disciplines": ["WordPress", "General", "DevOps"]
     },
     {
-      "label": "DTH Media",
+      "label": "Direct To Home",
       "blurb": "Working onsite at DTH media’s offices in New Farm, I worked on creating a modern set of digital tools for this Brisbane based startup.",
       "slug": "dth-media",
       "hours": "+260",
@@ -440,31 +440,63 @@
     },
     {
       "label": "Healthy Staff",
+      "slug": "healthy-staff",
+      "blurb": "I worked with the startup company Healthy Staff to develop a simple WordPress website aimed as a jump off point for their future digital marketing ideas.",
       "hours": "+40",
       "year": "2016",
       "tags": ["Agency"],
       "summary": "Healthy staff is a simple WordPress website created using a mixture of standard WordPress plugins (YOAST, ACF etc) and Visual Composer. The layout was created entirely with Visual Composer to allow for customisation of any design element on any page at any time. In addition to developing the theme I also developed the design concept and page hierarchy.",
-      "disciplines": ["WordPress", "General"]
+      "disciplines": ["WordPress", "General"],
+      "description": "Healthy Staff was the last project in which I used a purely Visual Composer approach for layout design. I had found the, what I thought at the time, restrictive way that WordPress approaches templating to be inefficient and difficult to work with. Coming from a strong symphony background I was used to twig templates allowing me to customize the look of pages with relative ease. After finding out about Visual Composer I manipulated the plugin to become a complete drag and drop page builder. It was during this project that I began to see the limitations of this approach and realize that there was a lot more to developing WordPress themes. Aside from that I had a great deal of fun working on this project. The major constraint was time and the client had a need to have the site ready and launched within a two-week period. I worked with a junior developer to research what other sites in the industry provided users as well as built up a good understanding of what the general look and feel was. The design and development process was rapid and we had a release candidate up within a week. The client, who is a client we have worked with on multiple times before, was happy and with relatively little changes we proceeded to launch.",
+      "slides": [
+        {"type": "laptop", "label": "", "src": "/media/projects/casestudies/healthy_laptop_one.jpg"},
+        {"type": "laptop", "label": "", "src": "/media/projects/casestudies/healthy_laptop_two.jpg"},
+        {"type": "laptop", "label": "", "src": "/media/projects/casestudies/healthy_laptop_three.jpg"},
+        {"type": "mobile", "label": "", "src": "/media/projects/casestudies/healthy_mobile_one.jpg"},
+        {"type": "mobile", "label": "", "src": "/media/projects/casestudies/healthy_mobile_two.jpg"},
+        {"type": "mobile", "label": "", "src": "/media/projects/casestudies/healthy_mobile_three.jpg"}
+      ]
     },
     {
       "label": "Drug And Alcohol Institute",
+      "slug": "drug-alcohol-institute",
+      "blurb": "I worked with Drug & Alcohol Institute to develop a modern and friendly sales platform to advertise their specialist courses and take enrolment & payments online.",
+      "description": "The Drug and Alcohol Institute project was the first project that pushed me into learning WordPress. Before this time, I had mainly worked with Drupal 7 and Symfony however the client required that the final proposal included WordPress. The integration requirements for this project were extensive and it was now that I decided to build the Visual Composer Form Framework to provide the necessary custom logic to the various forms on the website. My research of existing form plugins such as Gravity and Ninja forms resulted in the realization that they were just not set up for heavy forms with advanced conditional logic. The final project resulted in a heavily customised WordPress platform with custom plugin and theme development as well as integration with Axcelerate, Xero, eWay and Vision 6. The site is fully responsive and built entirely using the drag and drop site builder plugin Visual Composer.",
       "hours": "+300",
       "year": "2015",
       "summary": "The Drug and Alcohol Institute website involved the development of a sales platform using WordPress and multiple integration features. The layout has been designed using Visual Composer with numerous custom visual composer plugins to bring integrated content from various third party providers such as Axcelerate. In addition to Axcelerate, eWay and Xero integration was built into the platform to allow for online payments and automatic invoice creation.",
-      "tags": ["Freelance"],
-      "disciplines": ["WordPress", "General"]
+      "tags": ["Freelance", "Creative", "Responsive"],
+      "disciplines": ["WordPress", "General"],
+      "slides": [
+        {"type": "laptop", "label": "", "src": "/media/projects/casestudies/dati_laptop_one.jpg"},
+        {"type": "laptop", "label": "", "src": "/media/projects/casestudies/dati_laptop_two.jpg"},
+        {"type": "laptop", "label": "", "src": "/media/projects/casestudies/dati_laptop_three.jpg"},
+        {"type": "mobile", "label": "", "src": "/media/projects/casestudies/dati_mobile_one.jpg"},
+        {"type": "mobile", "label": "", "src": "/media/projects/casestudies/dati_mobile_two.jpg"},
+        {"type": "mobile", "label": "", "src": "/media/projects/casestudies/dati_mobile_three.jpg"}
+      ]
     },
     {
       "label": "Control Logic",
+      "slug": "control-logic",
+      "blurb": "We teamed up with the guys at Control Logic to develop a WordPress solution with a special focus on a modern and impressive responsive design.",
       "hours": "+100",
       "year": "2015",
       "summary": "Control Logic challenged my CSS and layout skills and pushed me way outside of my comfort zone. It was a challenging project and lead me to improve some of the more advanced creative and design skills that I had not had exposure to as a primarily server side developer. It is a WordPress website with custom plugins and theme development. It is fully responsive and built within Visual Composer.",
-      "tags": ["Freelance"],
-      "disciplines": ["WordPress", "General"]
+      "tags": ["Freelance", "Creative", "Responsive"],
+      "disciplines": ["WordPress", "General"],
+      "slides": [
+        {"type": "laptop", "label": "", "src": "/media/projects/casestudies/control_laptop_one.png"},
+        {"type": "laptop", "label": "", "src": "/media/projects/casestudies/control_laptop_two.jpg"},
+        {"type": "mobile", "label": "", "src": "/media/projects/casestudies/control_mobile_one.jpg"},
+        {"type": "mobile", "label": "", "src": "/media/projects/casestudies/control_mobile_two.jpg"},
+        {"type": "mobile", "label": "", "src": "/media/projects/casestudies/control_mobile_three.jpg"}
+      ]
     },
     {
       "label": "Axiom College",
       "slug": "axiom-college",
+      "blurb": "I worked with Axiom College over a number of years to deliver multiple iterations of their online sales & enrolment platform using Drupal and WordPress",
       "hours": "+7000",
       "year": "2015",
       "tags": ["In-House", "Symfony", "Drupal 7", "Symfony"],
@@ -472,10 +504,10 @@
         "The current Axiom College sales and enrollment platform is developed using WordPress with a custom theme and a number of custom plugins to provide integration to the company FileMaker database. I worked with stakeholders to continuously develop the branding and theme to stay ahead of the curve. The site is fully responsive and was designed to handle large amounts of both templated information and bespoke landing pages.",
         "Employed to managed the organisation’s digital projects.",
         "In charge of scoping, planning, scheduling, development, deploying and monitoring digital applications.",
-        "Liaised directly with the owner and key stakeholders to identify requirements and guide the organisation towards modernisation.",
         "Developed multiple iterations of the digital student portal system and sales website",
         "Worked with heavily integrating the organisation's FileMaker database into every digital project."
       ],
+      "description": "When I first started at Axiom college during 2012 they had a custom solution in place with limited responsive and content management features. Over the following 6 months I embedded myself within the company and learned the processes and industry which Axiom College operated. Having come directly from a University background (Griffth) I was familiar with adult education but the VET industry was something completely new. I worked with the organisation’s sales and marketing manager to develop a new look within a Drupal 7 platform to replace the current limited system. The new Drupal 7 solution provided a far easier way for staff to add course material, better integration and better responsive features. Overall my goal was to develop something modern, scalable and flexible for the new marketing direction the company was heading. After two years of running the Drupal 7 system the requirements of the company had changed and they were looking for something easier and more straight forward for their staff to use for publishing and sales. It was decided that a move to a WordPress platform was the best choice as the administrative experience was more in line with the administration staff’s expectations. The current website was developed using Visual Composer with a custom theme and considerable plugin development to allow for direct integration with the company’s FileMaker database. The aim was to create a responsive and accessible platform that simplified the process for adding courses and content to the website. This was a considerable task given the complex amount of integration requirements which needed to be met in order for enrollments and course information to be communicated reliably and efficiently.",
       "disciplines": ["WordPress", "General"],
       "slides": [
         {"type": "laptop", "label": "", "src": "/media/projects/casestudies/axiom_laptop_one.jpg"},

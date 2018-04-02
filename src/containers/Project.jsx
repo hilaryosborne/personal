@@ -13,7 +13,7 @@ import PropTypes from 'prop-types'
 @radium
 export class Project extends React.Component {
   static propTypes = {
-    project: PropTypes.any
+    project: PropTypes.object
   }
 
   static getDerivedStateFromProps (nextProps, prevState) {
@@ -33,15 +33,11 @@ export class Project extends React.Component {
     }
   }
 
-  getProject () {
-    return _.get(this.props.project, 'viewing')
-  }
-
   render () {
     return (<SharedWrapper>
-      <PageMeta title='Some Projects' />
+      <PageMeta title={_.get(this.props.project, 'viewing.project.label')} />
       <ProjectBannerLayer />
-      <ProjectDetailedLayer project={this.getProject()} />
+      <ProjectDetailedLayer />
     </SharedWrapper>)
   }
 }
