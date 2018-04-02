@@ -464,6 +464,7 @@
     },
     {
       "label": "Axiom College",
+      "slug": "axiom-college",
       "hours": "+7000",
       "year": "2015",
       "tags": ["In-House", "Symfony", "Drupal 7", "Symfony"],
@@ -475,7 +476,15 @@
         "Developed multiple iterations of the digital student portal system and sales website",
         "Worked with heavily integrating the organisation's FileMaker database into every digital project."
       ],
-      "disciplines": ["WordPress", "General"]
+      "disciplines": ["WordPress", "General"],
+      "slides": [
+        {"type": "laptop", "label": "", "src": "/media/projects/casestudies/axiom_laptop_one.jpg"},
+        {"type": "laptop", "label": "", "src": "/media/projects/casestudies/axiom_laptop_two.jpg"},
+        {"type": "laptop", "label": "", "src": "/media/projects/casestudies/axiom_laptop_three.jpg"},
+        {"type": "mobile", "label": "", "src": "/media/projects/casestudies/axiom_mobile_one.jpg"},
+        {"type": "mobile", "label": "", "src": "/media/projects/casestudies/axiom_mobile_two.jpg"},
+        {"type": "mobile", "label": "", "src": "/media/projects/casestudies/axiom_mobile_three.jpg"}
+      ]
     },
     {
       "label": "Griffith University",

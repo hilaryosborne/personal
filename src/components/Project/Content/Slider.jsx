@@ -7,6 +7,7 @@ import {backgrounds} from 'scripts/styles'
 import {SlideNav} from './SlideNav'
 import {connect} from 'react-redux'
 import {Slide} from './Slide'
+import {DeviceNav} from './DeviceNav'
 
 const styling = {
   mobile: {
@@ -79,6 +80,8 @@ export class Slider extends React.Component {
     this.setDeviceEl = this.setDeviceEl.bind(this)
     this.doNextSlideAction = this.doNextSlideAction.bind(this)
     this.doPrevSlideAction = this.doPrevSlideAction.bind(this)
+    this.doMobileAction = this.doMobileAction.bind(this)
+    this.doLaptopAction = this.doLaptopAction.bind(this)
   }
 
   setDeviceEl (ref) {
@@ -105,29 +108,58 @@ export class Slider extends React.Component {
     return this.getSlides()[index]
   }
 
-  doNextSlideAction () {
+  hasSlides () {
+    return _.get(this.props.project, 'viewing.project.slides', []).length > 0
+  }
+
+  hasDevices () {
+    const slides = _.get(this.props.project, 'viewing.project.slides', [])
+    const mobileCount = _.filter(slides, {type: 'mobile'})
+    const laptopCount = _.filter(slides, {type: 'laptop'})
+    return mobileCount.length > 0 && laptopCount.length > 0
+  }
+
+  doNextSlideAction (e) {
+    e.preventDefault()
     const slides = this.getSlides()
     const index = this.getIndex()
     const newIndex = (index + 1) >= slides.length ? 0 : (index + 1)
     this.props.dispatch({type: 'PROJECT_VIEW_SLIDE', slide: newIndex})
   }
 
-  doPrevSlideAction () {
+  doPrevSlideAction (e) {
+    e.preventDefault()
     const slides = this.getSlides()
     const index = this.getIndex()
     const newIndex = (index - 1) < 0 ? (slides.length - 1) : (index - 1)
     this.props.dispatch({type: 'PROJECT_VIEW_SLIDE', slide: newIndex})
   }
 
+  doMobileAction (e) {
+    e.preventDefault()
+    this.props.dispatch({type: 'PROJECT_VIEW_DEVICE', device: 'mobile'})
+  }
+
+  doLaptopAction (e) {
+    e.preventDefault()
+    this.props.dispatch({type: 'PROJECT_VIEW_DEVICE', device: 'laptop'})
+  }
+
   render () {
-    return (<div className={classnames('d-flex justify-content-center', this.props.className)} style={{...this.props.style}}>
-      <div style={{...styling[this.getDevice()].wrapper}}>
-        <div ref={this.setDeviceEl} style={{...styling[this.getDevice()].inner}}>
-          <Slide slide={this.getSlide()} />
+    return (this.hasSlides() ? <div className={classnames(this.props.className)} style={{...this.props.style}}>
+      {this.hasDevices() ? <div className='d-flex justify-content-center'>
+        <DeviceNav icon='fas fa-laptop' active={this.getDevice() === 'laptop'} onClick={this.doLaptopAction} />
+        <DeviceNav icon='fas fa-mobile-alt' active={this.getDevice() === 'mobile'} onClick={this.doMobileAction} />
+      </div> : null}
+      <div className='d-flex justify-content-center'>
+        <div style={{...styling[this.getDevice()].wrapper}}>
+          <div ref={this.setDeviceEl} style={{...styling[this.getDevice()].inner}}>
+            <Slide slide={this.getSlide()} />
+          </div>
+          <SlideNav direction='left' onClick={this.doPrevSlideAction} />
+          <SlideNav direction='right' onClick={this.doNextSlideAction} />
         </div>
-        <SlideNav direction='left' onClick={this.doPrevSlideAction} />
-        <SlideNav direction='right' onClick={this.doNextSlideAction} />
       </div>
-    </div>)
+    </div> : null)
   }
 }
