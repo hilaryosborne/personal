@@ -1,4 +1,5 @@
 export { Menu } from './Menu'
 export { MenuLink } from './MenuLink'
+export { MenuIcon } from './MenuIcon'
 export { MenuToggle } from './MenuToggle'
 export { MenuDropdown } from './MenuDropdown'

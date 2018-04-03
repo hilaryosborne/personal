@@ -5,7 +5,7 @@ import classnames from 'classnames'
 import _ from 'lodash'
 import { backgrounds } from 'scripts/styles'
 import { SharedLogo } from './'
-import { MenuToggle, Menu, MenuLink } from 'components/Facade'
+import { MenuToggle, Menu, MenuLink, MenuIcon } from 'components/Facade'
 
 const styling = {
   el: {
@@ -84,7 +84,9 @@ export class Header extends React.Component {
               <MenuLink to={'/'}>Home</MenuLink>
               <MenuLink to={'/projects'}>Projects</MenuLink>
               <MenuLink to={'/services'}>Services</MenuLink>
-              <MenuLink to={'https://github.com/hilaryosborne'} external><i className='fab fa-github mr-1' /> Fork me on GitHub</MenuLink>
+              <MenuIcon to={'https://github.com/hilaryosborne'} external><i className='fab fa-github' /></MenuIcon>
+              <MenuIcon to={'https://github.com/hilaryosborne'} external><i className='fab fa-linkedin' /></MenuIcon>
+              <MenuIcon to={'https://github.com/hilaryosborne'} external><i className='fab fa-steam' /></MenuIcon>
             </Menu>
           </div>
         </div>

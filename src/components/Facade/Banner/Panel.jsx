@@ -15,7 +15,7 @@ const styling = {
     },
     full: {
       height: '100vh',
-      maxHeight: '70rem'
+      maxHeight: '50rem'
     },
     half: {
       height: '50vh'

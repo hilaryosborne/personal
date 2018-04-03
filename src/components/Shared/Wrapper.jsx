@@ -4,6 +4,7 @@ import PropType from 'prop-types'
 import classnames from 'classnames'
 import { SharedHeader } from './'
 import { AboutCover } from 'features/About'
+import { SocialBrowse } from 'features/Social'
 
 @radium
 export class Wrapper extends React.Component {
@@ -24,7 +25,7 @@ export class Wrapper extends React.Component {
       className={classnames(this.props.className)}>
       <SharedHeader />
       {this.props.children}
-      <div>SocialSummary</div>
+      <SocialBrowse />
       <AboutCover />
       <div>Footer</div>
     </div>)
