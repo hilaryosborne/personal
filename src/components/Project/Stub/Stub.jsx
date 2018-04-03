@@ -11,7 +11,7 @@ import { Summary } from './Summary'
 
 const styling = {
   wrapper: {
-    paddingBottom: '4rem',
+    paddingBottom: '2rem',
     '@media print': {
       pageBreakInside: 'avoid'
     }

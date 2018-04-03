@@ -551,7 +551,7 @@
       "tags": ["In-House", "Symfony", "jQuery"],
       "summary": [
         "I was contracted to develop a custom online gaming system for multiplayer browser card games",
-        "Worked closely with professional card game players to learn the games, the strategies and the rules for 9 popular middle eastern games",
+        "Worked closely with professional card game pfeatures to learn the games, the strategies and the rules for 9 popular middle eastern games",
         "Developed a custom object orientated PHP server-side API to manage game lobbies, individual sessions, game rules and AI decision making logic.",
         "Developed a jQuery user interface to allow users to navigate the system, manage personal profiles, create and join games as well as play the actual games"
       ],

@@ -5,7 +5,7 @@ import { connect } from 'react-redux'
 import { withRouter } from 'react-router-dom'
 import { SharedWrapper } from 'components/Shared'
 import { PageMeta } from 'components/Facade'
-import { ProjectHero, ProjectDetailed } from 'layers/Project'
+import { ProjectHero, ProjectDetailed } from 'features/Project'
 import PropTypes from 'prop-types'
 
 @connect(state => state)

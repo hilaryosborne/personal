@@ -20,8 +20,8 @@
     "moduleNameMapper": {
       "^media(.*)$": "<rootDir>/src/media$1",
       "^scripts(.*)$": "<rootDir>/src/scripts$1",
-      "^containers(.*)$": "<rootDir>/src/containers$1",
-      "^layers(.*)$": "<rootDir>/src/layers$1",
+      "^endpoints(.*)$": "<rootDir>/src/endpoints$1",
+      "^features(.*)$": "<rootDir>/src/features$1",
       "^components(.*)$": "<rootDir>/src/components$1"
     }
   },

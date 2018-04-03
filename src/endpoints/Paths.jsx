@@ -6,6 +6,7 @@ import { store, history } from 'scripts/store'
 import { NotFound } from './NotFound'
 import { Resume } from './Resume'
 import { Project } from './Project'
+import { Services } from './Services'
 import { Home } from './Home'
 import { Projects } from './Projects'
 import { StyleRoot, Style } from 'radium'
@@ -43,6 +44,7 @@ export class Paths extends React.Component {
             <Route exact path='/' component={Home} />
             <Route exact path='/resume' component={Resume} />
             <Route exact path='/projects' component={Projects} />
+            <Route exact path='/services' component={Services} />
             <Route path='/projects/:slug' component={Project} />
             <Route component={NotFound} />
           </Switch>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { ProjectHero, ProjectTimeline } from 'layers/Project'
+import { ProjectHero, ProjectTimeline } from 'features/Project'
 import { withRouter } from 'react-router-dom'
 import { withAuth } from 'scripts/auth'
 import { SharedWrapper } from 'components/Shared'
