@@ -5,7 +5,7 @@ import classnames from 'classnames'
 import { Layer, Banner, BannerPanel, H1, Lead, Container, Row, Col } from 'components/Facade'
 
 @radium
-export class BannerLayer extends React.Component {
+export class Hero extends React.Component {
   static propTypes = {
     style: PropType.object,
     className: PropType.string

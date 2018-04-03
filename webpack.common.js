@@ -59,6 +59,7 @@ module.exports = {
       media: path.resolve('src/media/'),
       config: path.resolve('src/config/'),
       components: path.resolve('src/components/'),
+      layers: path.resolve('src/layers/'),
       containers: path.resolve('src/containers/'),
       scripts: path.resolve('src/scripts/')
     }

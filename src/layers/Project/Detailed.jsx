@@ -2,12 +2,11 @@ import React from 'react'
 import radium from 'radium'
 import PropType from 'prop-types'
 import classnames from 'classnames'
+import { connect } from 'react-redux'
+import { backgrounds } from 'scripts/styles'
 import { Layer, Container } from 'components/Facade'
 import { SharedElevate } from 'components/Shared'
-import { Title, FullSummary, Slider, Description } from './Content'
-import { Navigation } from './Navigation'
-import { backgrounds } from 'scripts/styles'
-import {connect} from 'react-redux'
+import { Navigation, Description, Summary, Slider, Title } from 'components/Project'
 
 const styling = {
   layer: {
@@ -20,7 +19,7 @@ const styling = {
 
 @radium
 @connect(state => state)
-export class DetailedLayer extends React.Component {
+export class Detailed extends React.Component {
   static propTypes = {
     style: PropType.object,
     className: PropType.string
@@ -33,11 +32,11 @@ export class DetailedLayer extends React.Component {
   }
 
   render () {
-    return (<Layer className={classnames('project-detailed-layer', this.props.className)} style={{...styling.layer, ...this.props.style}}>
+    return (<Layer className={classnames(this.props.className)} style={{...styling.layer, ...this.props.style}}>
       <Container>
         <SharedElevate>
           <Title style={{marginBottom: '1rem'}} />
-          <FullSummary />
+          <Summary />
           <Slider style={{...styling.spacing}} />
           <Description style={{...styling.spacing}} />
           <Navigation style={{...styling.spacing}} />

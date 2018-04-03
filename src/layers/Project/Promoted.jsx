@@ -4,7 +4,7 @@ import PropType from 'prop-types'
 import classnames from 'classnames'
 
 @radium
-export class Browser extends React.Component {
+export class Promoted extends React.Component {
   static propTypes = {
     style: PropType.object,
     className: PropType.string

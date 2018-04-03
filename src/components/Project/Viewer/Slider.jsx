@@ -7,7 +7,7 @@ import {backgrounds} from 'scripts/styles'
 import {SlideNav} from './SlideNav'
 import {connect} from 'react-redux'
 import {Slide} from './Slide'
-import {DeviceNav} from './DeviceNav'
+import {Device} from './Device'
 
 const styling = {
   device: {
@@ -153,8 +153,8 @@ export class Slider extends React.Component {
   render () {
     return (this.hasSlides() ? <div className={classnames(this.props.className)} style={{...this.props.style}}>
       {this.hasDevices() ? <div className='d-flex justify-content-center' style={{...styling.device.spacer}}>
-        <DeviceNav icon='fas fa-laptop' active={this.getDevice() === 'laptop'} onClick={this.doLaptopAction} />
-        <DeviceNav icon='fas fa-mobile-alt' active={this.getDevice() === 'mobile'} onClick={this.doMobileAction} />
+        <Device icon='fas fa-laptop' active={this.getDevice() === 'laptop'} onClick={this.doLaptopAction} />
+        <Device icon='fas fa-mobile-alt' active={this.getDevice() === 'mobile'} onClick={this.doMobileAction} />
       </div> : null}
       <div className='d-flex justify-content-center'>
         <div style={{...styling[this.getDevice()].wrapper}}>

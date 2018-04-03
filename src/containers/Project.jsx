@@ -5,7 +5,7 @@ import { connect } from 'react-redux'
 import { withRouter } from 'react-router-dom'
 import { SharedWrapper } from 'components/Shared'
 import { PageMeta } from 'components/Facade'
-import { ProjectBannerLayer, ProjectDetailedLayer } from 'components/Project'
+import { ProjectHero, ProjectDetailed } from 'layers/Project'
 import PropTypes from 'prop-types'
 
 @connect(state => state)
@@ -36,8 +36,8 @@ export class Project extends React.Component {
   render () {
     return (<SharedWrapper>
       <PageMeta title={_.get(this.props.project, 'viewing.project.label')} />
-      <ProjectBannerLayer />
-      <ProjectDetailedLayer />
+      <ProjectHero />
+      <ProjectDetailed />
     </SharedWrapper>)
   }
 }

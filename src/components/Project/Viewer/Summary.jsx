@@ -9,7 +9,7 @@ import {connect} from 'react-redux'
 
 @radium
 @connect(state => state)
-export class FullSummary extends React.Component {
+export class Summary extends React.Component {
   static propTypes = {
     project: PropType.any,
     style: PropType.object,

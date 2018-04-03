@@ -22,7 +22,7 @@ const styling = {
 }
 
 @radium
-export class DeviceNav extends React.Component {
+export class Device extends React.Component {
   static propTypes = {
     icon: PropType.string,
     active: PropType.bool,
