@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import _ from 'lodash'
 import classnames from 'classnames'
+import {Link} from 'react-router-dom'
 
 export class Summary extends React.Component {
   static propTypes = {
@@ -18,9 +19,14 @@ export class Summary extends React.Component {
     }
   }
 
+  getLink () {
+    if (!this.props.project.slug) { return null }
+    return <Link to={'/projects/' + this.props.project.slug}>[READ MORE]</Link>
+  }
+
   render () {
     return (_.get(this.props.project, 'summary') ? <div className={classnames(this.props.className)}>
-      <i className='fas fa-quote-left mr-1' /> {this.getSummary()}
+      <i className='fas fa-quote-left mr-1' /> {this.getSummary()} {this.getLink()}
     </div> : null)
   }
 }

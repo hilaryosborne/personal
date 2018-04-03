@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import radium from 'radium'
 import _ from 'lodash'
+import { Icon } from './Icon'
 import { Title } from './Title'
 import { Time } from './Time'
 import { Tags } from './Tags'
@@ -10,8 +11,7 @@ import { Summary } from './Summary'
 
 const styling = {
   wrapper: {
-    paddingTop: '2rem',
-    paddingBottom: '2rem',
+    paddingBottom: '4rem',
     '@media print': {
       pageBreakInside: 'avoid'
     }
@@ -26,11 +26,8 @@ export class Stub extends React.Component {
 
     render () {
       return (<div style={{...styling.wrapper}} className='d-flex align-items-center' >
-        <div style={{marginRight: '2.5rem', marginLeft: '1.5rem'}}>
-          <div style={{position: 'relative'}}>
-            <i className='fas fa-code' style={{fontSize: '1.3rem', position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)'}} />
-            <i className='far fa-circle' style={{fontSize: '3rem'}} />
-          </div>
+        <div style={{marginRight: '2rem', marginLeft: '.5rem'}}>
+          <Icon />
         </div>
         <div>
           <Title project={this.props.project} />
