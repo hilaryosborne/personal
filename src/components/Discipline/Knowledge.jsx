@@ -18,7 +18,7 @@ const styles = {
   }
 }
 
-@radium()
+@radium
 export class Knowledge extends React.Component {
   static propTypes = {
     data: PropTypes.any,

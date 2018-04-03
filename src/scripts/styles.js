@@ -37,6 +37,9 @@ export const backgrounds = {
   },
   tomato: {
     color: '#FFF', background: colors.tomato
+  },
+  darkslategray: {
+    color: '#FFF', background: colors.darkslategray
   }
 }
 

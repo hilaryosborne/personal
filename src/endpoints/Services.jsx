@@ -1,5 +1,5 @@
 import React from 'react'
-import { ProjectHero } from 'features/Project'
+import { ServiceHero, ServiceBulletin } from 'features/Service'
 import { withRouter } from 'react-router-dom'
 import { withAuth } from 'scripts/auth'
 import { SharedWrapper } from 'components/Shared'
@@ -10,9 +10,9 @@ import { PageMeta } from 'components/Facade'
 export class Services extends React.Component {
   render () {
     return (<SharedWrapper>
-      <PageMeta title='Project Timeline' />
-      <ProjectHero />
-      Services
+      <PageMeta title='Services' />
+      <ServiceHero />
+      <ServiceBulletin />
     </SharedWrapper>)
   }
 }
