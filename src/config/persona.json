@@ -6,28 +6,28 @@
     "formal": "Hilary Osborne",
     "social":[
       {
-        "type": "website",
-        "label": "Portfolio Homepage",
-        "url": "https://www.hilaryosborne.com",
-        "icon": "fas fa-external-link-square-alt"
+        "type": "linkedin",
+        "featured": true,
+        "label": "Connect with me on Linkedin",
+        "url": "https://www.linkedin.com/in/hilaryosborne",
+        "display_url": "linkedin.com/in/hilaryosborne",
+        "display_label": "Link me on ",
+        "icon": "fab fa-linkedin"
       },
       {
         "type": "github",
-        "label": "Fork me On GitHub",
+        "featured": true,
+        "label": "Fork me on GitHub",
         "url": "https://github.com/hilaryosborne",
-        "icon": "fab fa-github-square"
-      },
-      {
-        "type": "linkedin",
-        "label": "Connect with me on Linkedin",
-        "url": "https://www.linkedin.com/in/hilaryosborne",
-        "icon": "fab fa-linkedin"
+        "display_url": "github.com/hilaryosborne",
+        "display_label": "Fork me on ",
+        "icon": "fab fa-github"
       },
       {
         "type": "steam",
         "label": "Join Me On Steam",
         "url": "http://steamcommunity.com/id/sackrin",
-        "icon": "fab fa-steam-square"
+        "icon": "fab fa-steam"
       }
     ],
     "communication":[

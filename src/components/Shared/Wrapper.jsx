@@ -27,7 +27,6 @@ export class Wrapper extends React.Component {
       {this.props.children}
       <SocialBrowse />
       <AboutCover />
-      <div>Footer</div>
     </div>)
   }
 }

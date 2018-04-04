@@ -1,9 +1,11 @@
+/* eslint-disable no-unused-vars */
 import React from 'react'
 import { Page, Titles, EntireDiscipline, EntireProjects, EntireSocial } from 'components/Resume'
 import { MarkDown } from 'components/Facade/Content'
 import persona from 'config/persona'
 import radium from 'radium'
-import { PageMeta } from 'components'
+import { PageMeta } from 'components/Facade'
+import { resetPage } from 'scripts/utils'
 
 const styling = {
   social: {
@@ -16,6 +18,10 @@ const styling = {
 
 @radium
 export class Resume extends React.Component {
+  componentDidMount () {
+    resetPage()
+  }
+
   render () {
     return (<div>
       <PageMeta title='Printer Friendly Resume' />

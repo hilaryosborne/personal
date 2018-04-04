@@ -5,13 +5,14 @@ import classnames from 'classnames'
 import { connect } from 'react-redux'
 import { backgrounds } from 'scripts/styles'
 import { Layer, Container, Row, Col } from 'components/Facade'
+import { SocialLink } from 'components/Social'
 import _ from 'lodash'
 import persona from 'config/persona'
 
 const styling = {
   layer: {
-    paddingTop: '3rem',
-    paddingBottom: '3rem',
+    paddingTop: '4rem',
+    paddingBottom: '4rem',
     ...backgrounds.tomato
   },
   spacing: {
@@ -32,26 +33,19 @@ export class Browse extends React.Component {
     className: ''
   }
 
-  getRows () {
-    return _.chunk(persona.disciplines, 2)
+  getFeatured () {
+    return _.filter(_.get(persona, 'personal.social', []), {featured: true})
   }
 
   render () {
     return (<Layer className={classnames(this.props.className)} style={{...styling.layer, ...this.props.style}}>
       <Container>
         <Row>
-          <Col md={6}>
-            <div className='text-center'>
-              <p className='mb-1'>Link up with me at <i className='fab fa-linkedin mx-1' /> linkedin</p>
-              <a href='' style={{fontWeight: 'bold', color: '#FFF'}}>github.com/hilaryosborne</a>
-            </div>
-          </Col>
-          <Col md={6}>
-            <div className='text-center'>
-              <p className='mb-1'>Link up with me at <i className='fab fa-linkedin mx-1' /> github</p>
-              <a href='' style={{fontWeight: 'bold', color: '#FFF'}}>linkedin.com/in/hilaryosborne</a>
-            </div>
-          </Col>
+          {_.map(this.getFeatured(), (social, k) => {
+            return (<Col key={k} md={6}>
+              <SocialLink social={social} />
+            </Col>)
+          })}
         </Row>
       </Container>
     </Layer>)

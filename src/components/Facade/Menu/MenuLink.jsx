@@ -34,6 +34,7 @@ export class MenuLink extends React.Component {
   render () {
     return (this.props.external
       ? <a href={this.props.to}
+        target='_blank' rel='noopener noreferrer'
         className={classnames(this.props.className)}
         style={{...styling.el, ...this.props.style}}>
         {this.props.children}</a>

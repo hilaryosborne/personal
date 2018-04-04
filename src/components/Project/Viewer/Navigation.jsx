@@ -69,14 +69,14 @@ export class Navigation extends React.Component {
     this.getPrevious()
     return (<div style={{...styling.wrapper, ...this.props.style}} className={classnames(this.props.className)}>
       <Row>
-        <Col md='4' className='text-left'>
-          <Link title={this.getPrevious().label} to={'/projects/' + this.getPrevious().slug} style={{...styling.link}}><i className='fas fa-chevron-left mr-2' /> Previous Project</Link>
+        <Col xs='4' className='text-left'>
+          <Link title={this.getPrevious().label} to={'/projects/' + this.getPrevious().slug} style={{...styling.link}}><i className='fas fa-chevron-left mr-2' /> Previous <span className='d-none d-md-inline'>Project</span></Link>
         </Col>
-        <Col md='4' className='text-center'>
-          <Link to='/projects' style={{...styling.link}}>View All Projects</Link>
+        <Col xs='4' className='text-center'>
+          <Link to='/projects' style={{...styling.link}}>View All <span className='d-none d-md-inline'>Projects</span></Link>
         </Col>
-        <Col md='4' className='text-right'>
-          <Link title={this.getNext().label} to={'/projects/' + this.getNext().slug} style={{...styling.link}}>Next Project <i className='fas fa-chevron-right ml-2' /></Link>
+        <Col xs='4' className='text-right'>
+          <Link title={this.getNext().label} to={'/projects/' + this.getNext().slug} style={{...styling.link}}>Next <span className='d-none d-md-inline'>Project</span> <i className='fas fa-chevron-right ml-2' /></Link>
         </Col>
       </Row>
     </div>)

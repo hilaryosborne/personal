@@ -70,13 +70,13 @@ export const breakpoints = {
 export const mediaQueryBelow = (breakpoint, rules) => {
   const point = _.get(breakpoints, '.' + breakpoint, '768px')
   const query = {}
-  query['@media (max-width: ' + point + ')'] = {...rules}
+  query['@media screen and (max-width: ' + point + ')'] = {...rules}
   return query
 }
 
 export const mediaQueryAbove = (breakpoint, rules) => {
   const point = _.get(breakpoints, '.' + breakpoint, '768px')
   const query = {}
-  query['@media (min-width: ' + point + ')'] = {...rules}
+  query['@media screen and (min-width: ' + point + ')'] = {...rules}
   return query
 }

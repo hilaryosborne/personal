@@ -7,6 +7,7 @@ import { SharedWrapper } from 'components/Shared'
 import { PageMeta } from 'components/Facade'
 import { ProjectHero, ProjectDetailed } from 'features/Project'
 import PropTypes from 'prop-types'
+import {resetPage} from 'scripts/utils'
 
 @connect(state => state)
 @withRouter
@@ -20,6 +21,7 @@ export class Project extends React.Component {
     const propSlug = _.get(nextProps, 'match.params.slug', '')
     const stateSlug = _.get(prevState, 'slug', '')
     if (propSlug !== stateSlug) {
+      resetPage()
       nextProps.dispatch({type: 'PROJECT_VIEW_LOAD', slug: propSlug})
       return {...prevState, slug: propSlug}
     }
@@ -31,6 +33,10 @@ export class Project extends React.Component {
     this.state = {
       slug: false
     }
+  }
+
+  componentDidMount () {
+    resetPage()
   }
 
   render () {

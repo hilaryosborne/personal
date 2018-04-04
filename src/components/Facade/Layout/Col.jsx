@@ -6,11 +6,11 @@ import classnames from 'classnames'
 @radium
 export class Col extends React.Component {
   static propTypes = {
-    xs: PropTypes.string,
-    sm: PropTypes.string,
-    md: PropTypes.string,
-    lg: PropTypes.string,
-    xl: PropTypes.string,
+    xs: PropTypes.any,
+    sm: PropTypes.any,
+    md: PropTypes.any,
+    lg: PropTypes.any,
+    xl: PropTypes.any,
     style: PropTypes.object,
     children: PropTypes.any,
     className: PropTypes.string
@@ -43,7 +43,7 @@ export class Col extends React.Component {
   }
 
   render () {
-    return (<div className={classnames('col', this.getCols(), this.props.className)} style={[this.props.style]}>
+    return (<div className={classnames('col', this.getCols(), this.props.className)} style={{...this.props.style}}>
       {this.props.children}
     </div>)
   }

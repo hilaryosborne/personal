@@ -5,11 +5,11 @@ import * as base from 'scripts/styles'
 
 const styles = {
   container: {
+    fontSize: '19px',
     ...base.backgrounds.white,
     marginTop: '4rem',
     marginBottom: '4rem',
     padding: '6rem 6rem 9rem 6rem',
-    fontSize: '1.2rem',
     '@media (max-width: 768px)': {
       padding: '1rem',
       marginTop: '0',

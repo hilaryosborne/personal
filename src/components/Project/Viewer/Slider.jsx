@@ -3,60 +3,17 @@ import radium from 'radium'
 import PropType from 'prop-types'
 import classnames from 'classnames'
 import _ from 'lodash'
-import {backgrounds} from 'scripts/styles'
 import {SlideNav} from './SlideNav'
 import {connect} from 'react-redux'
 import {Slide} from './Slide'
 import {Device} from './Device'
+import {Wrapper} from './Wrapper'
+import {Inner} from './Inner'
 
 const styling = {
   device: {
     spacer: {
       marginBottom: '1rem'
-    }
-  },
-  mobile: {
-    wrapper: {
-      position: 'relative',
-      display: 'block',
-      width: '21rem',
-      height: '41rem',
-      backgroundImage: 'url(/media/projects/device_mobile.png)',
-      backgroundPosition: 'center',
-      backgroundRepeat: 'no-repeat',
-      backgroundSize: 'contain'
-    },
-    inner: {
-      position: 'absolute',
-      display: 'block',
-      overflow: 'hidden',
-      top: '5.47rem',
-      left: '1.64rem',
-      right: '1.64rem',
-      bottom: '6.47rem',
-      ...backgrounds.white
-    }
-  },
-  laptop: {
-    wrapper: {
-      position: 'relative',
-      display: 'block',
-      width: '48.2rem',
-      height: '30.3rem',
-      backgroundImage: 'url(/media/projects/device_laptop.png)',
-      backgroundPosition: 'center',
-      backgroundRepeat: 'no-repeat',
-      backgroundSize: 'contain'
-    },
-    inner: {
-      position: 'absolute',
-      display: 'block',
-      overflow: 'hidden',
-      top: '2.05rem',
-      left: '5.8rem',
-      right: '5.4rem',
-      bottom: '5.2rem',
-      ...backgrounds.white
     }
   }
 }
@@ -76,24 +33,12 @@ export class Slider extends React.Component {
     className: ''
   }
 
-  deviceEl
-
-  deviceKinetic
-
   constructor (props) {
     super(props)
-    this.setDeviceEl = this.setDeviceEl.bind(this)
     this.doNextSlideAction = this.doNextSlideAction.bind(this)
     this.doPrevSlideAction = this.doPrevSlideAction.bind(this)
     this.doMobileAction = this.doMobileAction.bind(this)
     this.doLaptopAction = this.doLaptopAction.bind(this)
-  }
-
-  setDeviceEl (ref) {
-    if (!ref || this.deviceEl) { return }
-    this.deviceEl = ref
-    const Kinetic = window.VanillaKinetic
-    this.deviceKinetic = new Kinetic(this.deviceEl)
   }
 
   getDevice () {
@@ -157,13 +102,13 @@ export class Slider extends React.Component {
         <Device icon='fas fa-mobile-alt' active={this.getDevice() === 'mobile'} onClick={this.doMobileAction} />
       </div> : null}
       <div className='d-flex justify-content-center'>
-        <div style={{...styling[this.getDevice()].wrapper}}>
-          <div ref={this.setDeviceEl} style={{...styling[this.getDevice()].inner}}>
+        <Wrapper device={this.getDevice()}>
+          <Inner device={this.getDevice()}>
             <Slide slide={this.getSlide()} />
-          </div>
+          </Inner>
           <SlideNav direction='left' onClick={this.doPrevSlideAction} />
           <SlideNav direction='right' onClick={this.doNextSlideAction} />
-        </div>
+        </Wrapper>
       </div>
     </div> : null)
   }

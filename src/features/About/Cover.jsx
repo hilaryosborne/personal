@@ -5,11 +5,12 @@ import classnames from 'classnames'
 import { backgrounds } from 'scripts/styles'
 import { Layer, Container } from 'components/Facade'
 import { Title, Summary } from 'components/About'
+import { ResumeLink } from 'components/Resume'
 
 const styling = {
   layer: {
-    paddingTop: '3rem',
-    paddingBottom: '3rem',
+    paddingTop: '4rem',
+    paddingBottom: '4rem',
     ...backgrounds.darkslategray
   },
   spacing: {
@@ -34,6 +35,7 @@ export class Cover extends React.Component {
       <Container>
         <Title />
         <Summary style={{...styling.spacing}} />
+        <ResumeLink style={{...styling.spacing}} />
       </Container>
     </Layer>)
   }
