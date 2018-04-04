@@ -25,9 +25,9 @@ export class Hero extends React.Component {
           className='align-items-center'>
           <Container>
             <Row>
-              <Col md='8'>
-                <H1>Scope. Code. Test. <br />Caffeine. Repeat!</H1>
-                <Lead className='lead'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a nunc consectetur, mollis mauris sed.</Lead>
+              <Col md='10'>
+                <H1>I taught my 7 year old <br />How to code HTML</H1>
+                <Lead>Web development is my life and barely a day goes by that I am not learning, teaching or practicing my trade.</Lead>
               </Col>
             </Row>
           </Container>
