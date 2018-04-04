@@ -1,5 +1,5 @@
 import React from 'react'
-import { ServiceHero, ServiceBulletin } from 'features/Service'
+import { ServiceHero, ServiceBrowse, ServiceCatalog } from 'features/Service'
 import { withRouter } from 'react-router-dom'
 import { withAuth } from 'scripts/auth'
 import { SharedWrapper } from 'components/Shared'
@@ -17,7 +17,8 @@ export class Services extends React.Component {
     return (<SharedWrapper>
       <PageMeta title='Services' />
       <ServiceHero />
-      <ServiceBulletin />
+      <ServiceBrowse />
+      <ServiceCatalog style={{paddingBottom: '3rem'}} />
     </SharedWrapper>)
   }
 }

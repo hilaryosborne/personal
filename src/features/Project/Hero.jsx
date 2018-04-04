@@ -26,8 +26,8 @@ export class Hero extends React.Component {
           <Container>
             <Row>
               <Col md='10'>
-                <H1>It's 3am, needs to ship... <br />Just one more commit..</H1>
-                <Lead className='lead'>I engage in a number of ongoing professional and private projects ranging from web applications to utility libraries.</Lead>
+                <H1>It's 3am, need to ship... <br />Just one more commit..</H1>
+                <Lead className='lead'>The curse of loving what you get paid to do! I spend an unhealthy amount of time working on projects for clients and projects for myself. What can I say... it's an obsession!</Lead>
               </Col>
             </Row>
           </Container>

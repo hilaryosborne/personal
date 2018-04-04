@@ -25,7 +25,7 @@ export const typography = {
   p: { fontSize: '1rem' },
   lead: { fontSize: '1.4rem', lineHeight: '2rem' },
   h1: { ...fonts.raleway, textTransform: 'uppercase', fontWeight: '900', fontSize: '2.8rem' },
-  h2: { ...fonts.raleway, textTransform: 'uppercase', fontWeight: 'bold', fontSize: '2rem' },
+  h2: { ...fonts.raleway, textTransform: 'uppercase', fontWeight: '900', fontSize: '2.4rem' },
   h3: { ...fonts.lora, fontWeight: '900', fontSize: '1.3rem' },
   h4: { ...fonts.lora },
   h5: { ...fonts.lora }

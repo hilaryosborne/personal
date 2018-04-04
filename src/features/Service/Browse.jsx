@@ -21,7 +21,7 @@ const styling = {
 
 @radium
 @connect(state => state)
-export class Bulletin extends React.Component {
+export class Browse extends React.Component {
   static propTypes = {
     style: PropTypes.object,
     className: PropTypes.string

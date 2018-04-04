@@ -1,2 +1,3 @@
 export { Hero as ServiceHero } from './Hero'
-export { Bulletin as ServiceBulletin } from './Bulletin'
+export { Browse as ServiceBrowse } from './Browse'
+export { Catalog as ServiceCatalog } from './Catalog'

@@ -27,7 +27,7 @@ export class Hero extends React.Component {
             <Row>
               <Col md='10'>
                 <H1>I taught my 7 year old <br />How to code HTML</H1>
-                <Lead>Web development is my life and barely a day goes by that I am not learning, teaching or practicing my trade.</Lead>
+                <Lead>So I guess that means I better be bloody good at what I do or she might take my job! With that fear, I constantly strive to stay ahead of the modern industry... and her.</Lead>
               </Col>
             </Row>
           </Container>
