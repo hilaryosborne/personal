@@ -18,8 +18,8 @@ const styling = {
   }
 }
 
-@radium
 @connect(state => state)
+@radium
 export class Slider extends React.Component {
   static propTypes = {
     project: PropType.object,

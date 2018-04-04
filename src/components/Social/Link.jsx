@@ -3,11 +3,14 @@ import radium from 'radium'
 import PropTypes from 'prop-types'
 import classnames from 'classnames'
 import _ from 'lodash'
-import { typography } from 'scripts/styles'
+import { typography, mediaQueryBelow } from 'scripts/styles'
 
 const styling = {
   el: {
-    ...typography.lead
+    ...typography.lead,
+    ...mediaQueryBelow('md', {
+      marginBottom: '2rem'
+    })
   },
   link: {
     fontWeight: 'bold',

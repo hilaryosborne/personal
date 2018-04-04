@@ -4,8 +4,8 @@ import classnames from 'classnames'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 
-@radium
 @connect(state => state)
+@radium
 export class MenuToggle extends React.Component {
   static propTypes = {
     dispatch: PropTypes.func,

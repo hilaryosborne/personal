@@ -3,7 +3,7 @@ import radium from 'radium'
 import PropTypes from 'prop-types'
 import classnames from 'classnames'
 import { connect } from 'react-redux'
-import { backgrounds } from 'scripts/styles'
+import { backgrounds, mediaQueryBelow } from 'scripts/styles'
 import { Layer, Container, Row, Col } from 'components/Facade'
 import { SocialLink } from 'components/Social'
 import _ from 'lodash'
@@ -13,7 +13,11 @@ const styling = {
   layer: {
     paddingTop: '4rem',
     paddingBottom: '4rem',
-    ...backgrounds.tomato
+    ...backgrounds.tomato,
+    ...mediaQueryBelow('md', {
+      paddingTop: '2rem',
+      paddingBottom: '0'
+    })
   },
   spacing: {
     marginTop: '3rem'

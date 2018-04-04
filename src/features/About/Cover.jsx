@@ -2,16 +2,20 @@ import React from 'react'
 import radium from 'radium'
 import PropTypes from 'prop-types'
 import classnames from 'classnames'
-import { backgrounds } from 'scripts/styles'
 import { Layer, Container } from 'components/Facade'
 import { Title, Summary } from 'components/About'
 import { ResumeLink } from 'components/Resume'
+import { mediaQueryBelow, backgrounds } from 'scripts/styles'
 
 const styling = {
   layer: {
     paddingTop: '4rem',
     paddingBottom: '4rem',
-    ...backgrounds.darkslategray
+    ...backgrounds.darkslategray,
+    ...mediaQueryBelow('md', {
+      paddingTop: '1rem',
+      paddingBottom: '1rem'
+    })
   },
   spacing: {
     marginTop: '2rem'
