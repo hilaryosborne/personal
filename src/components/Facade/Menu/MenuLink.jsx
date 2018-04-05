@@ -34,7 +34,7 @@ export class MenuLink extends React.Component {
   }
 
   doClickAction () {
-    this.props.dispatch({'type': 'FACADE_MENU_TOGGLE'})
+    this.props.dispatch({'type': 'FACADE_MENU_HIDE'})
   }
 
   render () {
