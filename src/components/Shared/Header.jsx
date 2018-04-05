@@ -85,7 +85,9 @@ export class Header extends React.Component {
               <MenuLink to={'/'}>Home</MenuLink>
               <MenuLink to={'/projects'}>Projects</MenuLink>
               <MenuLink to={'/services'}>Services</MenuLink>
-              <SocialIcons />
+              <div className='d-block d-md-inline p-2'>
+                <SocialIcons />
+              </div>
             </Menu>
           </div>
         </div>

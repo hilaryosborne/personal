@@ -58,7 +58,7 @@
       "label": "General Consulting",
       "includes": ["scoping", "conceptual", "development", "project management", "devops"],
       "availability": "Available 15hrs/week",
-      "rate": "$80.00",
+      "rate": "$85.00",
       "unit": "hr"
     },
     {
@@ -66,14 +66,14 @@
       "includes": ["scoping", "conceptual", "development", "project management", "devops"],
       "conditions": "Monthly commitment and review",
       "availability": "Available 15hrs/week",
-      "rate": "$80.00",
+      "rate": "$85.00",
       "unit": "hr"
     },
     {
       "label": "Web Tutoring",
       "includes": ["lessons", "assessments", "marking", "mentorship"],
       "availability": "Booked Out",
-      "rate": "$85.00",
+      "rate": "$60.00",
       "unit": "hr"
     },
     {
@@ -81,7 +81,7 @@
       "includes": ["development", "devops"],
       "conditions": "Minimum 3 month contact",
       "availability": "Upon Request",
-      "rate": "$460.00",
+      "rate": "$680.00",
       "unit": "day"
     }
   ],
