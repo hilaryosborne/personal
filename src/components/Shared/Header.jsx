@@ -3,7 +3,7 @@ import radium from 'radium'
 import PropType from 'prop-types'
 import classnames from 'classnames'
 import _ from 'lodash'
-import { backgrounds } from 'scripts/styles'
+import { backgrounds, mediaQueryBelow } from 'scripts/styles'
 import { SharedLogo } from './'
 import { MenuToggle, Menu, MenuLink } from 'components/Facade'
 import { SocialIcons } from 'components/Social'
@@ -14,7 +14,11 @@ const styling = {
     zIndex: 999,
     top: 0,
     left: 0,
-    right: 0
+    right: 0,
+    ...mediaQueryBelow('md', {
+      position: 'fixed',
+      ...backgrounds.tomato
+    })
   },
   attached: {
     position: 'absolute'
@@ -76,7 +80,7 @@ export class Header extends React.Component {
 
   render () {
     return (<div style={{...styling.el, ...styling[this.state.status], ...this.props.style}} className={classnames(this.props.className)}>
-      <div className='container p-2'>
+      <div className='container p-3 p-md-2'>
         <div className='d-flex align-items-center'>
           <SharedLogo />
           <div className='ml-auto d-flex'>
@@ -85,7 +89,7 @@ export class Header extends React.Component {
               <MenuLink to={'/'}>Home</MenuLink>
               <MenuLink to={'/projects'}>Projects</MenuLink>
               <MenuLink to={'/services'}>Services</MenuLink>
-              <div className='d-block d-md-inline p-2'>
+              <div className='d-block d-md-inline p-3 p-md-2'>
                 <SocialIcons />
               </div>
             </Menu>

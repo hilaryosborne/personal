@@ -11,7 +11,7 @@ const styling = {
     ...mediaQueryBelow('md', {
       ...backgrounds.tomato,
       position: 'fixed',
-      top: '4rem',
+      top: '3.8rem',
       left: '0',
       right: '0'
     })

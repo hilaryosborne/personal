@@ -4,6 +4,7 @@ import classnames from 'classnames'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { mediaQueryBelow } from 'scripts/styles'
+import _ from 'lodash'
 
 const styling = {
   el: {
@@ -31,12 +32,16 @@ export class MenuToggle extends React.Component {
     this.props.dispatch({'type': 'FACADE_MENU_TOGGLE'})
   }
 
+  getVisibility () {
+    return _.get(this.props, 'facade.menu.toggle', false)
+  }
+
   render () {
     return (<a
       onClick={this.doClickAction}
-      className={classnames('d-sm-none', this.props.className)}
+      className={classnames('d-sm-none px-2', this.props.className)}
       style={{...styling.el, ...this.props.style}}>
-      <i className='fas fa-bars' />
+      <i className={classnames('fas', {'fa-bars': !this.getVisibility(), 'fa-times': this.getVisibility()})} />
     </a>)
   }
 }

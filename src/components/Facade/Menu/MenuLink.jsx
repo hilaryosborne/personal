@@ -41,12 +41,12 @@ export class MenuLink extends React.Component {
     return (this.props.external
       ? <a href={this.props.to}
         target='_blank' rel='noopener noreferrer'
-        className={classnames('d-block d-md-inline', this.props.className)}
+        className={classnames('d-block px-3 py-3 py-md-0 d-md-inline', this.props.className)}
         style={{...styling.el, ...this.props.style}}>
         {this.props.children}</a>
       : <Link {...filterProps(this.props, Link)}
         onClick={this.doClickAction}
-        className={classnames('d-block d-md-inline', this.props.className)}
+        className={classnames('d-block px-3 py-3 py-md-0 d-md-inline', this.props.className)}
         style={{...styling.el, ...this.props.style}}>
         {this.props.children}
       </Link>)
