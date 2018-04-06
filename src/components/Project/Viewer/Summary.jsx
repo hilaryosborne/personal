@@ -30,15 +30,19 @@ export class Summary extends React.Component {
     }
   }
 
+  getBlurb () {
+    return _.get(this.props.project, 'viewing.project.blurb')
+  }
+
   render () {
     return (<div className={classnames(this.props.className)} style={{...this.props.style}}>
-      <Row className='mb-3'>
+      {this.getBlurb() ? <Row className='mb-3 mb-md-4'>
         <Col md='12'>
-          <Lead>{_.get(this.props.project, 'viewing.project.blurb')}</Lead>
+          <Lead className='mb-0'>{_.get(this.props.project, 'viewing.project.blurb')}</Lead>
         </Col>
-      </Row>
+      </Row> : null }
       <Row>
-        <Col md={'7'}>
+        <Col md={'7'} className='mb-3 mb-md-0'>
           {this.getSummary()}
         </Col>
         <Col md={'5'}>

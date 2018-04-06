@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 import { Row, Col } from 'components/Facade'
 import { connect } from 'react-redux'
 import persona from 'config/persona'
-import {colors} from 'scripts/styles'
+import { colors } from 'scripts/styles'
 
 const styling = {
   wrapper: {
@@ -19,8 +19,8 @@ const styling = {
   }
 }
 
-@radium
 @connect(state => state)
+@radium
 export class Navigation extends React.Component {
   static propTypes = {
     project: PropType.object,

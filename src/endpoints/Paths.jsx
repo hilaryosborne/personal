@@ -9,6 +9,7 @@ import { Project } from './Project'
 import { Services } from './Services'
 import { Home } from './Home'
 import { Projects } from './Projects'
+import { LayoutSpacing } from 'components/Layout'
 import { StyleRoot, Style } from 'radium'
 import { backgrounds, typography } from 'scripts/styles'
 
@@ -38,6 +39,7 @@ export class Paths extends React.Component {
   render () {
     return (<StyleRoot>
       <Style rules={styling} />
+      <LayoutSpacing />
       <Provider store={store}>
         <ConnectedRouter history={history}>
           <Switch>

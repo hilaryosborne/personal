@@ -7,17 +7,31 @@ export const breakpoints = {
   'xl': '1200px'
 }
 
+export const mediaBelow = (breakpoint, rules) => {
+  const point = _.get(breakpoints, '.' + breakpoint, '768px')
+  const query = {}
+  query['(max-width: ' + point + ')'] = {...rules}
+  return query
+}
+
+export const mediaAbove = (breakpoint, rules) => {
+  const point = _.get(breakpoints, '.' + breakpoint, '768px')
+  const query = {}
+  query['(min-width: ' + point + ')'] = {...rules}
+  return query
+}
+
 export const mediaQueryBelow = (breakpoint, rules) => {
   const point = _.get(breakpoints, '.' + breakpoint, '768px')
   const query = {}
-  query['@media screen and (max-width: ' + point + ')'] = {...rules}
+  query['@media (max-width: ' + point + ')'] = {...rules}
   return query
 }
 
 export const mediaQueryAbove = (breakpoint, rules) => {
   const point = _.get(breakpoints, '.' + breakpoint, '768px')
   const query = {}
-  query['@media screen and (min-width: ' + point + ')'] = {...rules}
+  query['@media (min-width: ' + point + ')'] = {...rules}
   return query
 }
 
