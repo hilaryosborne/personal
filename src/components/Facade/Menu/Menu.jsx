@@ -10,6 +10,8 @@ const styling = {
   el: {
     ...mediaQueryBelow('md', {
       ...backgrounds.tomato,
+      paddingTop: '1rem',
+      paddingBottom: '1rem',
       position: 'fixed',
       top: '3.8rem',
       left: '0',

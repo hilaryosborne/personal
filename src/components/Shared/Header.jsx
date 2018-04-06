@@ -5,8 +5,8 @@ import classnames from 'classnames'
 import _ from 'lodash'
 import { backgrounds, mediaQueryBelow } from 'scripts/styles'
 import { SharedLogo } from './'
-import { MenuToggle, Menu, MenuLink } from 'components/Facade'
-import { SocialIcons } from 'components/Social'
+import { MenuToggle, Menu, MenuRouteLink, MenuDivider } from 'components/Facade'
+import { SocialMenuIcons } from 'components/Social'
 
 const styling = {
   el: {
@@ -86,12 +86,11 @@ export class Header extends React.Component {
           <div className='ml-auto d-flex'>
             <MenuToggle />
             <Menu>
-              <MenuLink to={'/'}>Home</MenuLink>
-              <MenuLink to={'/projects'}>Projects</MenuLink>
-              <MenuLink to={'/services'}>Services</MenuLink>
-              <div className='d-block d-md-inline p-3 p-md-2'>
-                <SocialIcons />
-              </div>
+              <MenuRouteLink to={'/'} className='px-3 py-2 py-md-0'>Home</MenuRouteLink>
+              <MenuRouteLink to={'/projects'} className='px-3 py-2 py-md-0'>Projects</MenuRouteLink>
+              <MenuRouteLink to={'/services'} className='px-3 py-2 py-md-0'>Services</MenuRouteLink>
+              <MenuDivider className='d-block d-md-none' />
+              <SocialMenuIcons />
             </Menu>
           </div>
         </div>
