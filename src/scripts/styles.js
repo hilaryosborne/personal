@@ -1,5 +1,26 @@
 import _ from 'lodash'
 
+export const breakpoints = {
+  'sm': '576px',
+  'md': '768px',
+  'lg': '992px',
+  'xl': '1200px'
+}
+
+export const mediaQueryBelow = (breakpoint, rules) => {
+  const point = _.get(breakpoints, '.' + breakpoint, '768px')
+  const query = {}
+  query['@media screen and (max-width: ' + point + ')'] = {...rules}
+  return query
+}
+
+export const mediaQueryAbove = (breakpoint, rules) => {
+  const point = _.get(breakpoints, '.' + breakpoint, '768px')
+  const query = {}
+  query['@media screen and (min-width: ' + point + ')'] = {...rules}
+  return query
+}
+
 export const fonts = {
   raleway: { fontFamily: 'Raleway, sans-serif' },
   lora: { fontFamily: 'Lora, serif' }
@@ -24,8 +45,22 @@ export const typography = {
   body: { ...fonts.lora, fontSize: '21px' },
   p: { fontSize: '1rem' },
   lead: { fontSize: '1.4rem', lineHeight: '2rem' },
-  h1: { ...fonts.raleway, textTransform: 'uppercase', fontWeight: '900', fontSize: '2.8rem' },
-  h2: { ...fonts.raleway, textTransform: 'uppercase', fontWeight: '900', fontSize: '2.4rem' },
+  h1: { ...fonts.raleway,
+    textTransform: 'uppercase',
+    fontWeight: '900',
+    fontSize: '2.8rem',
+    ...mediaQueryBelow('md', {
+      fontSize: '2.2rem'
+    })
+  },
+  h2: { ...fonts.raleway,
+    textTransform: 'uppercase',
+    fontWeight: '900',
+    fontSize: '2.4rem',
+    ...mediaQueryBelow('md', {
+      fontSize: '2.2rem'
+    })
+  },
   h3: { ...fonts.lora, fontWeight: '900', fontSize: '1.3rem' },
   h4: { ...fonts.lora },
   h5: { ...fonts.lora }
@@ -58,25 +93,4 @@ export const underline = {
     background: colors.tomato,
     height: '.4rem'
   }
-}
-
-export const breakpoints = {
-  'sm': '576px',
-  'md': '768px',
-  'lg': '992px',
-  'xl': '1200px'
-}
-
-export const mediaQueryBelow = (breakpoint, rules) => {
-  const point = _.get(breakpoints, '.' + breakpoint, '768px')
-  const query = {}
-  query['@media screen and (max-width: ' + point + ')'] = {...rules}
-  return query
-}
-
-export const mediaQueryAbove = (breakpoint, rules) => {
-  const point = _.get(breakpoints, '.' + breakpoint, '768px')
-  const query = {}
-  query['@media screen and (min-width: ' + point + ')'] = {...rules}
-  return query
 }

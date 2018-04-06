@@ -8,10 +8,14 @@ import { Time } from './Time'
 import { Tags } from './Tags'
 import { Link } from './Link'
 import { Summary } from './Summary'
+import { mediaQueryBelow } from 'scripts/styles'
 
 const styling = {
   wrapper: {
     paddingBottom: '2rem',
+    ...mediaQueryBelow('md', {
+      paddingBottom: '1.5rem'
+    }),
     '@media print': {
       pageBreakInside: 'avoid'
     }
@@ -26,7 +30,7 @@ export class Stub extends React.Component {
 
     render () {
       return (<div style={{...styling.wrapper}} className='d-flex align-items-center' >
-        <div style={{marginRight: '2rem', marginLeft: '.5rem'}}>
+        <div style={{marginRight: '2rem', marginLeft: '.5rem'}} className='d-none d-md-block'>
           <Icon />
         </div>
         <div>

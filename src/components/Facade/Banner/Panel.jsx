@@ -2,6 +2,7 @@ import React from 'react'
 import radium from 'radium'
 import classnames from 'classnames'
 import PropTypes from 'prop-types'
+import {mediaQueryBelow} from 'scripts/styles'
 
 const styling = {
   core: {
@@ -15,10 +16,20 @@ const styling = {
     },
     full: {
       height: '100vh',
-      maxHeight: '50rem'
+      maxHeight: '50rem',
+      ...mediaQueryBelow('md', {
+        paddingTop: '8rem',
+        paddingBottom: '3.5rem',
+        height: 'auto'
+      })
     },
     half: {
-      height: '50vh'
+      height: '50vh',
+      ...mediaQueryBelow('md', {
+        paddingTop: '8rem',
+        paddingBottom: '3.5rem',
+        height: 'auto'
+      })
     }
   }
 }

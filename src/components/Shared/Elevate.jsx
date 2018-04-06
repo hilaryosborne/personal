@@ -11,7 +11,7 @@ const styling = {
     padding: '1rem 1.5rem',
     margin: '-3.5rem -1.5rem 0 -1.5rem',
     ...mediaQueryBelow('md', {
-      padding: '.5rem 0',
+      padding: '1rem 0',
       margin: '0'
     })
   }

@@ -18,7 +18,10 @@ const styling = {
     })
   },
   spacing: {
-    marginTop: '2rem'
+    marginTop: '2rem',
+    ...mediaQueryBelow('md', {
+      marginTop: '1rem'
+    })
   }
 }
 
