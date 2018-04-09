@@ -35,13 +35,15 @@ export class MenuRouteLink extends React.Component {
     this.doClickAction = this.doClickAction.bind(this)
   }
 
-  doClickAction () {
+  doClickAction (e) {
+    e.preventDefault()
     this.props.history.push(this.props.to)
     this.props.dispatch({'type': 'FACADE_MENU_HIDE'})
   }
 
   render () {
     return (<a onClick={this.doClickAction}
+      href={this.props.to}
       className={classnames('d-block d-md-inline', this.props.className)}
       style={{...styling.base, ...this.props.style}}>{this.props.children}</a>)
   }

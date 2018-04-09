@@ -1,6 +1,7 @@
 import React from 'react'
 import radium from 'radium'
 import PropType from 'prop-types'
+import _ from 'lodash'
 import classnames from 'classnames'
 import { backgrounds, mediaQueryBelow } from 'scripts/styles'
 
@@ -60,6 +61,18 @@ export class Inner extends React.Component {
   constructor (props) {
     super(props)
     this.setDeviceEl = this.setDeviceEl.bind(this)
+  }
+
+  componentDidUpdate (prevProps, prevState, snapshot) {
+    const prevSlug = _.get(prevProps, 'project.viewing.project.slug')
+    const nextSlug = _.get(this.props, 'project.viewing.project.slug')
+    if (prevSlug !== nextSlug && this.deviceKinetic) {
+      this.deviceKinetic.scrollTop(0)
+    }
+  }
+
+  componentWillUnmount () {
+    this.deviceKinetic.detach()
   }
 
   setDeviceEl (ref) {

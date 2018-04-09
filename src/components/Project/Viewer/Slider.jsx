@@ -103,7 +103,7 @@ export class Slider extends React.Component {
       </div> : null}
       <div className='d-flex justify-content-center'>
         <Wrapper device={this.getDevice()}>
-          <Inner device={this.getDevice()}>
+          <Inner project={this.props.project} device={this.getDevice()}>
             <Slide slide={this.getSlide()} />
           </Inner>
           <SlideNav direction='left' onClick={this.doPrevSlideAction} />
