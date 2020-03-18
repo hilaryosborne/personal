@@ -22,7 +22,6 @@ jobs:
           name: Install Yarn
           command: |
             sudo npm install -g yarn
-            sudo chmod a+x /usr/local/bin/yarn
       - restore_cache:
           key: v1-repo-{{ .Environment.CIRCLE_SHA1 }}
       - restore_cache:
