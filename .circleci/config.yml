@@ -4,7 +4,7 @@ jobs:
 
   app_checkout:
     docker:
-      - image: circleci/node:9-stretch-browsers
+      - image: circleci/node:8-stretch-browsers
     working_directory: ~/build
     steps:
       - checkout
@@ -15,7 +15,7 @@ jobs:
 
   node_dependencies:
     docker:
-      - image: circleci/node:9-stretch-browsers
+      - image: circleci/node:8-stretch-browsers
     working_directory: ~/build
     steps:
       - run:
@@ -37,7 +37,7 @@ jobs:
 
   testing:
       docker:
-        - image: circleci/node:9-stretch-browsers
+        - image: circleci/node:8-stretch-browsers
       working_directory: ~/build
       steps:
         - restore_cache:
@@ -53,7 +53,7 @@ jobs:
 
   precompile:
     docker:
-      - image: circleci/node:9-stretch-browsers
+      - image: circleci/node:8-stretch-browsers
     working_directory: ~/build
     steps:
       - run:
@@ -74,7 +74,7 @@ jobs:
 
   deploy_production:
     docker:
-      - image: circleci/node:9-stretch-browsers
+      - image: circleci/node:8-stretch-browsers
     working_directory: ~/build
     steps:
       - attach_workspace:
@@ -91,7 +91,7 @@ jobs:
 
   deploy_staging:
     docker:
-      - image: circleci/node:9-stretch-browsers
+      - image: circleci/node:8-stretch-browsers
     working_directory: ~/build
     steps:
       - attach_workspace:
