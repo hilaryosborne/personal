@@ -17,7 +17,7 @@ export class Hero extends React.Component {
   }
 
   render () {
-    return (<Layer className={classnames('project-banner-layer', this.props.className)} style={[this.props.style]}>
+    return (<Layer className={classnames('project-banner-layer', this.props.className)} style={this.props.style}>
       <Banner>
         <BannerPanel
           size='half'

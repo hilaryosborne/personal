@@ -11,7 +11,7 @@ export class Container extends React.Component {
     className: PropTypes.string
   }
   render () {
-    return (<div className={classnames('container', this.props.className)} style={[this.props.style]}>
+    return (<div className={classnames('container', this.props.className)} style={this.props.style}>
       {this.props.children}
     </div>)
   }

@@ -18,7 +18,7 @@ export class ViewLink extends React.Component {
   }
 
   render () {
-    return (<div className={classnames(this.props.className)} style={[this.props.style]}>
+    return (<div className={classnames(this.props.className)} style={this.props.style}>
       Component
     </div>)
   }

@@ -33,7 +33,7 @@ export class Tags extends React.Component {
   }
 
   render () {
-    return (<div className={classnames(this.props.className)} style={[this.props.style]}>
+    return (<div className={classnames(this.props.className)} style={this.props.style}>
       <Row>
         {_.map(this.getChunked(), (tags, k) => {
           return (<Col key={k} md='6'>

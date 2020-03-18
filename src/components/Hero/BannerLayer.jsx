@@ -11,7 +11,7 @@ export class BannerLayer extends React.Component {
     className: PropTypes.string
   }
   render () {
-    return (<Layer className={classnames('hero-layer', this.props.className)} style={[this.props.style]}>
+    return (<Layer className={classnames('hero-layer', this.props.className)} style={this.props.style}>
       <Banner>
         <BannerPanel
           size='full'

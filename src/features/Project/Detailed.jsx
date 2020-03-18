@@ -21,7 +21,6 @@ export class Detailed extends React.Component {
   }
 
   static defaultProps = {
-    project: false,
     style: {},
     className: ''
   }

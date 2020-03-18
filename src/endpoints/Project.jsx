@@ -14,7 +14,8 @@ import {resetPage} from 'scripts/utils'
 @radium
 export class Project extends React.Component {
   static propTypes = {
-    project: PropTypes.object
+    project: PropTypes.object,
+    dispatch: PropTypes.any
   }
 
   static getDerivedStateFromProps (nextProps, prevState) {

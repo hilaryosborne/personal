@@ -11,7 +11,7 @@ export class Row extends React.Component {
     className: PropTypes.string
   }
   render () {
-    return (<div className={classnames('row', this.props.className)} style={[this.props.style]}>
+    return (<div className={classnames('row', this.props.className)} style={this.props.style}>
       {this.props.children}
     </div>)
   }

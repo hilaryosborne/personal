@@ -21,7 +21,7 @@ export class Title extends React.Component {
   }
 
   render () {
-    return (<div className={classnames(this.props.className)} style={[this.props.style]}>
+    return (<div className={classnames(this.props.className)} style={this.props.style}>
       <H1>
         <Underline>
           {_.get(this.props.project, 'viewing.project.label')}

@@ -3,6 +3,7 @@ import radium from 'radium'
 import PropType from 'prop-types'
 import _ from 'lodash'
 import classnames from 'classnames'
+import Kinetic from '@buxlabs/kinetic'
 import { backgrounds, mediaQueryBelow } from 'scripts/styles'
 
 const styling = {
@@ -78,7 +79,6 @@ export class Inner extends React.Component {
   setDeviceEl (ref) {
     if (!ref || this.deviceEl) { return }
     this.deviceEl = ref
-    const Kinetic = window.VanillaKinetic
     this.deviceKinetic = new Kinetic(this.deviceEl)
   }
 
